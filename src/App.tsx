@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Search, Info, Leaf, ShieldAlert } from 'lucide-react';
 import rankingDataRaw from './ranking_db.json';
 import { CompanyCard } from './components/CompanyCard';
-import { MethodologyModal } from './components/MethodologyModal'; // <--- Import Novo
+import { MethodologyModal } from './components/MethodologyModal';
 import { RankingData } from './types';
 
 // Cast the imported JSON to the correct type
@@ -53,7 +53,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
-      {/* Hero Section */}
+      {/* Hero Section - A CORREÇÃO ESTÁ NA LINHA ABAIXO (z-50) */}
       <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative z-50 overflow-hidden">
         <div className="absolute top-0 right-0 p-12 opacity-10">
           <Leaf size={200} />
@@ -66,7 +66,6 @@ const App: React.FC = () => {
               DADOS PÚBLICOS B3 • IBAMA • MTE
             </div>
             
-            {/* Componente do Modal Inserido Aqui */}
             <MethodologyModal />
           </div>
 
@@ -84,9 +83,10 @@ const App: React.FC = () => {
         </div>
       </header>
 
+      {/* Main Content */}
       <main className="max-w-4xl mx-auto -mt-8 px-4 relative z-20">
         
-        {/* Search Bar - Stickyish */}
+        {/* Search Bar */}
         <div className="bg-white rounded-xl shadow-xl p-4 mb-6 ring-1 ring-slate-900/5">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
