@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Info, AlertTriangle, Leaf, ShieldAlert } from 'lucide-react';
+import { Search, Info, Leaf, ShieldAlert } from 'lucide-react';
 import rankingDataRaw from './ranking_db.json';
 import { CompanyCard } from './components/CompanyCard';
-import { RankingData, Company } from './types';
+import { MethodologyModal } from './components/MethodologyModal'; // <--- Import Novo
+import { RankingData } from './types';
 
 // Cast the imported JSON to the correct type
 const rankingData = rankingDataRaw as RankingData;
@@ -58,9 +59,17 @@ const App: React.FC = () => {
           <Leaf size={200} />
         </div>
         <div className="max-w-3xl mx-auto relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold mb-4 border border-emerald-500/30">
-            DADOS PÚBLICOS B3 • IBAMA • MTE
+          
+          {/* Badge de Dados + Botão de Metodologia */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+              DADOS PÚBLICOS B3 • IBAMA • MTE
+            </div>
+            
+            {/* Componente do Modal Inserido Aqui */}
+            <MethodologyModal />
           </div>
+
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
             Quem financia o futuro e <br className="hidden md:block"/>
             <span className="text-red-400">quem destrói o presente?</span>
