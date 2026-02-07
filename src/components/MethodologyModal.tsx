@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom'; // <--- O SEGREDO ESTÁ AQUI
 import { Info, X, Scale, ShieldCheck, FileWarning, ArrowRight } from 'lucide-react';
 
 export const MethodologyModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Parte 1: O Botão (Continua onde você colocar ele)
   if (!isOpen) {
     return (
       <button 
         onClick={() => setIsOpen(true)}
-        className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all border border-white/10 backdrop-blur-sm z-50 relative"
+        className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all border border-white/10 backdrop-blur-sm relative z-50"
       >
         <Info size={16} />
         <span>Entenda a Metodologia</span>
@@ -16,9 +18,9 @@ export const MethodologyModal = () => {
     );
   }
 
-  return (
-    // Z-[999] garante que a janela flutue ACIMA de tudo
-    <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
+  // Parte 2: A Janela Modal (Teletransportada para o body)
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
       
       {/* Fundo Escuro */}
       <div 
@@ -121,6 +123,7 @@ export const MethodologyModal = () => {
 
         </div>
       </div>
-    </div>
+    </div>,
+    document.body // <--- Isso joga o modal para fora de tudo, no nível mais alto do site
   );
 };
