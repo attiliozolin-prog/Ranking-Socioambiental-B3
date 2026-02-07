@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_update": "2026-02-07",
+    "total_companies": 5
+  },
+  "companies": [
+    {
+      "ticker": "WEGE3",
+      "name": "WEG S.A.",
+      "cnpj_root": "84429695",
+      "score_final": 95,
+      "dimensions": {
+        "environmental": 90,
+        "social": 85,
+        "governance": 95
+      },
+      "badges": ["ISE", "Novo Mercado", "Líder ESG"],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "B3 - Índice ISE",
+          "description": "Membro da carteira teórica 2026",
+          "impact": 20
+        },
+        {
+          "type": "BONUS",
+          "source": "B3 - Novo Mercado",
+          "description": "Listagem no segmento máximo de governança",
+          "impact": 10
+        },
+        {
+          "type": "BONUS",
+          "source": "Relatório de Sustentabilidade",
+          "description": "Redução de 15% nas emissões de carbono auditada",
+          "impact": 15
+        }
+      ]
+    },
+    {
+      "ticker": "PETR4",
+      "name": "Petrobras",
+      "cnpj_root": "33000167",
+      "score_final": 45,
+      "dimensions": {
+        "environmental": 30,
+        "social": 50,
+        "governance": 60
+      },
+      "badges": ["ISE", "Alerta Ambiental"],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "B3 - Índice ISE",
+          "description": "Membro da carteira teórica 2026",
+          "impact": 15
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA - Autos de Infração",
+          "description": "Multa por vazamento em área offshore",
+          "date": "2025-11-15",
+          "impact": -10,
+          "link_ref": "#"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CADE",
+          "description": "Investigação preliminar sobre preços",
+          "date": "2025-05-10",
+          "impact": -10
+        }
+      ]
+    },
+    {
+      "ticker": "MINR3",
+      "name": "Mineradora Genérica Sul",
+      "cnpj_root": "12345678",
+      "score_final": 25,
+      "dimensions": {
+        "environmental": 10,
+        "social": 30,
+        "governance": 40
+      },
+      "badges": ["Ofensor Ambiental", "Risco Alto"],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "B3",
+          "description": "Listada na bolsa",
+          "impact": 0
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA",
+          "description": "Múltiplas infrações em barragens",
+          "date": "2024-02-01",
+          "impact": -20
+        },
+        {
+          "type": "PENALTY",
+          "source": "MTE",
+          "description": "Irregularidades trabalhistas graves",
+          "date": "2025-01-20",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "BANC4",
+      "name": "Banco Varejo Nacional",
+      "cnpj_root": "99988877",
+      "score_final": 65,
+      "dimensions": {
+        "environmental": 50,
+        "social": 70,
+        "governance": 80
+      },
+      "badges": ["Novo Mercado", "ICO2"],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "B3 - Novo Mercado",
+          "description": "Alta Governança Corporativa",
+          "impact": 10
+        },
+        {
+          "type": "BONUS",
+          "source": "Social",
+          "description": "Programa de diversidade premiado",
+          "impact": 5
+        }
+      ]
+    },
+    {
+      "ticker": "CONS3",
+      "name": "Construtora Horizonte",
+      "cnpj_root": "11223344",
+      "score_final": 0,
+      "dimensions": {
+        "environmental": 20,
+        "social": 0,
+        "governance": 30
+      },
+      "badges": ["LISTA SUJA DO TRABALHO ESCRAVO"],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "B3",
+          "description": "Listada no Nível 1",
+          "impact": 0
+        },
+        {
+          "type": "PENALTY",
+          "source": "MTE - Lista Suja",
+          "description": "Inclusão no cadastro de empregadores (Art. 149 CP)",
+          "date": "2025-06-30",
+          "impact": -999,
+          "link_ref": "https://www.gov.br/trabalho-e-emprego/pt-br"
+        }
+      ]
+    }
+  ]
+}
