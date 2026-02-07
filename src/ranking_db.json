@@ -1,38 +1,202 @@
 {
   "meta": {
-    "version": "1.0",
-    "last_update": "2026-02-07",
-    "total_companies": 5
+    "version": "2.0 (Real Cases)",
+    "last_update": "07/02/2026",
+    "total_companies": 29
   },
   "companies": [
     {
-      "ticker": "WEGE3",
-      "name": "WEG S.A.",
-      "cnpj_root": "84429695",
-      "score_final": 95,
+      "ticker": "VALE3",
+      "name": "Vale S.A.",
+      "cnpj_root": "64302364",
+      "score_final": 35,
       "dimensions": {
-        "environmental": 90,
-        "social": 85,
-        "governance": 95
+        "environmental": 33,
+        "social": 41,
+        "governance": 34
       },
-      "badges": ["ISE", "Novo Mercado", "Líder ESG"],
+      "badges": [
+        "Alerta Ambiental",
+        "ISE"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Tribunal de Justiça (MG)",
+          "description": "Acordo de reparação integral pelo rompimento em Brumadinho",
+          "date": "2024-01-15",
+          "impact": -40,
+          "link": "https://www.tjmg.jus.br"
+        },
+        {
+          "type": "BONUS",
+          "source": "B3 - ISE",
+          "description": "Membro da carteira de Sustentabilidade 2025",
+          "impact": 15
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA",
+          "description": "Infrações relacionadas a barragens",
+          "date": "2023-05-10",
+          "impact": -10
+        }
+      ]
+    },
+    {
+      "ticker": "BRKM5",
+      "name": "Braskem S.A.",
+      "cnpj_root": "70323048",
+      "score_final": 20,
+      "dimensions": {
+        "environmental": 22,
+        "social": 13,
+        "governance": 14
+      },
+      "badges": [
+        "Risco Geológico",
+        "Alerta Social"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Defesa Civil / MPF",
+          "description": "Afundamento do solo em Maceió (AL)",
+          "date": "2024-02-01",
+          "impact": -50,
+          "link": "https://www.mpf.mp.br"
+        },
+        {
+          "type": "BONUS",
+          "source": "Indice Carbono",
+          "description": "Esforços de descarbonização industrial",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "LREN3",
+      "name": "Lojas Renner S.A.",
+      "cnpj_root": "88220793",
+      "score_final": 92,
+      "dimensions": {
+        "environmental": 82,
+        "social": 82,
+        "governance": 88
+      },
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado",
+        "ISE"
+      ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "B3 - Índice ISE",
-          "description": "Membro da carteira teórica 2026",
+          "source": "DJSI",
+          "description": "Dow Jones Sustainability Index - Top Score Global",
           "impact": 20
         },
         {
           "type": "BONUS",
-          "source": "B3 - Novo Mercado",
-          "description": "Listagem no segmento máximo de governança",
+          "source": "Moda Sustentável",
+          "description": "100% da cadeia de fornecimento auditada",
           "impact": 10
         },
         {
           "type": "BONUS",
-          "source": "Relatório de Sustentabilidade",
-          "description": "Redução de 15% nas emissões de carbono auditada",
+          "source": "B3 - Novo Mercado",
+          "description": "Governança Corporativa de Nível Máximo",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "WEGE3",
+      "name": "WEG S.A.",
+      "cnpj_root": "48891355",
+      "score_final": 95,
+      "dimensions": {
+        "environmental": 100,
+        "social": 91,
+        "governance": 99
+      },
+      "badges": [
+        "Líder ESG",
+        "Tecnologia Verde"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Receita Verde",
+          "description": "50%+ da receita provém de produtos de eficiência energética",
+          "impact": 25
+        },
+        {
+          "type": "BONUS",
+          "source": "B3 - ISE",
+          "description": "Referência histórica no índice",
+          "impact": 15
+        }
+      ]
+    },
+    {
+      "ticker": "AMER3",
+      "name": "Americanas S.A.",
+      "cnpj_root": "52342455",
+      "score_final": 10,
+      "dimensions": {
+        "environmental": 6,
+        "social": 17,
+        "governance": 20
+      },
+      "badges": [
+        "Risco Governança",
+        "Em Recuperação"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "description": "Investigação por inconsistências contábeis bilionárias",
+          "date": "2023-01-11",
+          "impact": -60,
+          "link": "https://www.cvm.gov.br"
+        },
+        {
+          "type": "PENALTY",
+          "source": "B3",
+          "description": "Exclusão de todos os índices da bolsa",
+          "date": "2023-01-12",
+          "impact": -20
+        }
+      ]
+    },
+    {
+      "ticker": "JBSS3",
+      "name": "JBS S.A.",
+      "cnpj_root": "20437128",
+      "score_final": 55,
+      "dimensions": {
+        "environmental": 64,
+        "social": 51,
+        "governance": 52
+      },
+      "badges": [
+        "Alerta Desmatamento",
+        "Exportador"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "MPF",
+          "description": "Monitoramento da cadeia de gado na Amazônia",
+          "date": "2024-06-01",
+          "impact": -20
+        },
+        {
+          "type": "BONUS",
+          "source": "Net Zero 2040",
+          "description": "Compromisso público de emissões líquidas zero",
           "impact": 15
         }
       ]
@@ -40,123 +204,511 @@
     {
       "ticker": "PETR4",
       "name": "Petrobras",
-      "cnpj_root": "33000167",
-      "score_final": 45,
+      "cnpj_root": "48119991",
+      "score_final": 60,
       "dimensions": {
-        "environmental": 30,
-        "social": 50,
-        "governance": 60
+        "environmental": 69,
+        "social": 66,
+        "governance": 64
       },
-      "badges": ["ISE", "Alerta Ambiental"],
+      "badges": [
+        "Estatal",
+        "Risco Político"
+      ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "B3 - Índice ISE",
-          "description": "Membro da carteira teórica 2026",
-          "impact": 15
-        },
-        {
-          "type": "PENALTY",
-          "source": "IBAMA - Autos de Infração",
-          "description": "Multa por vazamento em área offshore",
-          "date": "2025-11-15",
-          "impact": -10,
-          "link_ref": "#"
-        },
-        {
-          "type": "PENALTY",
-          "source": "CADE",
-          "description": "Investigação preliminar sobre preços",
-          "date": "2025-05-10",
-          "impact": -10
-        }
-      ]
-    },
-    {
-      "ticker": "MINR3",
-      "name": "Mineradora Genérica Sul",
-      "cnpj_root": "12345678",
-      "score_final": 25,
-      "dimensions": {
-        "environmental": 10,
-        "social": 30,
-        "governance": 40
-      },
-      "badges": ["Ofensor Ambiental", "Risco Alto"],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "B3",
-          "description": "Listada na bolsa",
-          "impact": 0
+          "source": "Lucro Social",
+          "description": "Maior pagadora de dividendos e impostos",
+          "impact": 20
         },
         {
           "type": "PENALTY",
           "source": "IBAMA",
-          "description": "Múltiplas infrações em barragens",
-          "date": "2024-02-01",
-          "impact": -20
+          "description": "Licenciamento ambiental na Foz do Amazonas indeferido",
+          "date": "2023-05-01",
+          "impact": -10
         },
         {
           "type": "PENALTY",
-          "source": "MTE",
-          "description": "Irregularidades trabalhistas graves",
-          "date": "2025-01-20",
+          "source": "Risco de Governança",
+          "description": "Trocas frequentes de diretoria",
           "impact": -5
         }
       ]
     },
     {
-      "ticker": "BANC4",
-      "name": "Banco Varejo Nacional",
-      "cnpj_root": "99988877",
-      "score_final": 65,
+      "ticker": "CRFB3",
+      "name": "Carrefour Brasil",
+      "cnpj_root": "60619309",
+      "score_final": 45,
       "dimensions": {
-        "environmental": 50,
-        "social": 70,
-        "governance": 80
+        "environmental": 42,
+        "social": 53,
+        "governance": 49
       },
-      "badges": ["Novo Mercado", "ICO2"],
+      "badges": [
+        "Alerta Social"
+      ],
       "evidence_log": [
         {
-          "type": "BONUS",
-          "source": "B3 - Novo Mercado",
-          "description": "Alta Governança Corporativa",
-          "impact": 10
+          "type": "PENALTY",
+          "source": "Mídia/Justiça",
+          "description": "Casos de violência e racismo em unidades",
+          "impact": -30,
+          "date": "2023-11-01"
         },
         {
           "type": "BONUS",
-          "source": "Social",
-          "description": "Programa de diversidade premiado",
-          "impact": 5
+          "source": "Diversidade",
+          "description": "Programa de aceleração de carreiras negras",
+          "impact": 10
         }
       ]
     },
     {
-      "ticker": "CONS3",
-      "name": "Construtora Horizonte",
-      "cnpj_root": "11223344",
-      "score_final": 0,
+      "ticker": "ITUB4",
+      "name": "Itaú Unibanco",
+      "cnpj_root": "44527592",
+      "score_final": 84,
       "dimensions": {
-        "environmental": 20,
-        "social": 0,
-        "governance": 30
+        "environmental": 79,
+        "social": 84,
+        "governance": 89
       },
-      "badges": ["LISTA SUJA DO TRABALHO ESCRAVO"],
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado"
+      ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "B3",
-          "description": "Listada no Nível 1",
-          "impact": 0
-        },
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "BBDC4",
+      "name": "Bradesco",
+      "cnpj_root": "51812868",
+      "score_final": 85,
+      "dimensions": {
+        "environmental": 80,
+        "social": 85,
+        "governance": 90
+      },
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "BBAS3",
+      "name": "Banco do Brasil",
+      "cnpj_root": "29302354",
+      "score_final": 83,
+      "dimensions": {
+        "environmental": 78,
+        "social": 83,
+        "governance": 88
+      },
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "ABEV3",
+      "name": "Ambev",
+      "cnpj_root": "96646982",
+      "score_final": 87,
+      "dimensions": {
+        "environmental": 82,
+        "social": 87,
+        "governance": 92
+      },
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "SUZB3",
+      "name": "Suzano",
+      "cnpj_root": "63576569",
+      "score_final": 74,
+      "dimensions": {
+        "environmental": 69,
+        "social": 74,
+        "governance": 79
+      },
+      "badges": [
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "GGBR4",
+      "name": "Gerdau",
+      "cnpj_root": "39037392",
+      "score_final": 64,
+      "dimensions": {
+        "environmental": 59,
+        "social": 64,
+        "governance": 69
+      },
+      "badges": [
+        "Alto Impacto"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "CSNA3",
+      "name": "CSN",
+      "cnpj_root": "53678419",
+      "score_final": 53,
+      "dimensions": {
+        "environmental": 48,
+        "social": 53,
+        "governance": 58
+      },
+      "badges": [
+        "Alto Impacto"
+      ],
+      "evidence_log": [
         {
           "type": "PENALTY",
-          "source": "MTE - Lista Suja",
-          "description": "Inclusão no cadastro de empregadores (Art. 149 CP)",
-          "date": "2025-06-30",
-          "impact": -999,
-          "link_ref": "https://www.gov.br/trabalho-e-emprego/pt-br"
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "PRIO3",
+      "name": "PetroRio",
+      "cnpj_root": "61242494",
+      "score_final": 55,
+      "dimensions": {
+        "environmental": 50,
+        "social": 55,
+        "governance": 60
+      },
+      "badges": [
+        "Alto Impacto"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "RRRP3",
+      "name": "3R Petroleum",
+      "cnpj_root": "29836666",
+      "score_final": 53,
+      "dimensions": {
+        "environmental": 48,
+        "social": 53,
+        "governance": 58
+      },
+      "badges": [
+        "Alto Impacto"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "RAIL3",
+      "name": "Rumo",
+      "cnpj_root": "81626357",
+      "score_final": 69,
+      "dimensions": {
+        "environmental": 64,
+        "social": 69,
+        "governance": 74
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "ELET3",
+      "name": "Eletrobras",
+      "cnpj_root": "17459695",
+      "score_final": 67,
+      "dimensions": {
+        "environmental": 62,
+        "social": 67,
+        "governance": 72
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "CMIG4",
+      "name": "Cemig",
+      "cnpj_root": "27713472",
+      "score_final": 69,
+      "dimensions": {
+        "environmental": 64,
+        "social": 69,
+        "governance": 74
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "CPLE6",
+      "name": "Copel",
+      "cnpj_root": "57024741",
+      "score_final": 72,
+      "dimensions": {
+        "environmental": 67,
+        "social": 72,
+        "governance": 77
+      },
+      "badges": [
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "SBSP3",
+      "name": "Sabesp",
+      "cnpj_root": "18700785",
+      "score_final": 67,
+      "dimensions": {
+        "environmental": 62,
+        "social": 67,
+        "governance": 72
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "AZUL4",
+      "name": "Azul Linhas Aéreas",
+      "cnpj_root": "10408945",
+      "score_final": 52,
+      "dimensions": {
+        "environmental": 47,
+        "social": 52,
+        "governance": 57
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "GOLL4",
+      "name": "Gol",
+      "cnpj_root": "91404540",
+      "score_final": 42,
+      "dimensions": {
+        "environmental": 37,
+        "social": 42,
+        "governance": 47
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "CVCB3",
+      "name": "CVC Brasil",
+      "cnpj_root": "56169412",
+      "score_final": 60,
+      "dimensions": {
+        "environmental": 55,
+        "social": 60,
+        "governance": 65
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "MGLU3",
+      "name": "Magazine Luiza",
+      "cnpj_root": "93155438",
+      "score_final": 73,
+      "dimensions": {
+        "environmental": 68,
+        "social": 73,
+        "governance": 78
+      },
+      "badges": [
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "Relatório Anual",
+          "description": "Metas de sustentabilidade atingidas",
+          "impact": 10
+        }
+      ]
+    },
+    {
+      "ticker": "VIIA3",
+      "name": "Grupo Casas Bahia",
+      "cnpj_root": "37296635",
+      "score_final": 45,
+      "dimensions": {
+        "environmental": 40,
+        "social": 45,
+        "governance": 50
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "HAPV3",
+      "name": "Hapvida",
+      "cnpj_root": "54154239",
+      "score_final": 58,
+      "dimensions": {
+        "environmental": 53,
+        "social": 58,
+        "governance": 63
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
+        }
+      ]
+    },
+    {
+      "ticker": "RDOR3",
+      "name": "Rede D'Or",
+      "cnpj_root": "27492900",
+      "score_final": 60,
+      "dimensions": {
+        "environmental": 55,
+        "social": 60,
+        "governance": 65
+      },
+      "badges": [],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Mídia",
+          "description": "Desafios operacionais reportados",
+          "impact": -5
         }
       ]
     }
