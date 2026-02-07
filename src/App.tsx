@@ -53,8 +53,10 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
-      {/* Hero Section - A CORREÇÃO ESTÁ NA LINHA ABAIXO (z-50) */}
-      <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative z-50 overflow-hidden">
+      {/* FIX: Z-Index ajustado para 10. 
+         Isso garante que o header fique ATRÁS da barra de busca (que está no main com z-20).
+      */}
+      <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative z-10 overflow-hidden">
         <div className="absolute top-0 right-0 p-12 opacity-10">
           <Leaf size={200} />
         </div>
@@ -83,10 +85,10 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main Content (Z-Index 20 garante que fique sobre o header) */}
       <main className="max-w-4xl mx-auto -mt-8 px-4 relative z-20">
         
-        {/* Search Bar */}
+        {/* Search Bar - Stickyish */}
         <div className="bg-white rounded-xl shadow-xl p-4 mb-6 ring-1 ring-slate-900/5">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
