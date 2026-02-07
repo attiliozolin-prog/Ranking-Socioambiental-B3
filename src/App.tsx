@@ -54,7 +54,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
       {/* Hero Section */}
-      <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative overflow-hidden">
+      <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative z-50 overflow-hidden">
         <div className="absolute top-0 right-0 p-12 opacity-10">
           <Leaf size={200} />
         </div>
