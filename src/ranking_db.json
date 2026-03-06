@@ -38,7 +38,7 @@
           "dimension": "all",
           "description": "Membro da carteira ISE B3 — referência histórica de sustentabilidade",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -46,7 +46,7 @@
           "dimension": "environmental",
           "description": "Baixa pegada de carbono — eficiência energética como principal receita",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
         },
         {
           "type": "BONUS",
@@ -54,7 +54,7 @@
           "dimension": "governance",
           "description": "Governança de nível máximo da B3",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
         },
         {
           "type": "BONUS",
@@ -62,7 +62,7 @@
           "dimension": "all",
           "description": "Componente do índice S&P/B3 Brasil ESG com alta ponderação",
           "impact": 12,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/s-p-b3-brasil-esg.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/s-p-b3-brasil-esg-b3.htm"
         }
       ],
       "last_verified": "2026-03-06",
@@ -99,7 +99,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025 — destaque em práticas socioambientais",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -107,7 +107,7 @@
           "dimension": "social",
           "description": "Liderança em diversidade de gênero e raça em cargos executivos",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
         },
         {
           "type": "BONUS",
@@ -115,7 +115,7 @@
           "dimension": "governance",
           "description": "Governança de nível máximo",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
         },
         {
           "type": "BONUS",
@@ -161,7 +161,7 @@
           "dimension": "all",
           "description": "Presença histórica no ISE B3 desde sua criação em 2005",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -169,7 +169,7 @@
           "dimension": "social",
           "description": "Metas públicas de diversidade e inclusão no quadro executivo",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
         },
         {
           "type": "BONUS",
@@ -177,7 +177,7 @@
           "dimension": "environmental",
           "description": "Compromisso de carteira neutra em carbono até 2050",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
         },
         {
           "type": "PENALTY",
@@ -222,7 +222,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -230,7 +230,7 @@
           "dimension": "environmental",
           "description": "Relatório de emissões GEE publicado e auditado",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
         },
         {
           "type": "BONUS",
@@ -275,7 +275,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025 — maior financiador de energia renovável do Brasil",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -283,7 +283,7 @@
           "dimension": "social",
           "description": "Certificado Great Place to Work — excelência no ambiente de trabalho",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-gptw-b3.htm"
         },
         {
           "type": "BONUS",
@@ -291,7 +291,7 @@
           "dimension": "social",
           "description": "Programa de diversidade e equidade reconhecido",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
         }
       ],
       "last_verified": "2026-03-06",
@@ -327,7 +327,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -380,7 +380,7 @@
           "dimension": "all",
           "description": "ISE B3 — maior produtora de celulose de eucalipto do mundo, com manejo florestal certificado",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "BONUS",
@@ -437,7 +437,7 @@
           "dimension": "environmental",
           "description": "Divulgação de emissões GEE e metas de redução de intensidade de carbono",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
         },
         {
           "type": "PENALTY",
@@ -446,7 +446,7 @@
           "description": "Licença ambiental para exploração na Foz do Amazonas indeferida",
           "impact": -15,
           "date": "2023-05-18",
-          "link": "https://www.gov.br/ibama/pt-br/assuntos/noticias/2023/ibama-defere-licenciamento-de-quatro-areas-na-margem-equatorial"
+          "link": "https://www.gov.br/ibama/pt-br/assuntos/noticias/2023/ibama-indefere-licenca-ambiental-para-perfuracao-na-bacia-da-foz-do-amazonas"
         },
         {
           "type": "PENALTY",
@@ -497,7 +497,7 @@
           "dimension": "all",
           "description": "Membro da carteira ISE B3 — investimentos em processos de reparação e novas tecnologias",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
         },
         {
           "type": "PENALTY",
@@ -506,7 +506,7 @@
           "description": "Acordo de R$ 37,7 bi pelo rompimento da barragem de Brumadinho — 270 mortos",
           "impact": -40,
           "date": "2024-01-15",
-          "link": "https://www.tjmg.jus.br/portal-tjmg/noticias/vale-assina-acordo-historico-de-r-377-bilhoes-pelo-rompimento-de-brumadinho.htm#"
+          "link": "https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/mpmg-mpe-e-governo-de-minas-assinam-acordo-para-reparacao-integral-dos-danos-causados-pelo-rompimento-da-barragem-da-vale-em-brumadinho.shtml"
         },
         {
           "type": "PENALTY",
@@ -612,7 +612,7 @@
           "description": "Condenação pelo afundamento do solo em Maceió — 60 mil desabrigados",
           "impact": -50,
           "date": "2024-02-01",
-          "link": "https://www.mpf.mp.br/al/sala-de-imprensa/noticias-al/mpf-firma-acordo-com-braskem-para-compensacao-de-danos-na-regiao-lagunar-maceio"
+          "link": "https://www.mpf.mp.br/al/sala-de-imprensa/noticias-al/mpf-firma-novo-acordo-com-braskem-para-pagamento-de-r-17-bi-ao-estado-de-alagoas-por-danos-em-maceio"
         },
         {
           "type": "PENALTY",
