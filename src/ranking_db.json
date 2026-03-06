@@ -2,7 +2,7 @@
   "meta": {
     "version": "4.0",
     "last_update": "06/03/2026",
-    "total_companies": 96,
+    "total_companies": 100,
     "methodology_version": "3.0"
   },
   "companies": [
@@ -687,6 +687,76 @@
           "description": "Índice IGPTW B3 — certificação Great Place to Work",
           "impact": 8,
           "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "NTCO3",
+      "name": "Natura &Co Holding",
+      "cnpj_root": "32785497",
+      "sector": "Varejo",
+      "score_final": 82,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 84,
+        "social": 85,
+        "governance": 77
+      },
+      "indices_b3": [
+        "ISE B3",
+        "ICO2 B3",
+        "IGC — Novo Mercado",
+        "IDiversa B3"
+      ],
+      "badges": [
+        "Líder ESG",
+        "Corporation",
+        "Novo Mercado",
+        "Empresa B Certificada"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Membro do ISE B3 — líder global em cosméticos sustentáveis e economia circular",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Metas de carbono neutro até 2030 e inventário GEE auditado",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Listada no Novo Mercado B3",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Liderança em diversidade racial e de gênero — Carteira IDiversa B3",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Investigação CVM sobre disclosure de resultados da The Body Shop (2023)",
+          "impact": -8,
+          "date": "2023-10-01",
+          "link": "https://www.google.com/search?q=Natura+Co+CVM+Body+Shop+investigação+2023"
         }
       ],
       "last_verified": "2026-03-06",
@@ -1954,120 +2024,44 @@
       "data_quality": "alto"
     },
     {
-      "ticker": "SANB11",
-      "name": "Santander Brasil",
-      "cnpj_root": "90400888",
-      "sector": "Financeiro",
-      "score_final": 58,
+      "ticker": "MOVI3",
+      "name": "Movida Participações",
+      "cnpj_root": "21314559",
+      "sector": "Serviços",
+      "score_final": 62,
       "kill_switch": false,
       "dimensions": {
         "environmental": 60,
-        "social": 60,
-        "governance": 54
+        "social": 62,
+        "governance": 64
       },
       "indices_b3": [
-        "ICO2 B3",
-        "IGC — Novo Mercado",
-        "IDiversa B3"
+        "IGC — Novo Mercado"
       ],
       "badges": [
+        "Corporation",
         "Novo Mercado"
       ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "ICO2 B3",
-          "dimension": "environmental",
-          "description": "Participa do índice ICO2 B3 — inventário de emissões de GEE auditado",
-          "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
-        },
-        {
-          "type": "BONUS",
           "source": "IGC — Novo Mercado",
           "dimension": "governance",
-          "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
+          "description": "Listada no Novo Mercado B3 — nível máximo de governança",
           "impact": 8,
           "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
         },
         {
           "type": "BONUS",
-          "source": "IDiversa B3",
-          "dimension": "social",
-          "description": "Carteira IDiversa B3 — empresa com liderança em diversidade e inclusão",
-          "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
-        },
-        {
-          "type": "PENALTY",
-          "source": "CADE",
-          "dimension": "governance",
-          "description": "Multa por práticas anticoncorrenciais em tarifas bancárias",
-          "impact": -4,
-          "date": "2021-05-01",
-          "link": "https://www.google.com/search?q=Santander+CADE+tarifa+2021"
+          "source": "GRI",
+          "dimension": "all",
+          "description": "Relatório de Sustentabilidade GRI publicado com metas de eletrificação da frota",
+          "impact": 3,
+          "link": "https://www.movida.com.br/sustentabilidade"
         }
       ],
       "last_verified": "2026-03-06",
-      "data_quality": "alto"
-    },
-    {
-      "ticker": "MGLU3",
-      "name": "Magazine Luiza",
-      "cnpj_root": "47960950",
-      "sector": "Varejo",
-      "score_final": 57,
-      "kill_switch": false,
-      "dimensions": {
-        "environmental": 50,
-        "social": 68,
-        "governance": 53
-      },
-      "indices_b3": [
-        "IGC — Novo Mercado",
-        "IDiversa B3",
-        "IGPTW B3"
-      ],
-      "badges": [
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "IDiversa B3",
-          "dimension": "social",
-          "description": "Carteira IDiversa B3 — empresa com liderança em diversidade e inclusão",
-          "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
-        },
-        {
-          "type": "BONUS",
-          "source": "IGPTW B3",
-          "dimension": "social",
-          "description": "Índice IGPTW B3 — certificação Great Place to Work",
-          "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
-        },
-        {
-          "type": "BONUS",
-          "source": "IGC — Novo Mercado",
-          "dimension": "governance",
-          "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
-          "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
-        },
-        {
-          "type": "PENALTY",
-          "source": "CVM",
-          "dimension": "governance",
-          "description": "Investigação por divulgação de projeções de crescimento otimistas",
-          "impact": -5,
-          "date": "2022-09-01",
-          "link": "https://www.google.com/search?q=Magazine+Luiza+CVM+2022"
-        }
-      ],
-      "last_verified": "2026-03-06",
-      "data_quality": "alto"
+      "data_quality": "medio"
     },
     {
       "ticker": "TRPL4",
@@ -3479,6 +3473,185 @@
           "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
           "impact": 8,
           "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "RAPT4",
+      "name": "Randon S.A. Implementos e Participações",
+      "cnpj_root": "89850341",
+      "sector": "Indústria",
+      "score_final": 60,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 58,
+        "social": 60,
+        "governance": 62
+      },
+      "indices_b3": [
+        "ICO2 B3"
+      ],
+      "badges": [
+        "Corporation"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Participa do ICO2 B3 com inventário de emissões de GEE auditado",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "medio"
+    },
+    {
+      "ticker": "SANB11",
+      "name": "Santander Brasil",
+      "cnpj_root": "90400888",
+      "sector": "Financeiro",
+      "score_final": 58,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 60,
+        "social": 60,
+        "governance": 54
+      },
+      "indices_b3": [
+        "ICO2 B3",
+        "IGC — Novo Mercado",
+        "IDiversa B3"
+      ],
+      "badges": [
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Participa do índice ICO2 B3 — inventário de emissões de GEE auditado",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Carteira IDiversa B3 — empresa com liderança em diversidade e inclusão",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CADE",
+          "dimension": "governance",
+          "description": "Multa por práticas anticoncorrenciais em tarifas bancárias",
+          "impact": -4,
+          "date": "2021-05-01",
+          "link": "https://www.google.com/search?q=Santander+CADE+tarifa+2021"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "GMAT3",
+      "name": "Grupo Mateus",
+      "cnpj_root": "27612993",
+      "sector": "Varejo",
+      "score_final": 58,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 56,
+        "social": 58,
+        "governance": 60
+      },
+      "indices_b3": [
+        "IGC — Novo Mercado"
+      ],
+      "badges": [
+        "Corporation",
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "medio"
+    },
+    {
+      "ticker": "MGLU3",
+      "name": "Magazine Luiza",
+      "cnpj_root": "47960950",
+      "sector": "Varejo",
+      "score_final": 57,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 50,
+        "social": 68,
+        "governance": 53
+      },
+      "indices_b3": [
+        "IGC — Novo Mercado",
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
+      "badges": [
+        "Novo Mercado"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Carteira IDiversa B3 — empresa com liderança em diversidade e inclusão",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGPTW B3",
+          "dimension": "social",
+          "description": "Índice IGPTW B3 — certificação Great Place to Work",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Listada no Novo Mercado B3 — nível máximo de governança corporativa",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Investigação por divulgação de projeções de crescimento otimistas",
+          "impact": -5,
+          "date": "2022-09-01",
+          "link": "https://www.google.com/search?q=Magazine+Luiza+CVM+2022"
         }
       ],
       "last_verified": "2026-03-06",
