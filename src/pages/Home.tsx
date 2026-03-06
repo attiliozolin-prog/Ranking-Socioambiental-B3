@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="pb-20">
-      <header className="bg-slate-900 text-white pt-12 pb-16 px-4 relative z-10 overflow-hidden">
+      <header className="bg-slate-900 text-white pt-8 pb-14 sm:pt-12 sm:pb-16 px-4 relative z-10 overflow-hidden">
         <div className="absolute top-0 right-0 p-12 opacity-10">
           <Leaf size={200} />
         </div>
@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-2">
             <div className="relative flex-1">
               <select
-                className="w-full pl-3 pr-8 py-2 border border-slate-200 rounded-lg bg-slate-50 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
+                className="w-full pl-3 pr-8 py-2 border border-slate-200 rounded-lg bg-white text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer appearance-none shadow-sm"
                 value={selectedSector}
                 onChange={(e) => setSelectedSector(e.target.value)}
               >
@@ -145,6 +145,11 @@ const HomePage: React.FC = () => {
                   <option key={s} value={s}>{s}</option>
                 ))}
               </select>
+              <div className="pointer-events-none absolute inset-y-0 right-2 flex items-center">
+                <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
             </div>
 
             <div className="relative flex-1">
@@ -152,7 +157,7 @@ const HomePage: React.FC = () => {
                 <SlidersHorizontal className="h-4 w-4 text-slate-400" />
               </div>
               <select
-                className="w-full pl-9 pr-8 py-2 border border-slate-200 rounded-lg bg-slate-50 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
+                className="w-full pl-9 pr-8 py-2 border border-slate-200 rounded-lg bg-white text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer appearance-none shadow-sm"
                 value={sortKey}
                 onChange={(e) => setSortKey(e.target.value as SortKey)}
               >
@@ -160,6 +165,11 @@ const HomePage: React.FC = () => {
                   <option key={o.value} value={o.value}>Ordenar por: {o.label}</option>
                 ))}
               </select>
+              <div className="pointer-events-none absolute inset-y-0 right-2 flex items-center">
+                <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>

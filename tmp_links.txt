@@ -1,0 +1,53 @@
+WEGE3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+WEGE3 | ICO2 B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm
+WEGE3 | IGC — Novo Mercado | https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/
+WEGE3 | S&P/B3 ESG | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/s-p-b3-brasil-esg.htm
+LREN3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+LREN3 | IDiversa B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm
+LREN3 | IGC — Novo Mercado | https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/
+LREN3 | GRI | https://www.lojasrenner.com.br/ri/sustentabilidade
+ITUB4 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+ITUB4 | IDiversa B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm
+ITUB4 | ICO2 B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm
+ITUB4 | CADE | https://www.cade.gov.br
+BBDC4 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+BBDC4 | ICO2 B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm
+BBDC4 | GRI | https://www.bradescori.com.br/sustentabilidade/
+BBAS3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+BBAS3 | IGPTW B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm
+BBAS3 | IDiversa B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm
+ABEV3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+ABEV3 | ICO2 B3 | https://www.ambev.com.br/sustentabilidade
+ABEV3 | IBAMA | https://servicos.ibama.gov.br
+SUZB3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+SUZB3 | TCFD | https://www.suzano.com.br/sustentabilidade
+SUZB3 | CDP | https://www.cdp.net
+SUZB3 | MPT | https://www.prt15.mpt.mp.br
+PETR4 | ICO2 B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm
+PETR4 | IBAMA | https://www.gov.br/ibama/pt-br/assuntos/noticias/2023/ibama-defere-licenciamento-de-quatro-areas-na-margem-equatorial
+PETR4 | Tribunal Federal | https://www.jfpe.jus.br
+PETR4 | CVM | https://www.cvm.gov.br
+VALE3 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+VALE3 | Tribunal Estadual | https://www.tjmg.jus.br/portal-tjmg/noticias/vale-assina-acordo-historico-de-r-377-bilhoes-pelo-rompimento-de-brumadinho.htm#
+VALE3 | IBAMA | https://servicos.ibama.gov.br/ctf/publico/areasembargadas/ConsultaPublicaAreasEmbargadas.php
+VALE3 | MPT | https://mpt.mp.br
+JBSS3 | GRI | https://jbs.com.br/sustentabilidade/
+JBSS3 | MPF | https://www.mpf.mp.br/atuacao-tematica/ccr4/dados-da-atuacao/projetos/fundo-amazonia
+JBSS3 | SEC | https://www.justice.gov/opa/pr/jbs-sa-agrees-pay-over-156-million-resolve-foreign-corrupt-practices-act-charges
+JBSS3 | MTE | https://www.gov.br/trabalho-e-emprego
+BRKM5 | Tribunal Federal | https://www.mpf.mp.br/al/sala-de-imprensa/noticias-al/mpf-firma-acordo-com-braskem-para-compensacao-de-danos-na-regiao-lagunar-maceio
+BRKM5 | IBAMA | https://servicos.ibama.gov.br
+BRKM5 | CVM | https://www.cvm.gov.br
+AMER3 | CVM | https://www.cvm.gov.br/noticias/arquivos/2023/20230112-1.html
+AMER3 | Tribunal Federal | https://www.tjrj.jus.br
+AMER3 | MTE | https://www.gov.br/trabalho-e-emprego
+CRFB3 | Tribunal Estadual | https://www.tjrs.jus.br
+CRFB3 | MPT | https://mpt.mp.br
+CRFB3 | GRI | https://www.carrefour.com.br/sustentabilidade
+MGLU3 | IDiversa B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm
+MGLU3 | IGPTW B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm
+MGLU3 | IGC — Novo Mercado | https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/
+MGLU3 | CVM | https://www.cvm.gov.br
+GGBR4 | ISE B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm
+GGBR4 | ICO2 B3 | https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm
+GGBR4 | IBAMA | https://servicos.ibama.gov.br
