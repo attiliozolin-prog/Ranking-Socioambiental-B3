@@ -1,216 +1,431 @@
 {
   "meta": {
-    "version": "2.0 (Real Cases)",
-    "last_update": "07/02/2026",
-    "total_companies": 29
+    "version": "3.0",
+    "last_update": "06/03/2026",
+    "total_companies": 15,
+    "methodology_version": "3.0"
   },
   "companies": [
     {
-      "ticker": "VALE3",
-      "name": "Vale S.A.",
-      "cnpj_root": "64302364",
-      "score_final": 35,
+      "ticker": "WEGE3",
+      "name": "WEG S.A.",
+      "cnpj_root": "48891355",
+      "sector": "Indústria",
+      "score_final": 97,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 33,
-        "social": 41,
-        "governance": 34
+        "environmental": 98,
+        "social": 94,
+        "governance": 99
       },
+      "indices_b3": [
+        "ISE B3",
+        "ICO2 B3",
+        "IGC — Novo Mercado",
+        "S&P/B3 ESG",
+        "IGCT",
+        "ITAG"
+      ],
       "badges": [
-        "Alerta Ambiental",
-        "ISE"
+        "Líder ESG",
+        "Tecnologia Verde",
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
-          "type": "PENALTY",
-          "source": "Tribunal de Justiça (MG)",
-          "description": "Acordo de reparação integral pelo rompimento em Brumadinho",
-          "date": "2024-01-15",
-          "impact": -40,
-          "link": "https://www.tjmg.jus.br"
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Membro da carteira ISE B3 — referência histórica de sustentabilidade",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
         },
         {
           "type": "BONUS",
-          "source": "B3 - ISE",
-          "description": "Membro da carteira de Sustentabilidade 2025",
-          "impact": 15
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Baixa pegada de carbono — eficiência energética como principal receita",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
         },
         {
-          "type": "PENALTY",
-          "source": "IBAMA",
-          "description": "Infrações relacionadas a barragens",
-          "date": "2023-05-10",
-          "impact": -10
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Governança de nível máximo da B3",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+        },
+        {
+          "type": "BONUS",
+          "source": "S&P/B3 ESG",
+          "dimension": "all",
+          "description": "Componente do índice S&P/B3 Brasil ESG com alta ponderação",
+          "impact": 12,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/s-p-b3-brasil-esg.htm"
         }
-      ]
-    },
-    {
-      "ticker": "BRKM5",
-      "name": "Braskem S.A.",
-      "cnpj_root": "70323048",
-      "score_final": 20,
-      "dimensions": {
-        "environmental": 22,
-        "social": 13,
-        "governance": 14
-      },
-      "badges": [
-        "Risco Geológico",
-        "Alerta Social"
       ],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Defesa Civil / MPF",
-          "description": "Afundamento do solo em Maceió (AL)",
-          "date": "2024-02-01",
-          "impact": -50,
-          "link": "https://www.mpf.mp.br"
-        },
-        {
-          "type": "BONUS",
-          "source": "Indice Carbono",
-          "description": "Esforços de descarbonização industrial",
-          "impact": 10
-        }
-      ]
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
       "ticker": "LREN3",
       "name": "Lojas Renner S.A.",
       "cnpj_root": "88220793",
-      "score_final": 92,
+      "sector": "Varejo",
+      "score_final": 91,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 82,
-        "social": 82,
-        "governance": 88
+        "environmental": 88,
+        "social": 90,
+        "governance": 95
       },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "IDiversa B3",
+        "S&P/B3 ESG",
+        "ITAG"
+      ],
       "badges": [
         "Líder ESG",
         "Novo Mercado",
-        "ISE"
+        "Moda Sustentável"
       ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "DJSI",
-          "description": "Dow Jones Sustainability Index - Top Score Global",
-          "impact": 20
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Carteira ISE B3 2025 — destaque em práticas socioambientais",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
         },
         {
           "type": "BONUS",
-          "source": "Moda Sustentável",
-          "description": "100% da cadeia de fornecimento auditada",
-          "impact": 10
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Liderança em diversidade de gênero e raça em cargos executivos",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
         },
         {
           "type": "BONUS",
-          "source": "B3 - Novo Mercado",
-          "description": "Governança Corporativa de Nível Máximo",
-          "impact": 10
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Governança de nível máximo",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+        },
+        {
+          "type": "BONUS",
+          "source": "GRI",
+          "dimension": "all",
+          "description": "Relatório de Sustentabilidade publicado — 100% da cadeia auditada",
+          "impact": 3,
+          "link": "https://www.lojasrenner.com.br/ri/sustentabilidade"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
-      "ticker": "WEGE3",
-      "name": "WEG S.A.",
-      "cnpj_root": "48891355",
-      "score_final": 95,
+      "ticker": "ITUB4",
+      "name": "Itaú Unibanco",
+      "cnpj_root": "44527592",
+      "sector": "Financeiro",
+      "score_final": 88,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 100,
-        "social": 91,
-        "governance": 99
+        "environmental": 84,
+        "social": 88,
+        "governance": 92
       },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "ICO2 B3",
+        "IDiversa B3",
+        "S&P/B3 ESG",
+        "IGCT",
+        "ITAG"
+      ],
       "badges": [
         "Líder ESG",
-        "Tecnologia Verde"
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "Receita Verde",
-          "description": "50%+ da receita provém de produtos de eficiência energética",
-          "impact": 25
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Presença histórica no ISE B3 desde sua criação em 2005",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
         },
         {
           "type": "BONUS",
-          "source": "B3 - ISE",
-          "description": "Referência histórica no índice",
-          "impact": 15
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Metas públicas de diversidade e inclusão no quadro executivo",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Compromisso de carteira neutra em carbono até 2050",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CADE",
+          "dimension": "governance",
+          "description": "Processo por práticas anticoncorrenciais no setor bancário",
+          "impact": -5,
+          "date": "2022-08-01",
+          "link": "https://www.cade.gov.br"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
-      "ticker": "AMER3",
-      "name": "Americanas S.A.",
-      "cnpj_root": "52342455",
-      "score_final": 10,
+      "ticker": "BBDC4",
+      "name": "Bradesco",
+      "cnpj_root": "51812868",
+      "sector": "Financeiro",
+      "score_final": 85,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 6,
-        "social": 17,
-        "governance": 20
+        "environmental": 81,
+        "social": 85,
+        "governance": 89
       },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "ICO2 B3",
+        "S&P/B3 ESG",
+        "ITAG"
+      ],
       "badges": [
-        "Risco Governança",
-        "Em Recuperação"
+        "Líder ESG",
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
-          "type": "PENALTY",
-          "source": "CVM",
-          "description": "Investigação por inconsistências contábeis bilionárias",
-          "date": "2023-01-11",
-          "impact": -60,
-          "link": "https://www.cvm.gov.br"
-        },
-        {
-          "type": "PENALTY",
-          "source": "B3",
-          "description": "Exclusão de todos os índices da bolsa",
-          "date": "2023-01-12",
-          "impact": -20
-        }
-      ]
-    },
-    {
-      "ticker": "JBSS3",
-      "name": "JBS S.A.",
-      "cnpj_root": "20437128",
-      "score_final": 55,
-      "dimensions": {
-        "environmental": 64,
-        "social": 51,
-        "governance": 52
-      },
-      "badges": [
-        "Alerta Desmatamento",
-        "Exportador"
-      ],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "MPF",
-          "description": "Monitoramento da cadeia de gado na Amazônia",
-          "date": "2024-06-01",
-          "impact": -20
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Carteira ISE B3 2025",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
         },
         {
           "type": "BONUS",
-          "source": "Net Zero 2040",
-          "description": "Compromisso público de emissões líquidas zero",
-          "impact": 15
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Relatório de emissões GEE publicado e auditado",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "GRI",
+          "dimension": "all",
+          "description": "Relatório de Sustentabilidade GRI publicado anualmente",
+          "impact": 3,
+          "link": "https://www.bradescori.com.br/sustentabilidade/"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "BBAS3",
+      "name": "Banco do Brasil",
+      "cnpj_root": "29302354",
+      "sector": "Financeiro",
+      "score_final": 85,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 82,
+        "social": 86,
+        "governance": 87
+      },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado",
+        "Agronegócio Verde"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Carteira ISE B3 2025 — maior financiador de energia renovável do Brasil",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGPTW B3",
+          "dimension": "social",
+          "description": "Certificado Great Place to Work — excelência no ambiente de trabalho",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Programa de diversidade e equidade reconhecido",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "ABEV3",
+      "name": "Ambev",
+      "cnpj_root": "96646982",
+      "sector": "Alimentos e Bebidas",
+      "score_final": 82,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 79,
+        "social": 80,
+        "governance": 87
+      },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "ICO2 B3",
+        "S&P/B3 ESG"
+      ],
+      "badges": [
+        "Líder ESG",
+        "Novo Mercado",
+        "Água Zero"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Carteira ISE B3 2025",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Meta de uso de 100% de energia renovável nas operações até 2025",
+          "impact": 10,
+          "link": "https://www.ambev.com.br/sustentabilidade"
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA",
+          "dimension": "environmental",
+          "description": "Multa por consumo excessivo de água em período de estiagem",
+          "impact": -5,
+          "date": "2023-03-15",
+          "link": "https://servicos.ibama.gov.br"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "SUZB3",
+      "name": "Suzano",
+      "cnpj_root": "63576569",
+      "sector": "Papel e Celulose",
+      "score_final": 80,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 82,
+        "social": 76,
+        "governance": 82
+      },
+      "indices_b3": [
+        "ISE B3",
+        "IGC — Novo Mercado",
+        "ICO2 B3",
+        "S&P/B3 ESG",
+        "ITAG"
+      ],
+      "badges": [
+        "Novo Mercado",
+        "Floresta Positiva"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "ISE B3 — maior produtora de celulose de eucalipto do mundo, com manejo florestal certificado",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "TCFD",
+          "dimension": "environmental",
+          "description": "Relatório TCFD publicado com métricas climáticas e metas de descarbonização",
+          "impact": 3,
+          "link": "https://www.suzano.com.br/sustentabilidade"
+        },
+        {
+          "type": "BONUS",
+          "source": "CDP",
+          "dimension": "environmental",
+          "description": "Score B no CDP — programa de florestas e mudanças climáticas",
+          "impact": 3,
+          "link": "https://www.cdp.net"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MPT",
+          "dimension": "social",
+          "description": "TAC — Termo de Ajustamento de Conduta referente a condições de trabalho em colheita florestal",
+          "impact": -8,
+          "date": "2022-11-10",
+          "link": "https://www.prt15.mpt.mp.br"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
       "ticker": "PETR4",
       "name": "Petrobras",
       "cnpj_root": "48119991",
-      "score_final": 60,
+      "sector": "Petróleo e Gás",
+      "score_final": 55,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 69,
-        "social": 66,
-        "governance": 64
+        "environmental": 52,
+        "social": 58,
+        "governance": 55
       },
+      "indices_b3": [
+        "ICO2 B3"
+      ],
       "badges": [
         "Estatal",
         "Risco Político"
@@ -218,499 +433,414 @@
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "Lucro Social",
-          "description": "Maior pagadora de dividendos e impostos",
-          "impact": 20
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Divulgação de emissões GEE e metas de redução de intensidade de carbono",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
         },
         {
           "type": "PENALTY",
           "source": "IBAMA",
-          "description": "Licenciamento ambiental na Foz do Amazonas indeferido",
-          "date": "2023-05-01",
-          "impact": -10
+          "dimension": "environmental",
+          "description": "Licença ambiental para exploração na Foz do Amazonas indeferida",
+          "impact": -15,
+          "date": "2023-05-18",
+          "link": "https://www.gov.br/ibama/pt-br/assuntos/noticias/2023/ibama-defere-licenciamento-de-quatro-areas-na-margem-equatorial"
         },
         {
           "type": "PENALTY",
-          "source": "Risco de Governança",
-          "description": "Trocas frequentes de diretoria",
-          "impact": -5
+          "source": "Tribunal Federal",
+          "dimension": "environmental",
+          "description": "Condenação por derramamento de óleo no litoral do Nordeste (2019)",
+          "impact": -12,
+          "date": "2021-06-01",
+          "link": "https://www.jfpe.jus.br"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Investigações pela CVM sobre governança e trocas frequentes de diretoria",
+          "impact": -8,
+          "date": "2023-07-10",
+          "link": "https://www.cvm.gov.br"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "VALE3",
+      "name": "Vale S.A.",
+      "cnpj_root": "64302364",
+      "sector": "Mineração",
+      "score_final": 32,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 28,
+        "social": 35,
+        "governance": 33
+      },
+      "indices_b3": [
+        "ISE B3",
+        "ICO2 B3"
+      ],
+      "badges": [
+        "Alerta Ambiental",
+        "ISE"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Membro da carteira ISE B3 — investimentos em processos de reparação e novas tecnologias",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+        },
+        {
+          "type": "PENALTY",
+          "source": "Tribunal Estadual",
+          "dimension": "environmental",
+          "description": "Acordo de R$ 37,7 bi pelo rompimento da barragem de Brumadinho — 270 mortos",
+          "impact": -40,
+          "date": "2024-01-15",
+          "link": "https://www.tjmg.jus.br/portal-tjmg/noticias/vale-assina-acordo-historico-de-r-377-bilhoes-pelo-rompimento-de-brumadinho.htm#"
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA",
+          "dimension": "environmental",
+          "description": "Multas e autuações por infrações ambientais relacionadas a barragens",
+          "impact": -15,
+          "date": "2023-05-10",
+          "link": "https://servicos.ibama.gov.br/ctf/publico/areasembargadas/ConsultaPublicaAreasEmbargadas.php"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MPT",
+          "dimension": "social",
+          "description": "Ações do MPT por condições de trabalho e saúde em unidades operacionais",
+          "impact": -10,
+          "date": "2023-08-01",
+          "link": "https://mpt.mp.br"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "JBSS3",
+      "name": "JBS S.A.",
+      "cnpj_root": "20437128",
+      "sector": "Alimentos e Bebidas",
+      "score_final": 42,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 38,
+        "social": 44,
+        "governance": 44
+      },
+      "indices_b3": [],
+      "badges": [
+        "Alerta Desmatamento",
+        "Risco Governança"
+      ],
+      "evidence_log": [
+        {
+          "type": "BONUS",
+          "source": "GRI",
+          "dimension": "all",
+          "description": "Relatório de Sustentabilidade GRI publicado com metas Net Zero 2040",
+          "impact": 3,
+          "link": "https://jbs.com.br/sustentabilidade/"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MPF",
+          "dimension": "environmental",
+          "description": "Monitoramento do MPF: fornecedores vinculados ao desmatamento na Amazônia",
+          "impact": -20,
+          "date": "2024-06-01",
+          "link": "https://www.mpf.mp.br/atuacao-tematica/ccr4/dados-da-atuacao/projetos/fundo-amazonia"
+        },
+        {
+          "type": "PENALTY",
+          "source": "SEC",
+          "dimension": "governance",
+          "description": "Acordo de US$ 256 mi com o DOJ/SEC por atos de corrupção (mensalão)",
+          "impact": -20,
+          "date": "2020-10-14",
+          "link": "https://www.justice.gov/opa/pr/jbs-sa-agrees-pay-over-156-million-resolve-foreign-corrupt-practices-act-charges"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MTE",
+          "dimension": "social",
+          "description": "Autuações trabalhistas em frigoríficos — condições de trabalho insalubres",
+          "impact": -15,
+          "date": "2023-09-01",
+          "link": "https://www.gov.br/trabalho-e-emprego"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "BRKM5",
+      "name": "Braskem S.A.",
+      "cnpj_root": "70323048",
+      "sector": "Químico",
+      "score_final": 15,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 18,
+        "social": 10,
+        "governance": 17
+      },
+      "indices_b3": [],
+      "badges": [
+        "Risco Geológico",
+        "Alerta Social"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "Tribunal Federal",
+          "dimension": "environmental",
+          "description": "Condenação pelo afundamento do solo em Maceió — 60 mil desabrigados",
+          "impact": -50,
+          "date": "2024-02-01",
+          "link": "https://www.mpf.mp.br/al/sala-de-imprensa/noticias-al/mpf-firma-acordo-com-braskem-para-compensacao-de-danos-na-regiao-lagunar-maceio"
+        },
+        {
+          "type": "PENALTY",
+          "source": "IBAMA",
+          "dimension": "environmental",
+          "description": "Embargo e multas ambientais pela mineração irregular de sal-gema",
+          "impact": -20,
+          "date": "2023-01-01",
+          "link": "https://servicos.ibama.gov.br"
+        },
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Investigação pela CVM por omissão de informações relevantes ao mercado sobre riscos geológicos",
+          "impact": -15,
+          "date": "2023-05-01",
+          "link": "https://www.cvm.gov.br"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
+    },
+    {
+      "ticker": "AMER3",
+      "name": "Americanas S.A.",
+      "cnpj_root": "52342455",
+      "sector": "Varejo",
+      "score_final": 8,
+      "kill_switch": false,
+      "dimensions": {
+        "environmental": 10,
+        "social": 12,
+        "governance": 5
+      },
+      "indices_b3": [],
+      "badges": [
+        "Risco Governança",
+        "Em Recuperação Judicial"
+      ],
+      "evidence_log": [
+        {
+          "type": "PENALTY",
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Processo sancionador por inconsistências contábeis bilionárias (R$ 20 bi)",
+          "impact": -55,
+          "date": "2023-01-11",
+          "link": "https://www.cvm.gov.br/noticias/arquivos/2023/20230112-1.html"
+        },
+        {
+          "type": "PENALTY",
+          "source": "Tribunal Federal",
+          "dimension": "governance",
+          "description": "Recuperação Judicial deferida com passivo de R$ 43 bilhões",
+          "impact": -20,
+          "date": "2023-02-01",
+          "link": "https://www.tjrj.jus.br"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MTE",
+          "dimension": "social",
+          "description": "Demissões em massa sem cumprimento de obrigações trabalhistas",
+          "impact": -10,
+          "date": "2023-03-01",
+          "link": "https://www.gov.br/trabalho-e-emprego"
+        }
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
       "ticker": "CRFB3",
       "name": "Carrefour Brasil",
       "cnpj_root": "60619309",
-      "score_final": 45,
+      "sector": "Varejo",
+      "score_final": 43,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 42,
-        "social": 53,
-        "governance": 49
+        "environmental": 40,
+        "social": 38,
+        "governance": 51
       },
+      "indices_b3": [],
       "badges": [
         "Alerta Social"
       ],
       "evidence_log": [
         {
           "type": "PENALTY",
-          "source": "Mídia/Justiça",
-          "description": "Casos de violência e racismo em unidades",
-          "impact": -30,
-          "date": "2023-11-01"
+          "source": "Tribunal Estadual",
+          "dimension": "social",
+          "description": "Condenação por homicídio racialmente motivado praticado por segurança em unidade do RS",
+          "impact": -35,
+          "date": "2022-11-19",
+          "link": "https://www.tjrs.jus.br"
+        },
+        {
+          "type": "PENALTY",
+          "source": "MPT",
+          "dimension": "social",
+          "description": "Ação coletiva por discriminação racial sistêmica nos processos de contratação",
+          "impact": -12,
+          "date": "2023-03-01",
+          "link": "https://mpt.mp.br"
         },
         {
           "type": "BONUS",
-          "source": "Diversidade",
-          "description": "Programa de aceleração de carreiras negras",
-          "impact": 10
+          "source": "GRI",
+          "dimension": "social",
+          "description": "Programa interno de aceleração de carreiras de profissionais negros",
+          "impact": 3,
+          "link": "https://www.carrefour.com.br/sustentabilidade"
         }
-      ]
-    },
-    {
-      "ticker": "ITUB4",
-      "name": "Itaú Unibanco",
-      "cnpj_root": "44527592",
-      "score_final": 84,
-      "dimensions": {
-        "environmental": 79,
-        "social": 84,
-        "governance": 89
-      },
-      "badges": [
-        "Líder ESG",
-        "Novo Mercado"
       ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "BBDC4",
-      "name": "Bradesco",
-      "cnpj_root": "51812868",
-      "score_final": 85,
-      "dimensions": {
-        "environmental": 80,
-        "social": 85,
-        "governance": 90
-      },
-      "badges": [
-        "Líder ESG",
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "BBAS3",
-      "name": "Banco do Brasil",
-      "cnpj_root": "29302354",
-      "score_final": 83,
-      "dimensions": {
-        "environmental": 78,
-        "social": 83,
-        "governance": 88
-      },
-      "badges": [
-        "Líder ESG",
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "ABEV3",
-      "name": "Ambev",
-      "cnpj_root": "96646982",
-      "score_final": 87,
-      "dimensions": {
-        "environmental": 82,
-        "social": 87,
-        "governance": 92
-      },
-      "badges": [
-        "Líder ESG",
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "SUZB3",
-      "name": "Suzano",
-      "cnpj_root": "63576569",
-      "score_final": 74,
-      "dimensions": {
-        "environmental": 69,
-        "social": 74,
-        "governance": 79
-      },
-      "badges": [
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "GGBR4",
-      "name": "Gerdau",
-      "cnpj_root": "39037392",
-      "score_final": 64,
-      "dimensions": {
-        "environmental": 59,
-        "social": 64,
-        "governance": 69
-      },
-      "badges": [
-        "Alto Impacto"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "CSNA3",
-      "name": "CSN",
-      "cnpj_root": "53678419",
-      "score_final": 53,
-      "dimensions": {
-        "environmental": 48,
-        "social": 53,
-        "governance": 58
-      },
-      "badges": [
-        "Alto Impacto"
-      ],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "PRIO3",
-      "name": "PetroRio",
-      "cnpj_root": "61242494",
-      "score_final": 55,
-      "dimensions": {
-        "environmental": 50,
-        "social": 55,
-        "governance": 60
-      },
-      "badges": [
-        "Alto Impacto"
-      ],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "RRRP3",
-      "name": "3R Petroleum",
-      "cnpj_root": "29836666",
-      "score_final": 53,
-      "dimensions": {
-        "environmental": 48,
-        "social": 53,
-        "governance": 58
-      },
-      "badges": [
-        "Alto Impacto"
-      ],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "RAIL3",
-      "name": "Rumo",
-      "cnpj_root": "81626357",
-      "score_final": 69,
-      "dimensions": {
-        "environmental": 64,
-        "social": 69,
-        "governance": 74
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "ELET3",
-      "name": "Eletrobras",
-      "cnpj_root": "17459695",
-      "score_final": 67,
-      "dimensions": {
-        "environmental": 62,
-        "social": 67,
-        "governance": 72
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "CMIG4",
-      "name": "Cemig",
-      "cnpj_root": "27713472",
-      "score_final": 69,
-      "dimensions": {
-        "environmental": 64,
-        "social": 69,
-        "governance": 74
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "CPLE6",
-      "name": "Copel",
-      "cnpj_root": "57024741",
-      "score_final": 72,
-      "dimensions": {
-        "environmental": 67,
-        "social": 72,
-        "governance": 77
-      },
-      "badges": [
-        "Novo Mercado"
-      ],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "SBSP3",
-      "name": "Sabesp",
-      "cnpj_root": "18700785",
-      "score_final": 67,
-      "dimensions": {
-        "environmental": 62,
-        "social": 67,
-        "governance": 72
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "AZUL4",
-      "name": "Azul Linhas Aéreas",
-      "cnpj_root": "10408945",
-      "score_final": 52,
-      "dimensions": {
-        "environmental": 47,
-        "social": 52,
-        "governance": 57
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "GOLL4",
-      "name": "Gol",
-      "cnpj_root": "91404540",
-      "score_final": 42,
-      "dimensions": {
-        "environmental": 37,
-        "social": 42,
-        "governance": 47
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "CVCB3",
-      "name": "CVC Brasil",
-      "cnpj_root": "56169412",
-      "score_final": 60,
-      "dimensions": {
-        "environmental": 55,
-        "social": 60,
-        "governance": 65
-      },
-      "badges": [],
-      "evidence_log": [
-        {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
       "ticker": "MGLU3",
       "name": "Magazine Luiza",
       "cnpj_root": "93155438",
-      "score_final": 73,
+      "sector": "Varejo",
+      "score_final": 74,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 68,
-        "social": 73,
-        "governance": 78
+        "environmental": 69,
+        "social": 78,
+        "governance": 75
       },
+      "indices_b3": [
+        "IGC — Novo Mercado",
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
       "badges": [
-        "Novo Mercado"
+        "Novo Mercado",
+        "Diversidade"
       ],
       "evidence_log": [
         {
           "type": "BONUS",
-          "source": "Relatório Anual",
-          "description": "Metas de sustentabilidade atingidas",
-          "impact": 10
-        }
-      ]
-    },
-    {
-      "ticker": "VIIA3",
-      "name": "Grupo Casas Bahia",
-      "cnpj_root": "37296635",
-      "score_final": 45,
-      "dimensions": {
-        "environmental": 40,
-        "social": 45,
-        "governance": 50
-      },
-      "badges": [],
-      "evidence_log": [
+          "source": "IDiversa B3",
+          "dimension": "social",
+          "description": "Referência nacional em programas de diversidade e inclusão racial",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGPTW B3",
+          "dimension": "social",
+          "description": "Certificação Great Place to Work — reconhecida como melhor empresa de varejo para trabalhar",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "IGC — Novo Mercado",
+          "dimension": "governance",
+          "description": "Listada no Novo Mercado da B3",
+          "impact": 8,
+          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+        },
         {
           "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
+          "source": "CVM",
+          "dimension": "governance",
+          "description": "Investigação por divulgação de projeções de crescimento consideradas excessivamente otimistas",
+          "impact": -5,
+          "date": "2022-09-01",
+          "link": "https://www.cvm.gov.br"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     },
     {
-      "ticker": "HAPV3",
-      "name": "Hapvida",
-      "cnpj_root": "54154239",
-      "score_final": 58,
+      "ticker": "GGBR4",
+      "name": "Gerdau",
+      "cnpj_root": "39037392",
+      "sector": "Indústria",
+      "score_final": 68,
+      "kill_switch": false,
       "dimensions": {
-        "environmental": 53,
-        "social": 58,
-        "governance": 63
+        "environmental": 65,
+        "social": 67,
+        "governance": 72
       },
-      "badges": [],
+      "indices_b3": [
+        "ISE B3",
+        "ICO2 B3",
+        "S&P/B3 ESG"
+      ],
+      "badges": [
+        "Aço Verde",
+        "ISE"
+      ],
       "evidence_log": [
         {
-          "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
-        }
-      ]
-    },
-    {
-      "ticker": "RDOR3",
-      "name": "Rede D'Or",
-      "cnpj_root": "27492900",
-      "score_final": 60,
-      "dimensions": {
-        "environmental": 55,
-        "social": 60,
-        "governance": 65
-      },
-      "badges": [],
-      "evidence_log": [
+          "type": "BONUS",
+          "source": "ISE B3",
+          "dimension": "all",
+          "description": "Maior reciclador de aço das Américas — 85% da produção a partir de sucata",
+          "impact": 20,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+        },
+        {
+          "type": "BONUS",
+          "source": "ICO2 B3",
+          "dimension": "environmental",
+          "description": "Menor intensidade de carbono por tonelada entre as siderúrgicas globais",
+          "impact": 10,
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+        },
         {
           "type": "PENALTY",
-          "source": "Mídia",
-          "description": "Desafios operacionais reportados",
-          "impact": -5
+          "source": "IBAMA",
+          "dimension": "environmental",
+          "description": "Multas ambientais por emissões acima do limite em unidades do interior paulista",
+          "impact": -10,
+          "date": "2023-04-20",
+          "link": "https://servicos.ibama.gov.br"
         }
-      ]
+      ],
+      "last_verified": "2026-03-06",
+      "data_quality": "alto"
     }
   ]
 }
