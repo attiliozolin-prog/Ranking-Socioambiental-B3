@@ -64,7 +64,8 @@ export const EvidenceLog: React.FC<EvidenceLogProps> = ({ evidence }) => {
                     rel="noreferrer noopener"
                     className="flex items-center gap-1 text-blue-500 hover:text-blue-700 hover:underline transition-colors"
                   >
-                    Ver fonte <ExternalLink size={10} />
+                    {item.link.includes('google.com/search') ? '🔍 Buscar notícias' : '↗ Ver fonte'}
+                    <ExternalLink size={10} />
                   </a>
                 )}
               </div>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "3.0",
+    "version": "3.1",
     "last_update": "06/03/2026",
     "total_companies": 15,
     "methodology_version": "3.0"
@@ -38,7 +38,7 @@
           "dimension": "all",
           "description": "Membro da carteira ISE B3 — referência histórica de sustentabilidade",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -46,7 +46,7 @@
           "dimension": "environmental",
           "description": "Baixa pegada de carbono — eficiência energética como principal receita",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -62,7 +62,7 @@
           "dimension": "all",
           "description": "Componente do índice S&P/B3 Brasil ESG com alta ponderação",
           "impact": 12,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/s-p-b3-brasil-esg-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         }
       ],
       "last_verified": "2026-03-06",
@@ -99,7 +99,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025 — destaque em práticas socioambientais",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -107,7 +107,7 @@
           "dimension": "social",
           "description": "Liderança em diversidade de gênero e raça em cargos executivos",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -161,7 +161,7 @@
           "dimension": "all",
           "description": "Presença histórica no ISE B3 desde sua criação em 2005",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -169,7 +169,7 @@
           "dimension": "social",
           "description": "Metas públicas de diversidade e inclusão no quadro executivo",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -177,7 +177,7 @@
           "dimension": "environmental",
           "description": "Compromisso de carteira neutra em carbono até 2050",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "PENALTY",
@@ -186,7 +186,7 @@
           "description": "Processo por práticas anticoncorrenciais no setor bancário",
           "impact": -5,
           "date": "2022-08-01",
-          "link": "https://www.cade.gov.br"
+          "link": "https://www.google.com/search?q=It%C3%A1+Unibanco+CADE+antitruste+2022"
         }
       ],
       "last_verified": "2026-03-06",
@@ -222,7 +222,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -230,7 +230,7 @@
           "dimension": "environmental",
           "description": "Relatório de emissões GEE publicado e auditado",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -275,7 +275,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025 — maior financiador de energia renovável do Brasil",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -283,7 +283,7 @@
           "dimension": "social",
           "description": "Certificado Great Place to Work — excelência no ambiente de trabalho",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-gptw-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -291,7 +291,7 @@
           "dimension": "social",
           "description": "Programa de diversidade e equidade reconhecido",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-diversidade-idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         }
       ],
       "last_verified": "2026-03-06",
@@ -327,7 +327,7 @@
           "dimension": "all",
           "description": "Carteira ISE B3 2025",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -335,7 +335,7 @@
           "dimension": "environmental",
           "description": "Meta de uso de 100% de energia renovável nas operações até 2025",
           "impact": 10,
-          "link": "https://www.ambev.com.br/sustentabilidade"
+          "link": "https://www.ambev.com.br/sustentabilidade/"
         },
         {
           "type": "PENALTY",
@@ -344,7 +344,7 @@
           "description": "Multa por consumo excessivo de água em período de estiagem",
           "impact": -5,
           "date": "2023-03-15",
-          "link": "https://servicos.ibama.gov.br"
+          "link": "https://www.google.com/search?q=Ambev+IBAMA+multa+%C3%A1gua+2023"
         }
       ],
       "last_verified": "2026-03-06",
@@ -380,7 +380,7 @@
           "dimension": "all",
           "description": "ISE B3 — maior produtora de celulose de eucalipto do mundo, com manejo florestal certificado",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -388,7 +388,7 @@
           "dimension": "environmental",
           "description": "Relatório TCFD publicado com métricas climáticas e metas de descarbonização",
           "impact": 3,
-          "link": "https://www.suzano.com.br/sustentabilidade"
+          "link": "https://www.suzano.com.br/sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -396,7 +396,7 @@
           "dimension": "environmental",
           "description": "Score B no CDP — programa de florestas e mudanças climáticas",
           "impact": 3,
-          "link": "https://www.cdp.net"
+          "link": "https://www.cdp.net/en/companies/companies-scores"
         },
         {
           "type": "PENALTY",
@@ -405,7 +405,7 @@
           "description": "TAC — Termo de Ajustamento de Conduta referente a condições de trabalho em colheita florestal",
           "impact": -8,
           "date": "2022-11-10",
-          "link": "https://www.prt15.mpt.mp.br"
+          "link": "https://www.google.com/search?q=Suzano+TAC+MPT+condi%C3%A7%C3%B5es+trabalho+2022"
         }
       ],
       "last_verified": "2026-03-06",
@@ -437,16 +437,16 @@
           "dimension": "environmental",
           "description": "Divulgação de emissões GEE e metas de redução de intensidade de carbono",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-carbono-eficiente-ico2.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "PENALTY",
           "source": "IBAMA",
           "dimension": "environmental",
-          "description": "Licença ambiental para exploração na Foz do Amazonas indeferida",
+          "description": "Licença ambiental para exploração na Foz do Amazonas indeferida pelo IBAMA",
           "impact": -15,
           "date": "2023-05-18",
-          "link": "https://www.gov.br/ibama/pt-br/assuntos/noticias/2023/ibama-indefere-licenca-ambiental-para-perfuracao-na-bacia-da-foz-do-amazonas"
+          "link": "https://www.google.com/search?q=Petrobras+IBAMA+licen%C3%A7a+Foz+Amazonas+indeferida+2023"
         },
         {
           "type": "PENALTY",
@@ -455,7 +455,7 @@
           "description": "Condenação por derramamento de óleo no litoral do Nordeste (2019)",
           "impact": -12,
           "date": "2021-06-01",
-          "link": "https://www.jfpe.jus.br"
+          "link": "https://www.google.com/search?q=Petrobras+derramamento+%C3%B3leo+Nordeste+2019+condena%C3%A7%C3%A3o"
         },
         {
           "type": "PENALTY",
@@ -464,7 +464,7 @@
           "description": "Investigações pela CVM sobre governança e trocas frequentes de diretoria",
           "impact": -8,
           "date": "2023-07-10",
-          "link": "https://www.cvm.gov.br"
+          "link": "https://www.google.com/search?q=Petrobras+CVM+governan%C3%A7a+diretoria+2023"
         }
       ],
       "last_verified": "2026-03-06",
@@ -497,7 +497,7 @@
           "dimension": "all",
           "description": "Membro da carteira ISE B3 — investimentos em processos de reparação e novas tecnologias",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/indice-de-sustentabilidade-empresarial-ise.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "PENALTY",
@@ -506,7 +506,7 @@
           "description": "Acordo de R$ 37,7 bi pelo rompimento da barragem de Brumadinho — 270 mortos",
           "impact": -40,
           "date": "2024-01-15",
-          "link": "https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/mpmg-mpe-e-governo-de-minas-assinam-acordo-para-reparacao-integral-dos-danos-causados-pelo-rompimento-da-barragem-da-vale-em-brumadinho.shtml"
+          "link": "https://www.google.com/search?q=Vale+Brumadinho+acordo+37+bilh%C3%B5es+repara%C3%A7%C3%A3o"
         },
         {
           "type": "PENALTY",
@@ -515,7 +515,7 @@
           "description": "Multas e autuações por infrações ambientais relacionadas a barragens",
           "impact": -15,
           "date": "2023-05-10",
-          "link": "https://servicos.ibama.gov.br/ctf/publico/areasembargadas/ConsultaPublicaAreasEmbargadas.php"
+          "link": "https://www.google.com/search?q=Vale+IBAMA+multa+ambiental+barragem+2023"
         },
         {
           "type": "PENALTY",
@@ -524,7 +524,7 @@
           "description": "Ações do MPT por condições de trabalho e saúde em unidades operacionais",
           "impact": -10,
           "date": "2023-08-01",
-          "link": "https://mpt.mp.br"
+          "link": "https://www.google.com/search?q=Vale+MPT+condi%C3%A7%C3%B5es+trabalho+a%C3%A7%C3%A3o+2023"
         }
       ],
       "last_verified": "2026-03-06",
@@ -558,21 +558,21 @@
         },
         {
           "type": "PENALTY",
-          "source": "MPF",
+          "source": "MPT",
           "dimension": "environmental",
-          "description": "Monitoramento do MPF: fornecedores vinculados ao desmatamento na Amazônia",
+          "description": "Fornecedores da JBS vinculados ao desmatamento na Amazônia — investigação do MPF",
           "impact": -20,
           "date": "2024-06-01",
-          "link": "https://www.mpf.mp.br/atuacao-tematica/ccr4/dados-da-atuacao/projetos/fundo-amazonia"
+          "link": "https://www.google.com/search?q=JBS+desmatamento+Amaz%C3%B4nia+MPF+fornecedores+2024"
         },
         {
           "type": "PENALTY",
           "source": "SEC",
           "dimension": "governance",
-          "description": "Acordo de US$ 256 mi com o DOJ/SEC por atos de corrupção (mensalão)",
+          "description": "Acordo de US$ 256 mi com o DOJ/SEC por atos de corrupção (mensalão da carne)",
           "impact": -20,
           "date": "2020-10-14",
-          "link": "https://www.justice.gov/opa/pr/jbs-sa-agrees-pay-over-156-million-resolve-foreign-corrupt-practices-act-charges"
+          "link": "https://www.google.com/search?q=JBS+acordo+DOJ+SEC+corrupcao+256+milhoes"
         },
         {
           "type": "PENALTY",
@@ -581,7 +581,7 @@
           "description": "Autuações trabalhistas em frigoríficos — condições de trabalho insalubres",
           "impact": -15,
           "date": "2023-09-01",
-          "link": "https://www.gov.br/trabalho-e-emprego"
+          "link": "https://www.google.com/search?q=JBS+frigorifico+MTE+autu%C3%A7%C3%A3o+trabalhista+insalubre"
         }
       ],
       "last_verified": "2026-03-06",
@@ -609,10 +609,10 @@
           "type": "PENALTY",
           "source": "Tribunal Federal",
           "dimension": "environmental",
-          "description": "Condenação pelo afundamento do solo em Maceió — 60 mil desabrigados",
+          "description": "Condenação pelo afundamento do solo em Maceió (AL) — 60 mil desabrigados",
           "impact": -50,
           "date": "2024-02-01",
-          "link": "https://www.mpf.mp.br/al/sala-de-imprensa/noticias-al/mpf-firma-novo-acordo-com-braskem-para-pagamento-de-r-17-bi-ao-estado-de-alagoas-por-danos-em-maceio"
+          "link": "https://www.google.com/search?q=Braskem+Macei%C3%B3+afundamento+solo+acordo+condena%C3%A7%C3%A3o"
         },
         {
           "type": "PENALTY",
@@ -621,16 +621,16 @@
           "description": "Embargo e multas ambientais pela mineração irregular de sal-gema",
           "impact": -20,
           "date": "2023-01-01",
-          "link": "https://servicos.ibama.gov.br"
+          "link": "https://www.google.com/search?q=Braskem+IBAMA+multa+sal-gema+embargo"
         },
         {
           "type": "PENALTY",
           "source": "CVM",
           "dimension": "governance",
-          "description": "Investigação pela CVM por omissão de informações relevantes ao mercado sobre riscos geológicos",
+          "description": "Investigação pela CVM por omissão de informações sobre riscos geológicos",
           "impact": -15,
           "date": "2023-05-01",
-          "link": "https://www.cvm.gov.br"
+          "link": "https://www.google.com/search?q=Braskem+CVM+omiss%C3%A3o+risco+geol%C3%B3gico+investiga%C3%A7%C3%A3o"
         }
       ],
       "last_verified": "2026-03-06",
@@ -661,7 +661,7 @@
           "description": "Processo sancionador por inconsistências contábeis bilionárias (R$ 20 bi)",
           "impact": -55,
           "date": "2023-01-11",
-          "link": "https://www.cvm.gov.br/noticias/arquivos/2023/20230112-1.html"
+          "link": "https://www.google.com/search?q=Americanas+CVM+fraude+cont%C3%A1bil+20+bilh%C3%B5es+2023"
         },
         {
           "type": "PENALTY",
@@ -670,16 +670,16 @@
           "description": "Recuperação Judicial deferida com passivo de R$ 43 bilhões",
           "impact": -20,
           "date": "2023-02-01",
-          "link": "https://www.tjrj.jus.br"
+          "link": "https://www.google.com/search?q=Americanas+recupera%C3%A7%C3%A3o+judicial+43+bilh%C3%B5es"
         },
         {
           "type": "PENALTY",
           "source": "MTE",
           "dimension": "social",
-          "description": "Demissões em massa sem cumprimento de obrigações trabalhistas",
+          "description": "Demissões em massa sem cumprimento integral de obrigações trabalhistas",
           "impact": -10,
           "date": "2023-03-01",
-          "link": "https://www.gov.br/trabalho-e-emprego"
+          "link": "https://www.google.com/search?q=Americanas+demiss%C3%B5es+massa+direitos+trabalhistas+2023"
         }
       ],
       "last_verified": "2026-03-06",
@@ -709,7 +709,7 @@
           "description": "Condenação por homicídio racialmente motivado praticado por segurança em unidade do RS",
           "impact": -35,
           "date": "2022-11-19",
-          "link": "https://www.tjrs.jus.br"
+          "link": "https://www.google.com/search?q=Carrefour+homicidio+racismo+Porto+Alegre+condena%C3%A7%C3%A3o"
         },
         {
           "type": "PENALTY",
@@ -718,7 +718,7 @@
           "description": "Ação coletiva por discriminação racial sistêmica nos processos de contratação",
           "impact": -12,
           "date": "2023-03-01",
-          "link": "https://mpt.mp.br"
+          "link": "https://www.google.com/search?q=Carrefour+MPT+discrimina%C3%A7%C3%A3o+racial+a%C3%A7%C3%A3o+coletiva"
         },
         {
           "type": "BONUS",
@@ -726,7 +726,7 @@
           "dimension": "social",
           "description": "Programa interno de aceleração de carreiras de profissionais negros",
           "impact": 3,
-          "link": "https://www.carrefour.com.br/sustentabilidade"
+          "link": "https://www.grupobigc.com.br/sustentabilidade/"
         }
       ],
       "last_verified": "2026-03-06",
@@ -760,15 +760,15 @@
           "dimension": "social",
           "description": "Referência nacional em programas de diversidade e inclusão racial",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/idiversa-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
           "source": "IGPTW B3",
           "dimension": "social",
-          "description": "Certificação Great Place to Work — reconhecida como melhor empresa de varejo para trabalhar",
+          "description": "Certificação Great Place to Work — melhor empresa de varejo para trabalhar",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/igptw-b3.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -776,16 +776,16 @@
           "dimension": "governance",
           "description": "Listada no Novo Mercado da B3",
           "impact": 8,
-          "link": "https://www.b3.com.br/pt_br/listagem/acoes/segmentos-de-listagem/novo-mercado/"
+          "link": "https://www.b3.com.br/pt_br/produtos-e-servicos/solucoes-para-emissores/segmentos-de-listagem/novo-mercado/"
         },
         {
           "type": "PENALTY",
           "source": "CVM",
           "dimension": "governance",
-          "description": "Investigação por divulgação de projeções de crescimento consideradas excessivamente otimistas",
+          "description": "Investigação por divulgação de projeções de crescimento excessivamente otimistas",
           "impact": -5,
           "date": "2022-09-01",
-          "link": "https://www.cvm.gov.br"
+          "link": "https://www.google.com/search?q=Magazine+Luiza+CVM+investiga%C3%A7%C3%A3o+projeções+crescimento+2022"
         }
       ],
       "last_verified": "2026-03-06",
@@ -819,7 +819,7 @@
           "dimension": "all",
           "description": "Maior reciclador de aço das Américas — 85% da produção a partir de sucata",
           "impact": 20,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ise-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "BONUS",
@@ -827,7 +827,7 @@
           "dimension": "environmental",
           "description": "Menor intensidade de carbono por tonelada entre as siderúrgicas globais",
           "impact": 10,
-          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/ico2-informacoes-gerais.htm"
+          "link": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-de-sustentabilidade/"
         },
         {
           "type": "PENALTY",
@@ -836,7 +836,7 @@
           "description": "Multas ambientais por emissões acima do limite em unidades do interior paulista",
           "impact": -10,
           "date": "2023-04-20",
-          "link": "https://servicos.ibama.gov.br"
+          "link": "https://www.google.com/search?q=Gerdau+IBAMA+multa+emiss%C3%B5es+2023"
         }
       ],
       "last_verified": "2026-03-06",
