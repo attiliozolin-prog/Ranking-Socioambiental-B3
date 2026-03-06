@@ -28,7 +28,6 @@
       ],
       "badges": [
         "Líder ESG",
-        "Tecnologia Verde",
         "Novo Mercado"
       ],
       "evidence_log": [
@@ -90,7 +89,7 @@
       "badges": [
         "Líder ESG",
         "Novo Mercado",
-        "Moda Sustentável"
+        "Corporation"
       ],
       "evidence_log": [
         {
@@ -152,7 +151,8 @@
       ],
       "badges": [
         "Líder ESG",
-        "Novo Mercado"
+        "Novo Mercado",
+        "Holding"
       ],
       "evidence_log": [
         {
@@ -266,7 +266,7 @@
       "badges": [
         "Líder ESG",
         "Novo Mercado",
-        "Agronegócio Verde"
+        "Estatal"
       ],
       "evidence_log": [
         {
@@ -317,8 +317,7 @@
       ],
       "badges": [
         "Líder ESG",
-        "Novo Mercado",
-        "Água Zero"
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
@@ -370,8 +369,7 @@
         "ITAG"
       ],
       "badges": [
-        "Novo Mercado",
-        "Floresta Positiva"
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
@@ -428,7 +426,9 @@
       ],
       "badges": [
         "Estatal",
-        "Risco Político"
+        "Risco Político",
+        "Alerta IBAMA",
+        "Alerta CVM"
       ],
       "evidence_log": [
         {
@@ -488,7 +488,9 @@
       ],
       "badges": [
         "Alerta Ambiental",
-        "ISE"
+        "ISE",
+        "Corporation",
+        "Alerta MPT"
       ],
       "evidence_log": [
         {
@@ -545,7 +547,9 @@
       "indices_b3": [],
       "badges": [
         "Alerta Desmatamento",
-        "Risco Governança"
+        "Risco Governança",
+        "Alerta SEC",
+        "Alerta MTE"
       ],
       "evidence_log": [
         {
@@ -602,7 +606,9 @@
       "indices_b3": [],
       "badges": [
         "Risco Geológico",
-        "Alerta Social"
+        "Alerta Social",
+        "Alerta IBAMA",
+        "Alerta CVM"
       ],
       "evidence_log": [
         {
@@ -651,7 +657,8 @@
       "indices_b3": [],
       "badges": [
         "Risco Governança",
-        "Em Recuperação Judicial"
+        "Em Recuperação Judicial",
+        "Alerta CVM"
       ],
       "evidence_log": [
         {
@@ -699,7 +706,8 @@
       },
       "indices_b3": [],
       "badges": [
-        "Alerta Social"
+        "Alerta Social",
+        "Alerta MPT"
       ],
       "evidence_log": [
         {
@@ -750,8 +758,7 @@
         "IGPTW B3"
       ],
       "badges": [
-        "Novo Mercado",
-        "Diversidade"
+        "Novo Mercado"
       ],
       "evidence_log": [
         {
@@ -809,7 +816,6 @@
         "S&P/B3 ESG"
       ],
       "badges": [
-        "Aço Verde",
         "ISE"
       ],
       "evidence_log": [
