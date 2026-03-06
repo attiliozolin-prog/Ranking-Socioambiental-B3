@@ -1,9 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Info, Leaf, ShieldAlert, SlidersHorizontal } from 'lucide-react';
-import rankingDataRaw from './ranking_db.json';
-import { CompanyCard } from './components/CompanyCard';
-import { MethodologyModal } from './components/MethodologyModal';
-import { RankingData, Sector } from './types';
+import rankingDataRaw from '../ranking_db.json';
+import { CompanyCard } from '../components/CompanyCard';
+import { MethodologyModal } from '../components/MethodologyModal';
+import { RankingData } from '../types';
 
 const rankingData = rankingDataRaw as RankingData;
 
