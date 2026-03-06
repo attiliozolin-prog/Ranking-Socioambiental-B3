@@ -106,7 +106,7 @@ const HomePage: React.FC = () => {
             <span className="text-red-400">quem destrói o presente?</span>
           </h1>
           <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
-            Democratizando a Due Diligence. Veja o ranking de responsabilidade socioambiental das empresas listadas na bolsa.
+            Democratizando a Due Diligence. Veja o ranking de responsabilidade socioambiental das <strong className="text-white">96 maiores empresas listadas na B3</strong>.
           </p>
 
           <div className="mt-8 text-xs text-slate-500">
