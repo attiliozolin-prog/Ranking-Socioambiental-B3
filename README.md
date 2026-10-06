@@ -1,20 +1,79 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ranking Socioambiental B3
 
-# Run and deploy your AI Studio app
+Ranking independente e auditável de responsabilidade socioambiental das maiores empresas listadas na B3. Cada nota é **calculada** a partir de fatos públicos (índices da B3, segmento de listagem e registros de órgãos como IBAMA, MPT, MTE, CVM e CADE), e a conta completa aparece na página de cada empresa.
 
-This contains everything you need to run your app locally.
+🌐 https://ranking-socioambiental-b3.vercel.app
 
-View your app in AI Studio: https://ai.studio/apps/drive/19Zw3678uvN_8dp7YPlHobwCwK3dORiqE
+> Conteúdo informativo. Não é recomendação de investimento nem relatório de análise (Resolução CVM nº 20/2021).
 
-## Run Locally
+## O que há na v2.0
+- **Motor de score determinístico** (`src/lib/scoring.ts`) com pilares E/S/G, materialidade setorial, controvérsias ponderadas por status jurídico e tempo, e tetos para casos graves.
+- **Metodologia como código** (`src/lib/methodology.ts`): a mesma configuração calcula as notas e gera a página `/metodologia`.
+- **Páginas por empresa** com a conta aberta, linha do tempo de controvérsias, comparação setorial e indicador de confiança.
+- **Comparador** de até 4 empresas, com link compartilhável.
+- **Validação de dados** que bloqueia o build (regras como "Novo Mercado só admite ON", datas, links HTTPS, CNPJ).
+- Acessibilidade, tema claro/escuro, layout responsivo, CSP e cabeçalhos de segurança, fontes auto-hospedadas.
 
-**Prerequisites:**  Node.js
+Veja o que mudou e por quê em [`docs/AUDITORIA-v2.md`](docs/AUDITORIA-v2.md).
 
+## Rodando localmente
+Requer Node.js 20.19+.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+| Comando | O que faz |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run validate` | Valida `src/data/companies.json` (use `-- --verbose` para listar cada aviso) |
+| `npm test` | Testes do motor, da busca, da formatação e do dataset |
+| `npm run typecheck` | Checagem de tipos (TypeScript estrito) |
+| `npm run build` | Valida, checa tipos, compila e gera páginas estáticas por empresa e `sitemap.xml` |
+| `npm run check` | Valida, checa tipos e roda os testes (o mesmo que a CI) |
+
+## Estrutura
+```
+src/
+  data/companies.json   # FATOS — nenhuma nota é digitada aqui
+  lib/methodology.ts    # pesos, faixas, tetos, perfis setoriais (fonte única)
+  lib/scoring.ts        # motor de cálculo (puro e testado)
+  lib/validate.ts       # regras de integridade do dataset
+  pages/                # Ranking, Empresa, Comparar, Metodologia, Sobre
+scripts/
+  validate-data.ts      # CLI de validação
+  postbuild.ts          # HTML com meta tags por empresa + sitemap
+  migrate_v1_to_v2.py   # registro auditável da migração da v1
+docs/AUDITORIA-v2.md    # achados da auditoria e pendências
+```
+
+## Como atualizar os dados
+1. Edite `src/data/companies.json`. Para um novo registro, use o formato:
+   ```json
+   {
+     "id": "VALE3-5",
+     "source": "IBAMA",
+     "pillars": ["E"],
+     "severity": 3,
+     "status": "processo",
+     "date": "2025-08-14",
+     "date_precision": "day",
+     "description": "Auto de infração por …",
+     "link": "https://…/documento-oficial",
+     "link_type": "primaria"
+   }
+   ```
+   - `severity`: 1 leve · 2 moderada · 3 grave · 4 muito grave · 5 catastrófica
+   - `status`: `investigacao` · `processo` · `acordo` · `reconhecido` · `condenacao`
+   - `link_type`: `primaria` (documento oficial) ou `busca` (provisório)
+2. Atualize `last_verified` da empresa e, para uma nova edição, `meta.as_of`.
+3. Rode `npm run check`. O build falha se alguma regra for violada.
+
+Correções de terceiros: abra uma issue com a **fonte primária**.
+
+## Deploy
+A Vercel publica automaticamente a cada push na branch `main` (o build roda `npm run build`). Cabeçalhos de segurança e rewrites ficam em `vercel.json`.
+
+## Licença e uso
+Código aberto. Os dados são compilados de fontes públicas e podem conter imprecisões; registros sob apuração são apresentados com seu status jurídico, sem presunção de culpa.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ranking-socioambiental-b3.vercel.app/sitemap.xml
