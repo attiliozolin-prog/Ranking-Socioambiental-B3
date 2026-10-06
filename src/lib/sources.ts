@@ -6,7 +6,6 @@ export const B3_SEGMENTS = 'https://www.b3.com.br/pt_br/produtos-e-servicos/solu
 
 export const INDEX_INFO: Record<IndexMembership, { name: string; desc: string; url: string }> = {
   'ISE B3': { name: 'Índice de Sustentabilidade Empresarial', desc: 'Carteira anual com avaliação ESG ampla, desde 2005', url: B3_SUSTAINABILITY },
-  'S&P/B3 ESG': { name: 'S&P/B3 Brasil ESG', desc: 'Metodologia S&P DJI com exclusões setoriais', url: B3_SUSTAINABILITY },
   'ICO2 B3': { name: 'Índice Carbono Eficiente', desc: 'Inventário de emissões publicado; peso por eficiência de carbono', url: B3_SUSTAINABILITY },
   'IDiversa B3': { name: 'Índice de Diversidade', desc: 'Diversidade de gênero e raça na liderança e no quadro', url: B3_SUSTAINABILITY },
   'IGPTW B3': { name: 'Índice GPTW', desc: 'Empresas certificadas pelo Great Place to Work', url: B3_SUSTAINABILITY },

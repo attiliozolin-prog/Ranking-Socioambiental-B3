@@ -3,13 +3,15 @@ import { Link, useParams } from 'react-router-dom';
 import { AlertTriangle, ArrowLeft, ArrowUpRight, Ban, Check, CircleSlash, Flag, GitCompareArrows, Info, ShieldCheck } from 'lucide-react';
 import { companies, dataset, getCompany, sectorAverage, sectorPeers } from '../lib/data';
 import { formatCnpjRoot, formatDate, formatPoints, formatPercent, plural } from '../lib/format';
-import { MATERIALITY, PILLAR_BASELINE, PILLAR_LABEL, SEGMENT_LABEL, SEVERITY, STATUS, ratingMeta } from '../lib/methodology';
+import { GROUP_DEDUCTION_CAP, MATERIALITY, PILLAR_BASELINE, PILLAR_LABEL, SEGMENT_LABEL, SEVERITY, STATUS, ratingMeta } from '../lib/methodology';
 import { B3_SEGMENTS, INDEX_INFO } from '../lib/sources';
-import { correctionUrl } from '../lib/site';
+import { correctionUrl, responseUrl } from '../lib/site';
 import type { Pillar, ScoredCompany, ScoredEvent } from '../lib/types';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { previousEdition, previousScore } from '../lib/editions';
 import {
   ConfidenceBadge,
+  Delta,
   Meter,
   PILLAR_BG,
   PILLAR_TEXT,
@@ -54,6 +56,7 @@ function Header({ c }: { c: ScoredCompany }) {
           </Link>
           <span aria-hidden="true">·</span>
           <span>{SEGMENT_LABEL[c.segment]}</span>
+          {c.other_tickers && <span className="font-mono text-xs text-ink-3">também {c.other_tickers.join(', ')}</span>}
           {c.tags.map((t) => (
             <Tag key={t}>{t}</Tag>
           ))}
@@ -74,6 +77,12 @@ function Header({ c }: { c: ScoredCompany }) {
               <a href={`#evento-${c.cap.eventId}`} className="underline underline-offset-2">
                 Ver o registro
               </a>
+            </Banner>
+          )}
+          {c.coverage_note && (
+            <Banner tone="info" icon={<Info size={16} />}>
+              <strong>Cobertura parcial:</strong> {c.coverage_note} A ausência de controvérsias pode refletir falta de pesquisa, não de
+              problemas.
             </Banner>
           )}
           {c.notice && (
@@ -100,8 +109,9 @@ function ScorePanel({ c }: { c: ScoredCompany }) {
             <span className={cx('font-serif text-7xl font-semibold leading-none tabular', RATING_TEXT[c.rating])}>{c.score}</span>
             <span className="mb-2 text-sm text-ink-3">/ 100</span>
           </div>
-          <div className="mt-3">
+          <div className="mt-3 flex items-center gap-3">
             <RatingBadge rating={c.rating} size="md" />
+            <Delta now={c.score} before={previousScore(c.ticker, c.cnpj_root)?.score} since={previousEdition?.as_of} />
           </div>
           <p className="mt-3 text-sm leading-relaxed text-ink-2">{meta.desc}.</p>
         </div>
@@ -294,6 +304,7 @@ function EventItem({ e }: { e: ScoredEvent }) {
           {sev.points} (gravidade) × {STATUS[e.status].weight.toString().replace('.', ',')} ({STATUS[e.status].label.toLowerCase()}) ×{' '}
           {formatPercent(e.decay)} (decaimento, {years})
         </span>
+        {e.group && <span className="block">Registros do mesmo grupo somam no máximo {GROUP_DEDUCTION_CAP} pontos por pilar.</span>}
       </p>
     </li>
   );
@@ -502,6 +513,14 @@ function DataQuality({ c }: { c: ScoredCompany }) {
           className="inline-flex items-center justify-center gap-2 rounded-xl border border-line px-4 py-2.5 text-sm font-medium text-ink transition hover:border-line-strong hover:bg-surface-2"
         >
           <Flag size={15} /> Reportar correção
+        </a>
+        <a
+          href={responseUrl(c.ticker)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-xs font-medium text-ink-2 underline-offset-2 hover:underline md:col-start-3"
+        >
+          Sou da empresa: direito de resposta ↗
         </a>
       </div>
       <p className="mt-3 flex items-start gap-2 text-xs text-ink-3">

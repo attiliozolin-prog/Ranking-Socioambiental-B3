@@ -8,6 +8,7 @@ import {
   CAP_ACTIVE_DECAY,
   CDP_POINTS,
   CONTROVERSY_CAPS,
+  GROUP_DEDUCTION_CAP,
   MATERIALITY,
   PILLAR_BASELINE,
   PRACTICES_FACTOR,
@@ -76,9 +77,9 @@ export function practicesFor(company: Company): Record<Pillar, { label: string; 
   const broad = broadEsg(company);
   if (broad) for (const p of PILLARS) out[p].push(broad);
 
-  if (company.indices.includes('ICO2 B3')) out.E.push({ label: 'ICO2 B3', points: 30 });
-  if (company.indices.includes('IDiversa B3')) out.S.push({ label: 'IDiversa B3', points: 30 });
-  if (company.indices.includes('IGPTW B3')) out.S.push({ label: 'IGPTW B3', points: 25 });
+  if (company.indices.includes('ICO2 B3')) out.E.push({ label: 'ICO2 B3', points: 25 });
+  if (company.indices.includes('IDiversa B3')) out.S.push({ label: 'IDiversa B3', points: 20 });
+  if (company.indices.includes('IGPTW B3')) out.S.push({ label: 'IGPTW B3', points: 35 });
 
   const seg = SEGMENT_POINTS[company.segment];
   if (seg > 0) out.G.push({ label: SEGMENT_LABEL[company.segment], points: seg });
@@ -111,6 +112,10 @@ function confidenceFor(company: Company, scored: ScoredEvent[]): { level: Confid
     reasons.push('Evento societário recente a confirmar');
     penalty += 1;
   }
+  if (company.coverage_note) {
+    reasons.push('Controvérsias ainda não pesquisadas sistematicamente');
+    penalty += 3;
+  }
   const level: Confidence = penalty === 0 ? 'alta' : penalty <= 2 ? 'media' : 'baixa';
   return { level, reasons };
 }
@@ -132,9 +137,20 @@ export function scoreCompany(company: Company, asOf: string): Unranked {
       label: x.label,
       points: round1(x.points * PRACTICES_FACTOR),
     }));
-    const deductions: Contribution[] = scoredEvents
-      .filter((e) => e.pillars.includes(p) && e.deduction > 0)
-      .map((e) => ({ label: e.source, points: -e.deduction, detail: e.description, eventId: e.id }));
+    const inPillar = scoredEvents.filter((e) => e.pillars.includes(p) && e.deduction > 0);
+    // teto conjunto para eventos do mesmo grupo (ex.: autos do IBAMA)
+    const groupTotals = new Map<string, number>();
+    for (const e of inPillar) if (e.group) groupTotals.set(e.group, (groupTotals.get(e.group) ?? 0) + e.deduction);
+    const deductions: Contribution[] = inPillar.map((e) => {
+      const total = e.group ? groupTotals.get(e.group)! : 0;
+      const factor = e.group && total > GROUP_DEDUCTION_CAP ? GROUP_DEDUCTION_CAP / total : 1;
+      return {
+        label: e.source,
+        points: -round1(e.deduction * factor),
+        detail: factor < 1 ? `${e.description} (reduzido pelo teto do grupo)` : e.description,
+        eventId: e.id,
+      };
+    });
     const raw = PILLAR_BASELINE + practiceTotal * PRACTICES_FACTOR + deductions.reduce((s, d) => s + d.points, 0);
     pillars[p] = {
       pillar: p,

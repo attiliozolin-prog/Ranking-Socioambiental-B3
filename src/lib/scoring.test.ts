@@ -37,7 +37,7 @@ describe('motor de score', () => {
     const r = scoreCompany(base, AS_OF);
     expect(r.score).toBe(50);
     expect(r.pillars.E.score).toBe(50);
-    expect(r.rating).toBe('C');
+    expect(r.rating).toBe('D');
   });
 
   it('todas as práticas reconhecidas levam a 100', () => {
@@ -54,12 +54,6 @@ describe('motor de score', () => {
     expect(r.pillars.S.practices).toBe(100);
     expect(r.pillars.G.practices).toBe(100);
     expect(r.score).toBe(100);
-  });
-
-  it('ISE B3 e S&P/B3 ESG não são contados em dobro', () => {
-    const only = scoreCompany({ ...base, indices: ['ISE B3'] }, AS_OF);
-    const both = scoreCompany({ ...base, indices: ['ISE B3', 'S&P/B3 ESG'] }, AS_OF);
-    expect(both.score).toBe(only.score);
   });
 
   it('ITAG só pontua fora do Novo Mercado', () => {
@@ -94,6 +88,16 @@ describe('motor de score', () => {
     expect(r.pillars.E.score).toBe(30);
     expect(r.pillars.S.score).toBe(30);
     expect(r.pillars.G.score).toBe(50);
+  });
+
+  it('eventos do mesmo grupo respeitam o teto conjunto por pilar', () => {
+    const evs = Array.from({ length: 6 }, (_, i) =>
+      ev({ id: `g${i}`, severity: 4, status: 'condenacao', group: 'ibama-autos' }),
+    );
+    const r = scoreCompany({ ...base, events: evs }, AS_OF);
+    const total = r.pillars.E.deductions.reduce((s, d) => s + d.points, 0);
+    expect(total).toBeGreaterThanOrEqual(-35.5);
+    expect(r.pillars.E.score).toBeCloseTo(15, 0);
   });
 
   it('eventos em quarentena e sinais de risco não afetam a nota', () => {

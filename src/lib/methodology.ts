@@ -21,30 +21,30 @@ export const PRACTICES_FACTOR = 0.5;
 // ---------- Práticas reconhecidas (pontos de 0–100 por pilar) ----------
 
 /**
- * ISE B3 e S&P/B3 Brasil ESG avaliam a empresa de forma ampla e se sobrepõem.
- * Contamos apenas o MAIOR dos dois (sem dupla contagem).
+ * ISE B3: avaliação ESG ampla, conta nos três pilares.
+ * (O S&P/B3 Brasil ESG saiu na v4: é calculado pela S&P, sem carteira aberta para conferência,
+ * e se sobrepunha ao ISE.)
  */
 export const BROAD_ESG: Partial<Record<IndexMembership, number>> = {
   'ISE B3': 35,
-  'S&P/B3 ESG': 21,
 };
 
 export const PILLAR_PRACTICES: Record<Pillar, { key: string; label: string; points: number; desc: string }[]> = {
   E: [
-    { key: 'broad', label: 'ISE B3 (ou S&P/B3 ESG: 21)', points: 35, desc: 'Avaliação ESG ampla — conta só o maior dos dois índices' },
-    { key: 'ICO2 B3', label: 'ICO2 B3', points: 30, desc: 'Inventário de emissões de GEE publicado e eficiência de carbono' },
-    { key: 'CDP', label: 'CDP Clima (A: 25 · B: 15 · C: 5)', points: 25, desc: 'Nota no Carbon Disclosure Project' },
+    { key: 'broad', label: 'ISE B3', points: 35, desc: 'Índice de Sustentabilidade Empresarial — avaliação ESG ampla' },
+    { key: 'ICO2 B3', label: 'ICO2 B3', points: 25, desc: 'Inventário de emissões de GEE publicado e eficiência de carbono' },
+    { key: 'CDP', label: 'CDP Clima (A: 30 · B: 18 · C: 6)', points: 30, desc: 'Nota no Carbon Disclosure Project' },
     { key: 'GRI', label: 'Relato GRI', points: 10, desc: 'Relatório de sustentabilidade no padrão GRI' },
   ],
   S: [
-    { key: 'broad', label: 'ISE B3 (ou S&P/B3 ESG: 21)', points: 35, desc: 'Avaliação ESG ampla — conta só o maior dos dois índices' },
-    { key: 'IDiversa B3', label: 'IDiversa B3', points: 30, desc: 'Diversidade de gênero e raça na liderança e no quadro' },
-    { key: 'IGPTW B3', label: 'IGPTW B3', points: 25, desc: 'Certificação Great Place to Work' },
+    { key: 'broad', label: 'ISE B3', points: 35, desc: 'Índice de Sustentabilidade Empresarial — avaliação ESG ampla' },
+    { key: 'IDiversa B3', label: 'IDiversa B3', points: 20, desc: 'Diversidade de gênero e raça na liderança e no quadro (índice amplo: 2/3 do IBrX 100)' },
+    { key: 'IGPTW B3', label: 'IGPTW B3', points: 35, desc: 'Certificação Great Place to Work (índice seletivo: 1/3 do IBrX 100)' },
     { key: 'GRI', label: 'Relato GRI', points: 10, desc: 'Relatório de sustentabilidade no padrão GRI' },
   ],
   G: [
     { key: 'segment', label: 'Segmento de listagem (NM: 55 · N2: 30 · N1: 15)', points: 55, desc: 'Regras de governança exigidas pela B3 — no Novo Mercado inclui o tag along de 100%' },
-    { key: 'broad', label: 'ISE B3 (ou S&P/B3 ESG: 21)', points: 35, desc: 'Avaliação ESG ampla — conta só o maior dos dois índices' },
+    { key: 'broad', label: 'ISE B3', points: 35, desc: 'Índice de Sustentabilidade Empresarial — avaliação ESG ampla' },
     { key: 'GRI', label: 'Relato GRI', points: 10, desc: 'Relatório de sustentabilidade no padrão GRI' },
     { key: 'ITAG', label: 'ITAG (fora do Novo Mercado)', points: 10, desc: 'Tag along diferenciado — no Novo Mercado já está contado no segmento' },
   ],
@@ -68,7 +68,7 @@ export const SEGMENT_LABEL: Record<Segment, string> = {
   VERIFICAR: 'Em verificação',
 };
 
-export const CDP_POINTS = { A: 25, B: 15, C: 5 } as const;
+export const CDP_POINTS = { A: 30, B: 18, C: 6 } as const;
 
 // ---------- Controvérsias ----------
 
@@ -100,6 +100,24 @@ export const CONTROVERSY_CAPS: { limit: number; when: string; test: (sev: number
 ];
 export const CAP_ACTIVE_DECAY = 0.5;
 
+/**
+ * Registros repetidos do mesmo grupo (ex.: dezenas de autos do IBAMA ao longo dos anos)
+ * deduzem no máximo este total por pilar — evita punir a escala operacional de forma
+ * desproporcional, sem deixar de pesar o histórico.
+ */
+export const GROUP_DEDUCTION_CAP = 35;
+
+/** Conversão dos autos de infração do IBAMA em eventos (scripts/sync_ibama.py). */
+export const IBAMA_RULES = {
+  windowYears: 10,
+  thresholds: [
+    { minTotal: 100e6, severity: 4 },
+    { minTotal: 20e6, severity: 3 },
+    { minTotal: 2e6, severity: 2 },
+    { minTotal: 1e6, severity: 1 },
+  ],
+};
+
 // ---------- Materialidade setorial ----------
 
 export const MATERIALITY: Record<string, { label: string; weights: Record<Pillar, number>; desc: string }> = {
@@ -125,6 +143,7 @@ export const SECTOR_PROFILE: Record<string, keyof typeof MATERIALITY> = {
   'Varejo': 'pessoas',
   'Saúde': 'pessoas',
   'Educação': 'pessoas',
+  'Bens de Consumo': 'pessoas',
   'Serviços': 'pessoas',
   'Telecomunicações': 'pessoas',
   'Construção Civil': 'pessoas',
@@ -139,10 +158,10 @@ export const SECTOR_PROFILE: Record<string, keyof typeof MATERIALITY> = {
 // ---------- Faixas de classificação ----------
 
 export const RATINGS: { rating: Rating; min: number; label: string; desc: string }[] = [
-  { rating: 'A', min: 80, label: 'Liderança', desc: 'Práticas amplamente reconhecidas e sem controvérsias relevantes' },
-  { rating: 'B', min: 65, label: 'Avançado', desc: 'Boas práticas, controvérsias pontuais ou antigas' },
-  { rating: 'C', min: 50, label: 'Intermediário', desc: 'Reconhecimentos limitados ou controvérsias moderadas' },
-  { rating: 'D', min: 35, label: 'Atenção', desc: 'Controvérsias relevantes pesam sobre as práticas' },
+  { rating: 'A', min: 85, label: 'Liderança', desc: 'Práticas amplamente reconhecidas e sem controvérsias relevantes' },
+  { rating: 'B', min: 70, label: 'Avançado', desc: 'Boas práticas, controvérsias pontuais ou antigas' },
+  { rating: 'C', min: 55, label: 'Intermediário', desc: 'Reconhecimentos limitados ou controvérsias moderadas' },
+  { rating: 'D', min: 40, label: 'Atenção', desc: 'Controvérsias relevantes pesam sobre as práticas' },
   { rating: 'E', min: 0, label: 'Crítico', desc: 'Controvérsias graves ou catastróficas ativas' },
 ];
 export const EXCLUDED_RATING = { rating: 'X' as const, label: 'Excluída', desc: 'Presente no Cadastro de Empregadores do MTE (trabalho análogo à escravidão)' };
@@ -165,10 +184,12 @@ export const CHANGELOG = [
       'Nota por pilar (E, S, G) com pesos de materialidade por setor, em vez de soma única de bônus.',
       'Penalidades ponderadas por status jurídico (investigação ≠ condenação) e com decaimento temporal.',
       'Teto de nota para controvérsias catastróficas ou muito graves ainda ativas.',
-      'Fim da dupla contagem entre ISE B3 e S&P/B3 ESG; IGCT (critério de liquidez) deixa de pontuar.',
+      'Índices passam a vir das carteiras oficiais da B3 no dia da edição; S&P/B3 ESG (sem carteira aberta) e IGCT (critério de liquidez) deixam de pontuar.',
+      'Universo objetivo: empresas com ação no IBrX 100; CNPJ e segmento conferidos no FCA da CVM e no cadastro da B3.',
       'Segmento de listagem corrigido: Novo Mercado só admite ações ON; 15 papéis PN, units ou BDR estavam marcados como NM.',
       'Recuperação judicial deixa de ser penalidade socioambiental e vira sinal de risco informativo.',
-      '8 CNPJs corrigidos e eventos com erro factual colocados em quarentena até checagem em fonte primária.',
+      'CNPJ e segmento de todas as empresas conferidos no FCA da CVM e no cadastro da B3; tickers atualizados após fusões e mudanças de marca.',
+      'Toda controvérsia na nota tem link para documento oficial; registros não localizados ficam em quarentena.',
     ],
   },
   {

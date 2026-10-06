@@ -5,6 +5,8 @@ import {
   CHANGELOG,
   CONTROVERSY_CAPS,
   EXCLUDED_RATING,
+  GROUP_DEDUCTION_CAP,
+  IBAMA_RULES,
   MATERIALITY,
   METHODOLOGY_VERSION,
   PILLAR_BASELINE,
@@ -24,6 +26,7 @@ import { PILLAR_TEXT, RatingBadge, SectionTitle, cx } from '../components/ui';
 const PILLARS: Pillar[] = ['E', 'S', 'G'];
 const TOC = [
   ['principios', 'Princípios'],
+  ['fontes', 'Universo e fontes'],
   ['formula', 'Fórmula'],
   ['praticas', 'Práticas reconhecidas'],
   ['controversias', 'Controvérsias'],
@@ -147,6 +150,58 @@ export default function MethodologyPage() {
             </ul>
           </section>
 
+          <section id="fontes" className="scroll-mt-24">
+            <SectionTitle title="Universo e fontes">
+              Os dados oficiais são coletados por scripts abertos no repositório, que qualquer pessoa pode rodar para reproduzir a base.
+            </SectionTitle>
+            <div className="card overflow-x-auto">
+              <table className="w-full min-w-[34rem] text-sm">
+                <thead>
+                  <tr>
+                    <Th>O quê</Th>
+                    <Th>Fonte oficial</Th>
+                    <Th>Como</Th>
+                  </tr>
+                </thead>
+                <tbody className="[&_td]:px-4 [&_td]:py-2.5 [&_td]:align-top [&_tr]:border-b [&_tr]:border-line [&_tr:last-child]:border-0">
+                  <tr>
+                    <td className="font-medium text-ink">Universo</td>
+                    <td className="text-ink-2">B3 — carteira do dia do IBrX 100</td>
+                    <td className="text-ink-2">Empresas com ao menos uma ação no índice; vale a classe de maior peso</td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium text-ink">Índices</td>
+                    <td className="text-ink-2">B3 — carteiras do ISE, ICO2, IDiversa, IGPTW e ITAG</td>
+                    <td className="text-ink-2">Participação na data de referência</td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium text-ink">CNPJ e segmento</td>
+                    <td className="text-ink-2">CVM — Formulário Cadastral (dados abertos) e cadastro de emissores da B3</td>
+                    <td className="text-ink-2">Por código de negociação</td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium text-ink">Autos ambientais</td>
+                    <td className="text-ink-2">IBAMA — autos de infração (dados abertos)</td>
+                    <td className="text-ink-2">
+                      Por CNPJ raiz, últimos {IBAMA_RULES.windowYears} anos, um registro por ano. Gravidade pelo total anual:{' '}
+                      {IBAMA_RULES.thresholds.map((t) => `≥ R$ ${t.minTotal / 1e6} mi → ${t.severity}`).join(' · ')}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium text-ink">Trabalho escravo</td>
+                    <td className="text-ink-2">MTE — Cadastro de Empregadores (Lista Suja)</td>
+                    <td className="text-ink-2">Por CNPJ raiz; presença zera a nota</td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium text-ink">Demais controvérsias</td>
+                    <td className="text-ink-2">CVM, CADE, MPF, STF, SEC/DOJ, governos e tribunais</td>
+                    <td className="text-ink-2">Curadoria manual; só entra com link para documento oficial</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           <section id="formula" className="scroll-mt-24 space-y-4">
             <SectionTitle title="Fórmula">
               Cada pilar (Ambiental, Social, Governança) recebe uma nota de 0 a 100. A nota final é a média ponderada dos três pilares pelos pesos
@@ -169,8 +224,8 @@ export default function MethodologyPage() {
 
           <section id="praticas" className="scroll-mt-24">
             <SectionTitle title="Práticas reconhecidas">
-              Pontos de 0 a 100 por pilar. ISE B3 e S&P/B3 Brasil ESG avaliam a empresa de forma ampla e se sobrepõem: conta só o maior. O IGCT
-              deixou de pontuar porque seu critério de entrada é liquidez, não qualidade de governança.
+              Pontos de 0 a 100 por pilar, a partir das carteiras oficiais da B3 no dia da edição. O ISE B3 vale nos três pilares por ser uma avaliação
+              ESG ampla. O IGCT não pontua porque seu critério de entrada é liquidez, não qualidade de governança.
             </SectionTitle>
             <div className="grid gap-4 xl:grid-cols-3">
               {PILLARS.map((p) => (
@@ -248,6 +303,11 @@ export default function MethodologyPage() {
             <p className="text-sm leading-relaxed text-ink-2">
               <strong className="text-ink">Exemplo:</strong> um auto de infração grave (20 pontos) ainda sem julgamento (× 0,5), de 5 anos atrás
               (decaimento {formatPercent(decayFactor(3, 5))}), deduz {(20 * 0.5 * decayFactor(3, 5)).toFixed(0)} pontos do pilar.
+            </p>
+            <p className="text-sm leading-relaxed text-ink-2">
+              <strong className="text-ink">Registros repetidos:</strong> eventos do mesmo grupo, como os autos anuais do IBAMA, somam no máximo{' '}
+              {GROUP_DEDUCTION_CAP} pontos de dedução por pilar. O histórico pesa, mas a escala operacional de uma grande empresa não vira, sozinha,
+              nota zero.
             </p>
             <p className="text-sm leading-relaxed text-ink-2">
               <strong className="text-ink">Não são penalidades:</strong> recuperação judicial e dificuldades financeiras (exibidas como sinal de
@@ -343,8 +403,9 @@ export default function MethodologyPage() {
                 desempenho real.
               </p>
               <p>
-                <strong>Fontes primárias pendentes.</strong> Parte das controvérsias herdadas da v1 ainda aponta para buscas de apoio, não para o
-                documento oficial. Isso aparece em cada registro e reduz o indicador de confiança da empresa.
+                <strong>Só entra o que tem fonte oficial.</strong> Registros herdados da v1 que não puderam ser localizados em documento
+                oficial ficam em quarentena, fora da nota. Empresas que entraram recentemente no IBrX 100 ainda não tiveram suas controvérsias
+                pesquisadas sistematicamente; isso aparece na página da empresa e reduz o indicador de confiança.
               </p>
               <p>
                 <strong>Não é recomendação de investimento.</strong> A nota mede responsabilidade socioambiental com base em dados públicos; não

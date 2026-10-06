@@ -1,0 +1,32 @@
+name: Atualizar dados oficiais
+
+on:
+  schedule:
+    - cron: "0 9 * * 1" # segundas, 06h (Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: npm ci
+      - run: python3 scripts/sync_official_data.py
+      - run: python3 scripts/sync_ibama.py
+      - run: npm run check
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: dados/atualizacao-automatica
+          title: "dados: atualização automática (B3, CVM, IBAMA)"
+          commit-message: "dados: atualização automática (B3, CVM, IBAMA)"
+          body: |
+            Atualização semanal gerada por `scripts/sync_official_data.py` e `scripts/sync_ibama.py`.
+            Revise as mudanças de universo, índices e autos antes de fazer o merge.

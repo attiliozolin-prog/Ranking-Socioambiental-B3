@@ -1,0 +1,26 @@
+name: Direito de resposta (empresas)
+description: Canal para a empresa avaliada contestar um registro, com documentação.
+title: "Direito de resposta: "
+labels: [direito-de-resposta]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este canal é público. Registros contestados com documentação oficial (decisão, arquivamento,
+        absolvição, cancelamento de auto) são revisados antes da edição seguinte.
+  - type: input
+    id: ticker
+    attributes: { label: Empresa (ticker) }
+    validations: { required: true }
+  - type: input
+    id: evento
+    attributes: { label: Registro contestado (texto ou id exibido na página) }
+    validations: { required: true }
+  - type: textarea
+    id: argumento
+    attributes: { label: Contestação }
+    validations: { required: true }
+  - type: input
+    id: documento
+    attributes: { label: Link do documento oficial que embasa a contestação }
+    validations: { required: true }

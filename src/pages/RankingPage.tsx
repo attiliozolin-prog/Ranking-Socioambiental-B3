@@ -7,7 +7,8 @@ import { RATINGS, ratingMeta } from '../lib/methodology';
 import { matchesQuery } from '../lib/search';
 import type { Pillar, Rating, ScoredCompany } from '../lib/types';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
-import { ConfidenceBadge, PillarMini, RATING_TEXT, RatingBadge, Stat, cx } from '../components/ui';
+import { previousScore } from '../lib/editions';
+import { ConfidenceBadge, Delta, PillarMini, RATING_TEXT, RatingBadge, Stat, cx } from '../components/ui';
 
 type SortKey = 'nota' | Pillar | 'nome';
 const SORTS: { key: SortKey; label: string }[] = [
@@ -63,14 +64,15 @@ function Hero() {
       <div className="container-page grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.35fr_1fr] lg:items-end">
         <div>
           <p className="eyebrow mb-4">
-            Edição de {formatDate(dataset.meta.as_of, 'month')} · {stats.n} empresas · Metodologia v{dataset.meta.methodology_version}
+            Edição de {formatDate(dataset.meta.as_of, 'month')} · {stats.n} empresas do {dataset.meta.universe ?? 'IBrX 100'} · Metodologia v
+            {dataset.meta.methodology_version}
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
             Quem financia o futuro e <span className="italic text-danger">quem destrói o presente?</span>
           </h1>
           <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-ink-2">
-            Notas socioambientais das maiores empresas da B3, calculadas a partir de índices da bolsa e de registros de órgãos públicos. Cada
-            ponto tem origem, peso e data, e a conta é aberta.{' '}
+            Notas socioambientais das empresas do IBrX 100, calculadas a partir das carteiras oficiais da B3, do cadastro da CVM e de registros
+            de órgãos públicos. Cada ponto tem origem, peso e data, e a conta é aberta.{' '}
             <Link to="/metodologia" className="font-medium text-accent underline underline-offset-4">
               Veja como calculamos
             </Link>
@@ -171,6 +173,7 @@ function CompanyRow({
       <div className="flex items-center gap-3 justify-self-end md:justify-self-start">
         <span className={cx('font-serif text-[1.75rem] font-semibold leading-none tabular', RATING_TEXT[c.rating])}>{c.score}</span>
         <RatingBadge rating={c.rating} size="sm" showLabel={false} />
+        <Delta now={c.score} before={previousScore(c.ticker, c.cnpj_root)?.score} />
       </div>
 
       <div className="col-span-3 md:col-span-1">
@@ -252,7 +255,7 @@ export default function RankingPage() {
   const results = useMemo(() => {
     const list = companies.filter(
       (c) =>
-        matchesQuery(f.q, c.name, c.ticker, c.sector) &&
+        matchesQuery(f.q, c.name, c.ticker, c.sector, ...(c.other_tickers ?? [])) &&
         (!f.sector || c.sector === f.sector) &&
         (!f.ratings.length || f.ratings.includes(c.rating)) &&
         (!f.onlyControversy || c.scoredEvents.length > 0),

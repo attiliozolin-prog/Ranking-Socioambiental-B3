@@ -115,22 +115,35 @@ Tudo isso está em `src/lib/methodology.ts`, que também gera a página `/metodo
 
 ---
 
-## 3. Pendências que exigem verificação humana
+## 3. Segunda rodada (out/2026): pendências resolvidas com dados oficiais
 
-O validador (`npm run validate -- --verbose`) lista cada item.
+### 3.1 Universo objetivo e dados cadastrais
+- **Universo = IBrX 100** na data da edição (carteira oficial da B3, 06/10/2026), em vez de uma lista montada à mão. Quando a empresa tem mais de uma classe no índice (ITUB3/ITUB4, BBDC3/BBDC4, PETR3/PETR4), vale a de maior peso. Resultado: **97 empresas**.
+- **CNPJ e segmento de todas as empresas** vêm do FCA da CVM (dados abertos) e do cadastro de emissores da B3. Isso revelou mais erros da base antiga: cerca de 40 CNPJs divergentes (a Copel estava com o CNPJ da Sanepar) e Ambev, Vivo e Santander listados como Novo Mercado, embora estejam no segmento Básico.
+- **Eventos societários resolvidos:** Azzas 2154 (AZZA3, fusão de Soma e Arezzo), MBRF (MBRF3, Marfrig + BRF), Axia (AXIA3, ex-Eletrobras), Embraer (EMBJ3), Copel (CPLE3), Brava (BRAV3), ISA Energia (ISAE4) e Natura (NATU3). Saíram do universo por não estarem mais no IBrX 100 ou na bolsa: AGRO3, ALUP11, AMER3, AZUL4, BRKM5, CGAS5, CIEL3, CRFB3, DXCO3, ENBR3, FRAS3, GOLL4, HBSA3, INBR32, JBSS3, LEVE3, LWSA3, MDIA3, NEOE3, OIBR3, PCAR3, PETZ3, RAPT4, TUPY3 e XPBR31. Entre elas estão casos graves (Braskem, Americanas, JBS); a regra de universo vale para todos.
+- **Índices** vêm das carteiras do dia na B3 (ISE, ICO2, IDiversa, IGPTW, ITAG). O S&P/B3 Brasil ESG saiu: é calculado pela S&P, sem carteira aberta para conferir.
 
-1. **43 controvérsias sem fonte primária**: todas apontam para buscas no Google. Substituir pelo link do auto de infração, da decisão ou do fato relevante.
-2. **75 CNPJs não conferidos** no cadastro da CVM.
-3. **5 segmentos em verificação**: IGTI11, CPLE6, CGAS5, CSNA3, CMIN3.
-4. **12 eventos societários** que podem ter mudado ticker ou listagem desde a coleta: Azzas 2154 (SOMA3/ARZZ3), EDP (ENBR3), Cielo (CIEL3), Brava (RRRP3), ISA Energia (TRPL4), Natura (NTCO3), JBS (JBSS3), BRF+Marfrig (BRFS3/MRFG3), Carrefour (CRFB3) e Eletrobras (ELET3). A página de cada empresa mostra o aviso.
-5. **5 registros em quarentena**: confirmar com fonte primária ou excluir definitivamente.
-6. **Composição dos índices** (ISE, ICO2, IDiversa etc.) muda todo ano: atualizar com as carteiras vigentes.
-7. **Cobertura de controvérsias**: há 43 registros para 100 empresas. Recomenda-se uma varredura sistemática por CNPJ nas bases públicas (IBAMA: autos de infração e áreas embargadas; MTE: Cadastro de Empregadores; CVM: processos sancionadores; CADE: processos administrativos).
+### 3.2 Controvérsias: só entra o que tem documento oficial
+- **Checagem das 29 controvérsias herdadas:** 5 confirmadas e corrigidas com link oficial (Vale/Brumadinho, Vale/Mariana, Petrobras/SEC, IRB/CVM, Itaú/CADE). As demais eram vagas, sem número de processo nem data real, e não foram localizadas; foram para **quarentena** com o motivo registrado. Duas foram contraditadas por fonte oficial: as auditorias do TAC da Carne, supervisionadas pelo MPF, apontam 100% de conformidade para Minerva e Marfrig na Amazônia.
+- **Casos graves que faltavam**, com fonte oficial: Embraer (FCPA, SEC 2016), Motiva/CCR e EcoRodovias (acordos de leniência com o MPF-PR, 2019).
+- **Autos de infração do IBAMA** cruzados automaticamente por CNPJ (`scripts/sync_ibama.py`): 35 registros anuais em 14 empresas, com teto conjunto de 35 pontos por pilar.
+- **Lista Suja do MTE** (atualizada em 05/10/2026) cruzada por CNPJ: nenhuma empresa do universo consta.
+- Resultado: **todas as controvérsias que entram na nota têm link para documento oficial.**
 
----
+### 3.3 Calibração
+Os índices da B3 são pouco seletivos dentro do IBrX 100: o IDiversa cobre 65% das empresas, o ISE 55% e o Novo Mercado 75%. Por isso o IDiversa passou a valer 20 pontos (antes 30) e o IGPTW, mais seletivo (32%), 35 (antes 25). As faixas subiram (A ≥ 85, B ≥ 70, C ≥ 55, D ≥ 40).
 
-## 4. Próximos passos recomendados
-- **Pipeline de coleta automatizada** por CNPJ (dados abertos do IBAMA, da CVM e do MTE) gerando eventos com `link_type: "primaria"`.
-- **Histórico por edição** (`src/data/editions/AAAA-MM.json`) para mostrar a evolução da nota.
+### 3.4 Novos mecanismos
+- `npm run sync`: coleta B3 + CVM + IBAMA. Uma GitHub Action semanal (`.github/workflows/sync.yml`) roda a coleta e abre um PR para revisão.
+- `npm run snapshot`: congela as notas da edição; a próxima edição mostra a variação de cada empresa.
+- Formulários públicos de **correção de dados** e **direito de resposta** para as empresas.
+
+## 4. O que ainda depende de pesquisa humana
+1. **24 empresas novas no universo** (marcadas com "cobertura parcial" e confiança baixa) ainda não tiveram controvérsias não ambientais pesquisadas: CVM, CADE, MPT e tribunais.
+2. **Status jurídico dos autos do IBAMA:** hoje todos contam como "processo". A base de julgamentos do IBAMA permitiria marcar os autos já confirmados como "condenação".
+3. **Lista Suja de fornecedores:** o cruzamento atual alcança só o CNPJ da própria empresa, não sua cadeia de fornecedores.
+4. **28 registros em quarentena:** podem voltar se alguém trouxer documento oficial.
+
+## 5. Próximos passos recomendados
+- Incluir os julgamentos do IBAMA e os processos sancionadores da CVM na coleta automática.
 - **Revisão por pares** dos registros de gravidade ≥ 4 antes de cada publicação.
-- **Direito de resposta**: canal para as empresas contestarem registros com documentação.

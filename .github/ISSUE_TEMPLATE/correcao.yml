@@ -1,0 +1,17 @@
+name: Correção de dados
+description: Aponte um dado incorreto, com fonte primária.
+title: "Correção de dados: "
+labels: [dados]
+body:
+  - type: input
+    id: ticker
+    attributes: { label: Empresa (ticker), placeholder: "VALE3" }
+    validations: { required: true }
+  - type: textarea
+    id: erro
+    attributes: { label: O que está incorreto? }
+    validations: { required: true }
+  - type: input
+    id: fonte
+    attributes: { label: Link da fonte primária (documento oficial), placeholder: "https://…gov.br/…" }
+    validations: { required: true }

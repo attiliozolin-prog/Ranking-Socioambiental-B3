@@ -5,14 +5,12 @@ export const REPO_URL = 'https://github.com/attiliozolin-prog/Ranking-Socioambie
 /** Link para abrir uma issue de correção já preenchida. Só texto controlado entra na URL. */
 export function correctionUrl(ticker?: string): string {
   const title = ticker ? `Correção de dados: ${ticker}` : 'Correção de dados';
-  const body = [
-    ticker ? `Empresa: ${ticker}` : '',
-    '',
-    'O que está incorreto?',
-    '',
-    'Fonte primária (link oficial) que comprova a correção:',
-    '',
-  ].join('\n');
-  const params = new URLSearchParams({ title, body, labels: 'dados' });
+  const params = new URLSearchParams({ template: 'correcao.yml', title, ticker: ticker ?? '' });
+  return `${REPO_URL}/issues/new?${params.toString()}`;
+}
+
+/** Direito de resposta para empresas avaliadas (formulário público no GitHub). */
+export function responseUrl(ticker: string): string {
+  const params = new URLSearchParams({ template: 'direito-de-resposta.yml', title: `Direito de resposta: ${ticker}`, ticker });
   return `${REPO_URL}/issues/new?${params.toString()}`;
 }

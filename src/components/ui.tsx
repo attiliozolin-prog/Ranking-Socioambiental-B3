@@ -210,3 +210,18 @@ export function Stat({ label, value, hint }: { label: string; value: ReactNode; 
     </div>
   );
 }
+
+/** Variação em relação à edição anterior (mesma metodologia). */
+export function Delta({ now, before, since }: { now: number; before?: number; since?: string }) {
+  if (before === undefined) return null;
+  const d = now - before;
+  const label = d === 0 ? 'estável' : `${d > 0 ? '+' : '−'}${Math.abs(d)}`;
+  return (
+    <span
+      className={cx('tabular text-xs font-medium', d > 0 ? 'text-accent' : d < 0 ? 'text-danger' : 'text-ink-3')}
+      title={since ? `Em relação à edição de ${since}` : 'Em relação à edição anterior'}
+    >
+      {d > 0 ? '▲' : d < 0 ? '▼' : '='} {label}
+    </span>
+  );
+}

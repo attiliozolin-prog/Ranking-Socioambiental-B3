@@ -9,7 +9,7 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { Meter, PILLAR_BG, PILLAR_TEXT, RATING_TEXT, RatingBadge, SectionTitle, cx } from '../components/ui';
 
 const MAX = 4;
-const INDICES: IndexMembership[] = ['ISE B3', 'S&P/B3 ESG', 'ICO2 B3', 'IDiversa B3', 'IGPTW B3'];
+const INDICES: IndexMembership[] = ['ISE B3', 'ICO2 B3', 'IDiversa B3', 'IGPTW B3', 'ITAG'];
 
 function Picker({ selected, onAdd }: { selected: string[]; onAdd: (t: string) => void }) {
   const [q, setQ] = useState('');

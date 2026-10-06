@@ -56,7 +56,7 @@ export default function AboutPage() {
             decidir.
           </p>
           <p>
-            O <strong>Ranking Socioambiental B3</strong> faz esse cruzamento para as {stats.n} maiores empresas da bolsa e entrega uma nota com a
+            O <strong>Ranking Socioambiental B3</strong> faz esse cruzamento para as {stats.n} empresas do IBrX 100, que reúne as ações mais negociadas da bolsa, e entrega uma nota com a
             conta aberta: cada ponto ganho ou perdido tem origem, peso e data.
           </p>
         </div>

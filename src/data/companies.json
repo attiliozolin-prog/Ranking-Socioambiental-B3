@@ -1,9 +1,15 @@
 {
   "meta": {
     "dataset_version": "2.0.0",
-    "as_of": "2026-03-06",
+    "as_of": "2026-10-06",
     "methodology_version": "4.0",
-    "notes": "Migrado da v1 (ranking_db.json). Ver docs/AUDITORIA-v2.md."
+    "notes": "Migrado da v1 (ranking_db.json). Ver docs/AUDITORIA-v2.md.",
+    "universe": "IBrX 100",
+    "sources": {
+      "b3_portfolios": "2026-10-06",
+      "cvm_fca": "2025–2026",
+      "ibama_autos": "2026-10-06"
+    }
   },
   "companies": [
     {
@@ -12,11 +18,10 @@
       "cnpj_root": "07526557",
       "cnpj_verified": true,
       "sector": "Alimentos e Bebidas",
-      "segment": "NM",
+      "segment": "BASICO",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3"
       ],
       "disclosures": [],
       "events": [
@@ -38,775 +43,117 @@
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "AGRO3",
-      "name": "BrasilAgro",
-      "cnpj_root": "73968167",
-      "cnpj_verified": false,
-      "sector": "Agronegócio",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "ALUP11",
-      "name": "Alupar Investimento",
-      "cnpj_root": "08364948",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "N2",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "AMER3",
-      "name": "Americanas S.A.",
-      "cnpj_root": "00776574",
+      "ticker": "ALOS3",
+      "name": "Allos",
+      "cnpj_root": "05878397",
       "cnpj_verified": true,
-      "sector": "Varejo",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "AMER3-1",
-          "source": "CVM",
-          "pillars": [
-            "G"
-          ],
-          "severity": 5,
-          "status": "reconhecido",
-          "date": "2023-06-13",
-          "date_precision": "day",
-          "description": "Fraude contábil de cerca de R$ 25 bi reconhecida pela própria empresa em fato relevante — apurada pela CVM e pela PF",
-          "link": "https://www.google.com/search?q=Americanas+CVM+fraude+contábil+20+bilhões",
-          "link_type": "busca"
-        },
-        {
-          "id": "AMER3-2",
-          "source": "Tribunal Federal",
-          "pillars": [
-            "G"
-          ],
-          "severity": 0,
-          "status": "processo",
-          "date": "2023-02-01",
-          "date_precision": "month",
-          "description": "Recuperação Judicial deferida com passivo de R$ 43 bilhões",
-          "link": "https://www.google.com/search?q=Americanas+recuperação+judicial+43+bilhões",
-          "link_type": "busca",
-          "review": "sinal_de_risco",
-          "review_note": "Recuperação judicial é consequência do evento contábil já computado; vira tag sem pontuação."
-        },
-        {
-          "id": "AMER3-3",
-          "source": "MTE",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-03-01",
-          "date_precision": "month",
-          "description": "Demissões em massa sem cumprimento integral de obrigações trabalhistas",
-          "link": "https://www.google.com/search?q=Americanas+demissões+massa+direitos+trabalhistas",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [
-        "Recuperação judicial"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "ARZZ3",
-      "name": "Arezzo & Co",
-      "cnpj_root": "16590234",
-      "cnpj_verified": false,
-      "sector": "Varejo",
+      "sector": "Imobiliário",
       "segment": "NM",
       "indices": [
-        "IDiversa B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Arezzo&Co e Grupo Soma anunciaram fusão em 2024 (Azzas 2154). Verificar ticker atual."
-    },
-    {
-      "ticker": "ASAI3",
-      "name": "Assaí Atacadista",
-      "cnpj_root": "06057223",
-      "cnpj_verified": false,
-      "sector": "Varejo",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "AURE3",
-      "name": "Auren Energia",
-      "cnpj_root": "49154891",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
-      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
         "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
-      "ticker": "AZUL4",
-      "name": "Azul Linhas Aéreas",
-      "cnpj_root": "09296295",
-      "cnpj_verified": false,
-      "sector": "Transporte Aéreo",
-      "segment": "N2",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "AZUL4-1",
-          "source": "CVM",
-          "pillars": [
-            "G"
-          ],
-          "severity": 2,
-          "status": "investigacao",
-          "date": "2023-06-01",
-          "date_precision": "month",
-          "description": "Investigação por omissão de informações sobre risco de liquidez e dívida",
-          "link": "https://www.google.com/search?q=Azul+CVM+liquidez+investigação",
-          "link_type": "busca"
-        },
-        {
-          "id": "AZUL4-2",
-          "source": "Tribunal Trabalhista",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2021-08-01",
-          "date_precision": "month",
-          "description": "Ação coletiva por atrasos salariais durante crise pandêmica",
-          "link": "https://www.google.com/search?q=Azul+atraso+salário+pandemia+trabalhista",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "B3SA3",
-      "name": "B3 S.A. — Brasil, Bolsa, Balcão",
-      "cnpj_root": "09346601",
+      "ticker": "ALPA4",
+      "name": "Alpargatas",
+      "cnpj_root": "61079117",
       "cnpj_verified": true,
-      "sector": "Financeiro",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3",
-        "IDiversa B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BBAS3",
-      "name": "Banco do Brasil",
-      "cnpj_root": "00000000",
-      "cnpj_verified": true,
-      "sector": "Financeiro",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3",
-        "IDiversa B3",
-        "IGPTW B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [
-        "Controle estatal"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BBDC4",
-      "name": "Bradesco",
-      "cnpj_root": "60746948",
-      "cnpj_verified": true,
-      "sector": "Financeiro",
-      "segment": "N1",
-      "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3",
-        "ITAG"
-      ],
-      "disclosures": [
-        {
-          "type": "GRI",
-          "link": "https://www.bradescori.com.br/sustentabilidade/"
-        }
-      ],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BBSE3",
-      "name": "BB Seguridade Participações",
-      "cnpj_root": "17344597",
-      "cnpj_verified": false,
-      "sector": "Financeiro",
-      "segment": "NM",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [
-        "Controle estatal"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BEEF3",
-      "name": "Minerva Foods",
-      "cnpj_root": "67955629",
-      "cnpj_verified": false,
-      "sector": "Alimentos e Bebidas",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "BEEF3-1",
-          "source": "MPF",
-          "pillars": [
-            "E"
-          ],
-          "severity": 3,
-          "status": "investigacao",
-          "date": "2024-01-01",
-          "date_precision": "year",
-          "description": "Cadeia de fornecedores com alertas de desmatamento no bioma Amazônia",
-          "link": "https://www.google.com/search?q=Minerva+desmatamento+Amazônia+MPF",
-          "link_type": "busca"
-        },
-        {
-          "id": "BEEF3-2",
-          "source": "MTE",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-05-01",
-          "date_precision": "month",
-          "description": "Autuações por condições de trabalho em plantas frigoríficas",
-          "link": "https://www.google.com/search?q=Minerva+MTE+condições+trabalho",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BPAC11",
-      "name": "BTG Pactual",
-      "cnpj_root": "30306294",
-      "cnpj_verified": false,
-      "sector": "Financeiro",
-      "segment": "N2",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BRAP4",
-      "name": "Bradespar S.A.",
-      "cnpj_root": "32852227",
-      "cnpj_verified": false,
-      "sector": "Holding",
-      "segment": "N1",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [
-        "Holding"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "BRFS3",
-      "name": "BRF S.A.",
-      "cnpj_root": "01838723",
-      "cnpj_verified": false,
-      "sector": "Alimentos e Bebidas",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "BRFS3-1",
-          "source": "MPT",
-          "pillars": [
-            "S"
-          ],
-          "severity": 3,
-          "status": "processo",
-          "date": "2023-01-01",
-          "date_precision": "year",
-          "description": "Ação coletiva por acidentes de trabalho em plantas frigoríficas",
-          "link": "https://www.google.com/search?q=BRF+MPT+acidente+trabalho+frigorifico",
-          "link_type": "busca"
-        },
-        {
-          "id": "BRFS3-2",
-          "source": "IBAMA",
-          "pillars": [
-            "E"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2022-07-01",
-          "date_precision": "month",
-          "description": "Autuações ambientais por descarte irregular de efluentes",
-          "link": "https://www.google.com/search?q=BRF+IBAMA+efluentes+2022",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "BRF e Marfrig anunciaram combinação de negócios em 2025. Verificar ticker atual."
-    },
-    {
-      "ticker": "BRKM5",
-      "name": "Braskem S.A.",
-      "cnpj_root": "42150391",
-      "cnpj_verified": true,
-      "sector": "Químico",
+      "sector": "Bens de Consumo",
       "segment": "N1",
       "indices": [],
       "disclosures": [],
-      "events": [
-        {
-          "id": "BRKM5-1",
-          "source": "MPF / MPAL / DPU / Município de Maceió",
-          "pillars": [
-            "E",
-            "S"
-          ],
-          "severity": 5,
-          "status": "acordo",
-          "date": "2023-07-21",
-          "date_precision": "day",
-          "description": "Afundamento do solo em bairros de Maceió pela extração de sal-gema — ~60 mil pessoas realocadas; acordos de reparação",
-          "link": "https://www.google.com/search?q=Braskem+Maceió+afundamento+solo",
-          "link_type": "busca"
-        },
-        {
-          "id": "BRKM5-2",
-          "source": "IBAMA",
-          "pillars": [
-            "E"
-          ],
-          "severity": 3,
-          "status": "processo",
-          "date": "2023-01-01",
-          "date_precision": "year",
-          "description": "Embargo e multas por mineração irregular de sal-gema",
-          "link": "https://www.google.com/search?q=Braskem+IBAMA+sal-gema+embargo",
-          "link_type": "busca"
-        },
-        {
-          "id": "BRKM5-3",
-          "source": "CVM",
-          "pillars": [
-            "G"
-          ],
-          "severity": 2,
-          "status": "investigacao",
-          "date": "2023-05-01",
-          "date_precision": "month",
-          "description": "Investigação por omissão de informações sobre riscos geológicos",
-          "link": "https://www.google.com/search?q=Braskem+CVM+omissão+risco+geológico",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CGAS5",
-      "name": "Comgás (Companhia de Gás de São Paulo)",
-      "cnpj_root": "61856571",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "VERIFICAR",
-      "indices": [],
-      "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
-      "ticker": "CIEL3",
-      "name": "Cielo S.A.",
-      "cnpj_root": "01027058",
-      "cnpj_verified": false,
-      "sector": "Tecnologia",
-      "segment": "NM",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Cielo passou por OPA de cancelamento de registro em 2024. Verificar listagem."
-    },
-    {
-      "ticker": "CMIG4",
-      "name": "Cemig",
-      "cnpj_root": "17155730",
+      "ticker": "ANIM3",
+      "name": "Ânima Educação",
+      "cnpj_root": "09288252",
       "cnpj_verified": true,
-      "sector": "Energia",
-      "segment": "N1",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "CMIG4-1",
-          "source": "IBAMA",
-          "pillars": [
-            "E"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2022-03-01",
-          "date_precision": "month",
-          "description": "Autuação por impactos em área de preservação de reservatório",
-          "link": "https://www.google.com/search?q=CEMIG+IBAMA+reservatório+autuação",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [
-        "Controle estatal"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CMIN3",
-      "name": "CSN Mineração",
-      "cnpj_root": "07669173",
-      "cnpj_verified": false,
-      "sector": "Mineração",
-      "segment": "VERIFICAR",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "CMIN3-1",
-          "source": "IBAMA",
-          "pillars": [
-            "E"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-01-01",
-          "date_precision": "year",
-          "description": "Autuações por impacto ambiental de operações de mineração de ferro",
-          "link": "https://www.google.com/search?q=CSN+Mineração+IBAMA+mineração+ferro",
-          "link_type": "busca"
-        },
-        {
-          "id": "CMIN3-2",
-          "source": "MPT",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "investigacao",
-          "date": "2023-03-01",
-          "date_precision": "month",
-          "description": "Investigações por condições de trabalho em minas",
-          "link": "https://www.google.com/search?q=CSN+Mineração+MPT+condições+trabalho",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "COGN3",
-      "name": "Cogna Educação",
-      "cnpj_root": "02541982",
-      "cnpj_verified": false,
       "sector": "Educação",
       "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "COGN3-1",
-          "source": "MEC",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "condenacao",
-          "date": "2022-09-01",
-          "date_precision": "month",
-          "description": "Descredenciamento parcial de cursos pelo MEC por qualidade insuficiente",
-          "link": "https://www.google.com/search?q=Cogna+MEC+descredenciamento+curso",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CPFE3",
-      "name": "CPFL Energia",
-      "cnpj_root": "02429144",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CPLE6",
-      "name": "Copel",
-      "cnpj_root": "76484013",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "VERIFICAR",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CRFB3",
-      "name": "Carrefour Brasil",
-      "cnpj_root": "60619309",
-      "cnpj_verified": false,
-      "sector": "Varejo",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "CRFB3-1",
-          "source": "MPRS / DPE-RS / MPT",
-          "pillars": [
-            "S"
-          ],
-          "severity": 4,
-          "status": "acordo",
-          "date": "2021-06-11",
-          "date_precision": "day",
-          "description": "Morte de João Alberto Freitas por seguranças em loja de Porto Alegre (2020) — TAC de R$ 115 mi",
-          "link": "https://www.google.com/search?q=Carrefour+homicidio+racismo+Porto+Alegre",
-          "link_type": "busca"
-        },
-        {
-          "id": "CRFB3-2",
-          "source": "MPT",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-03-01",
-          "date_precision": "month",
-          "description": "Ação coletiva por discriminação racial sistêmica em contratações",
-          "link": "https://www.google.com/search?q=Carrefour+MPT+discriminação+racial",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Carrefour Brasil teve operação de saída da B3 aprovada em 2025. Verificar listagem."
-    },
-    {
-      "ticker": "CSAN3",
-      "name": "Cosan S.A.",
-      "cnpj_root": "50746577",
-      "cnpj_verified": false,
-      "sector": "Petróleo e Gás",
-      "segment": "NM",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [
-        "Holding"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CSNA3",
-      "name": "CSN (Companhia Siderúrgica Nacional)",
-      "cnpj_root": "33042730",
-      "cnpj_verified": true,
-      "sector": "Siderurgia",
-      "segment": "VERIFICAR",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "CSNA3-1",
-          "source": "IBAMA",
-          "pillars": [
-            "E"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2022-01-01",
-          "date_precision": "year",
-          "description": "Autuações por emissões e resíduos industriais no Rio de Janeiro",
-          "link": "https://www.google.com/search?q=CSN+IBAMA+emissões+resíduos",
-          "link_type": "busca"
-        },
-        {
-          "id": "CSNA3-2",
-          "source": "CADE",
-          "pillars": [
-            "G"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2022-05-01",
-          "date_precision": "month",
-          "description": "Processo antitruste no setor de cimento e aço",
-          "link": "https://www.google.com/search?q=CSN+CADE+antitruste+cimento",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CXSE3",
-      "name": "Caixa Seguridade",
-      "cnpj_root": "09526551",
-      "cnpj_verified": false,
-      "sector": "Financeiro",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [
-        "Controle estatal"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "CYRE3",
-      "name": "Cyrela Brazil Realty",
-      "cnpj_root": "73180596",
-      "cnpj_verified": false,
-      "sector": "Construção Civil",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "DXCO3",
-      "name": "Dexco S.A.",
-      "cnpj_root": "82951229",
-      "cnpj_verified": false,
-      "sector": "Materiais",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "EGIE3",
-      "name": "Engie Brasil Energia",
-      "cnpj_root": "02712781",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3",
         "IDiversa B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
-      "ticker": "ELET3",
-      "name": "Eletrobras",
+      "ticker": "ASAI3",
+      "name": "Assaí Atacadista",
+      "cnpj_root": "06057223",
+      "cnpj_verified": true,
+      "sector": "Varejo",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "ASAI3-ibama-2018",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2018-07-02",
+          "date_precision": "day",
+          "description": "7 autos de infração em 2018, somando R$ 3,9 mi. Maior (R$ 0,8 mi, auto nº 9174708-E, SP): Comercializar 38.243kg de pescados ou produtos originados da pesca sem comprovante de origem ou autorização do órgão competente, vez que não possui Re…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "AURE3",
+      "name": "Auren Energia",
+      "cnpj_root": "28594234",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "AXIA3",
+      "name": "Axia Energia (ex-Eletrobras)",
       "cnpj_root": "00001180",
       "cnpj_verified": true,
       "sector": "Energia",
-      "segment": "N1",
+      "segment": "NM",
       "indices": [
-        "ICO2 B3"
+        "IDiversa B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [
@@ -822,7 +169,9 @@
           "date_precision": "year",
           "description": "Autuações históricas por impactos de barragens em terras indígenas",
           "link": "https://www.google.com/search?q=Eletrobras+IBAMA+barragem+terras+indígenas",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         },
         {
           "id": "ELET3-2",
@@ -836,119 +185,790 @@
           "date_precision": "day",
           "description": "Irregularidades apontadas pelo TCU no processo de privatização",
           "link": "https://www.google.com/search?q=Eletrobras+TCU+privatização+irregularidade",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Apontamentos do TCU sobre o processo de privatização não são conduta da empresa."
+        },
+        {
+          "id": "AXIA3-ibama-2026",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 1,
+          "status": "processo",
+          "date": "2026-01-28",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2026, somando R$ 1,2 mi. Maior (R$ 1,2 mi, auto nº 33T9C6YX, MG): Deixar de atender às condicionantes 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.2.1, 2.2.2, 2.3.1, 2.3.2, 2.3.3, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.5.1, 2.5.2, 2.6.1, 2…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Eletrobras anunciou mudança de marca em 2025. Verificar ticker atual."
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "EMBR3",
+      "ticker": "AZZA3",
+      "name": "Azzas 2154",
+      "cnpj_root": "16590234",
+      "cnpj_verified": true,
+      "sector": "Varejo",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "B3SA3",
+      "name": "B3 S.A. — Brasil, Bolsa, Balcão",
+      "cnpj_root": "09346601",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BBAS3",
+      "name": "Banco do Brasil",
+      "cnpj_root": "00000000",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "BBAS3-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2025-03-18",
+          "date_precision": "day",
+          "description": "5 autos de infração em 2025, somando R$ 2,8 mi. Maior (R$ 2,8 mi, auto nº R1P5C71N, MA): Intermediar 5.508,125 sacas (60 kg) de soja produzidas sob a área embargada conforme TEI n° 083384, lavrado em 02/07/2005. Ref. BACEN: 515906292",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BBDC4",
+      "name": "Bradesco",
+      "cnpj_root": "60746948",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "N1",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3",
+        "ITAG"
+      ],
+      "disclosures": [
+        {
+          "type": "GRI",
+          "link": "https://www.bradescori.com.br/sustentabilidade/"
+        }
+      ],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "other_tickers": [
+        "BBDC3"
+      ]
+    },
+    {
+      "ticker": "BBSE3",
+      "name": "BB Seguridade Participações",
+      "cnpj_root": "17344597",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BEEF3",
+      "name": "Minerva Foods",
+      "cnpj_root": "67620377",
+      "cnpj_verified": true,
+      "sector": "Alimentos e Bebidas",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "BEEF3-1",
+          "source": "MPF",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "investigacao",
+          "date": "2024-01-01",
+          "date_precision": "year",
+          "description": "Cadeia de fornecedores com alertas de desmatamento no bioma Amazônia",
+          "link": "https://www.google.com/search?q=Minerva+desmatamento+Amazônia+MPF",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Contraditado por auditoria supervisionada pelo MPF (TAC da Carne) com 100% de conformidade na Amazônia."
+        },
+        {
+          "id": "BEEF3-2",
+          "source": "MTE",
+          "pillars": [
+            "S"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2023-05-01",
+          "date_precision": "month",
+          "description": "Autuações por condições de trabalho em plantas frigoríficas",
+          "link": "https://www.google.com/search?q=Minerva+MTE+condições+trabalho",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BPAC11",
+      "name": "BTG Pactual",
+      "cnpj_root": "30306294",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "N2",
+      "indices": [
+        "IDiversa B3",
+        "ISE B3",
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BRAP4",
+      "name": "Bradespar S.A.",
+      "cnpj_root": "03847461",
+      "cnpj_verified": true,
+      "sector": "Holding",
+      "segment": "N1",
+      "indices": [
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [
+        "Holding"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "BRAV3",
+      "name": "Brava Energia",
+      "cnpj_root": "12091809",
+      "cnpj_verified": true,
+      "sector": "Petróleo e Gás",
+      "segment": "NM",
+      "indices": [],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CBAV3",
+      "name": "Companhia Brasileira de Alumínio (CBA)",
+      "cnpj_root": "61409892",
+      "cnpj_verified": true,
+      "sector": "Materiais",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "CEAB3",
+      "name": "C&A Modas",
+      "cnpj_root": "45242914",
+      "cnpj_verified": true,
+      "sector": "Varejo",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "CMIG4",
+      "name": "Cemig",
+      "cnpj_root": "17155730",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "N1",
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "CMIG4-1",
+          "source": "IBAMA",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-03-01",
+          "date_precision": "month",
+          "description": "Autuação por impactos em área de preservação de reservatório",
+          "link": "https://www.google.com/search?q=CEMIG+IBAMA+reservatório+autuação",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        }
+      ],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CMIN3",
+      "name": "CSN Mineração",
+      "cnpj_root": "89022910",
+      "cnpj_verified": true,
+      "sector": "Mineração",
+      "segment": "N2",
+      "indices": [
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "CMIN3-1",
+          "source": "IBAMA",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2023-01-01",
+          "date_precision": "year",
+          "description": "Autuações por impacto ambiental de operações de mineração de ferro",
+          "link": "https://www.google.com/search?q=CSN+Mineração+IBAMA+mineração+ferro",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        },
+        {
+          "id": "CMIN3-2",
+          "source": "MPT",
+          "pillars": [
+            "S"
+          ],
+          "severity": 2,
+          "status": "investigacao",
+          "date": "2023-03-01",
+          "date_precision": "month",
+          "description": "Investigações por condições de trabalho em minas",
+          "link": "https://www.google.com/search?q=CSN+Mineração+MPT+condições+trabalho",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "COGN3",
+      "name": "Cogna Educação",
+      "cnpj_root": "02800026",
+      "cnpj_verified": true,
+      "sector": "Educação",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "COGN3-1",
+          "source": "MEC",
+          "pillars": [
+            "S"
+          ],
+          "severity": 2,
+          "status": "condenacao",
+          "date": "2022-09-01",
+          "date_precision": "month",
+          "description": "Descredenciamento parcial de cursos pelo MEC por qualidade insuficiente",
+          "link": "https://www.google.com/search?q=Cogna+MEC+descredenciamento+curso",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CPFE3",
+      "name": "CPFL Energia",
+      "cnpj_root": "02429144",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CPLE3",
+      "name": "Copel",
+      "cnpj_root": "76483817",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CSAN3",
+      "name": "Cosan S.A.",
+      "cnpj_root": "50746577",
+      "cnpj_verified": true,
+      "sector": "Petróleo e Gás",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [
+        "Holding"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CSMG3",
+      "name": "Copasa",
+      "cnpj_root": "17281106",
+      "cnpj_verified": true,
+      "sector": "Saneamento",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "CSNA3",
+      "name": "CSN (Companhia Siderúrgica Nacional)",
+      "cnpj_root": "33042730",
+      "cnpj_verified": true,
+      "sector": "Siderurgia",
+      "segment": "BASICO",
+      "indices": [],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "CSNA3-1",
+          "source": "IBAMA",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-01-01",
+          "date_precision": "year",
+          "description": "Autuações por emissões e resíduos industriais no Rio de Janeiro",
+          "link": "https://www.google.com/search?q=CSN+IBAMA+emissões+resíduos",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        },
+        {
+          "id": "CSNA3-2",
+          "source": "CADE",
+          "pillars": [
+            "G"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-05-01",
+          "date_precision": "month",
+          "description": "Processo antitruste no setor de cimento e aço",
+          "link": "https://www.google.com/search?q=CSN+CADE+antitruste+cimento",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não há processo do CADE sobre cartel de cimento envolvendo a CSN localizado; o cartel julgado em 2014 envolveu outras cimenteiras."
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CURY3",
+      "name": "Cury Construtora",
+      "cnpj_root": "08797760",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "IGPTW B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "CVCB3",
+      "name": "CVC Brasil",
+      "cnpj_root": "10760260",
+      "cnpj_verified": true,
+      "sector": "Serviços",
+      "segment": "NM",
+      "indices": [
+        "IGPTW B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "CXSE3",
+      "name": "Caixa Seguridade",
+      "cnpj_root": "22543331",
+      "cnpj_verified": true,
+      "sector": "Financeiro",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "CYRE3",
+      "name": "Cyrela Brazil Realty",
+      "cnpj_root": "73178600",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "DIRR3",
+      "name": "Direcional Engenharia",
+      "cnpj_root": "16614075",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "ECOR3",
+      "name": "EcoRodovias",
+      "cnpj_root": "04149454",
+      "cnpj_verified": true,
+      "sector": "Transporte",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "ECOR3-n1",
+          "source": "MPF-PR (Operação Integração)",
+          "pillars": [
+            "G"
+          ],
+          "severity": 4,
+          "status": "reconhecido",
+          "date": "2019-08-12",
+          "date_precision": "day",
+          "description": "Acordo de leniência de R$ 400 mi (Ecovia e Ecocataratas): a empresa reconheceu pagamento de propina para obter aditivos em concessões de rodovias no Paraná",
+          "link": "https://apps.mpf.mp.br/apps/f?p=131%3A8",
+          "link_type": "primaria"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "EGIE3",
+      "name": "Engie Brasil Energia",
+      "cnpj_root": "02474103",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "EGIE3-ibama-2020",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2020-09-01",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2020, somando R$ 2,5 mi. Maior (R$ 2,5 mi, auto nº 4K5BGWOP, MT): Causar poluição (alteração adversa das características do meio ambiente que afetou desfavoravelmente a biota) por meio da operação da UHE Ponte de Ped…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "EMBJ3",
       "name": "Embraer S.A.",
       "cnpj_root": "07689002",
       "cnpj_verified": true,
       "sector": "Indústria",
       "segment": "NM",
       "indices": [
-        "ISE B3",
         "ICO2 B3",
         "IDiversa B3"
       ],
       "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "ENBR3",
-      "name": "EDP Brasil (Energias do Brasil)",
-      "cnpj_root": "04128563",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
+      "events": [
+        {
+          "id": "EMBJ3-n1",
+          "source": "SEC / DOJ / MPF",
+          "pillars": [
+            "G"
+          ],
+          "severity": 4,
+          "status": "acordo",
+          "date": "2016-10-24",
+          "date_precision": "day",
+          "description": "Acordo global de US$ 205 mi com SEC, DOJ e autoridades brasileiras por pagamento de propina a agentes públicos estrangeiros (FCPA)",
+          "link": "https://www.sec.gov/newsroom/press-releases/2016-224",
+          "link_type": "primaria"
+        }
       ],
-      "disclosures": [],
-      "events": [],
       "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "EDP Brasil passou por OPA de cancelamento de registro em 2023. Verificar listagem."
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "ENEV3",
       "name": "Eneva S.A.",
-      "cnpj_root": "08317250",
-      "cnpj_verified": false,
+      "cnpj_root": "04423567",
+      "cnpj_verified": true,
       "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "ENGI11",
+      "name": "Energisa S.A.",
+      "cnpj_root": "00864214",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "N2",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "EQTL3",
+      "name": "Equatorial Energia",
+      "cnpj_root": "03220438",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "EQTL3-ibama-2023",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2023-03-03",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2023, somando R$ 2,5 mi. Maior (R$ 2,5 mi, auto nº HZBLJMN2, DF): Deixar de atender a condicionante 2.1.5 da Licença de Instalação (LI) nº 1254/2018 (4039782) da LT 500 kV Igaporã III - Presidente Juscelino (02001.00…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "EZTC3",
+      "name": "EZTEC",
+      "cnpj_root": "08312229",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
       "segment": "NM",
       "indices": [],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "ENGI11",
-      "name": "Energisa S.A.",
-      "cnpj_root": "08302795",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "N2",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "EQTL3",
-      "name": "Equatorial Energia",
-      "cnpj_root": "26694281",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "FLRY3",
       "name": "Fleury S.A.",
       "cnpj_root": "60840055",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Saúde",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "IDiversa B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "FRAS3",
-      "name": "Frasle Mobility",
-      "cnpj_root": "82832244",
-      "cnpj_verified": false,
-      "sector": "Indústria",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "GGBR4",
@@ -958,8 +978,9 @@
       "sector": "Indústria",
       "segment": "N1",
       "indices": [
-        "ISE B3",
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "ITAG"
       ],
       "disclosures": [],
       "events": [
@@ -975,81 +996,71 @@
           "date_precision": "month",
           "description": "Multas ambientais por depósito de resíduos siderúrgicos",
           "link": "https://www.google.com/search?q=Gerdau+IBAMA+resíduos+siderúrgicos",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "GGPS3",
+      "name": "GPS Participações",
+      "cnpj_root": "09229201",
+      "cnpj_verified": true,
+      "sector": "Serviços",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "GMAT3",
       "name": "Grupo Mateus",
-      "cnpj_root": "27612993",
-      "cnpj_verified": false,
+      "cnpj_root": "24990777",
+      "cnpj_verified": true,
       "sector": "Varejo",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "GOLL4",
-      "name": "GOL Linhas Aéreas",
-      "cnpj_root": "06164253",
-      "cnpj_verified": false,
-      "sector": "Transporte Aéreo",
-      "segment": "N2",
-      "indices": [],
+      "ticker": "GOAU4",
+      "name": "Metalúrgica Gerdau",
+      "cnpj_root": "92690783",
+      "cnpj_verified": true,
+      "sector": "Siderurgia",
+      "segment": "N1",
+      "indices": [
+        "ITAG"
+      ],
       "disclosures": [],
-      "events": [
-        {
-          "id": "GOLL4-1",
-          "source": "Tribunal dos EUA",
-          "pillars": [
-            "G"
-          ],
-          "severity": 0,
-          "status": "processo",
-          "date": "2024-01-25",
-          "date_precision": "day",
-          "description": "Chapter 11 (recuperação judicial nos EUA) com passivo de US$ 3 bi",
-          "link": "https://www.google.com/search?q=GOL+Chapter11+recuperação+judicial+EUA+2024",
-          "link_type": "busca",
-          "review": "sinal_de_risco",
-          "review_note": "Recuperação judicial é risco financeiro, não infração socioambiental; vira tag sem pontuação."
-        },
-        {
-          "id": "GOLL4-2",
-          "source": "SEC",
-          "pillars": [
-            "G"
-          ],
-          "severity": 2,
-          "status": "investigacao",
-          "date": "2024-02-01",
-          "date_precision": "month",
-          "description": "Investigação da SEC por irregularidades em disclosure financeiro",
-          "link": "https://www.google.com/search?q=GOL+SEC+investigação+disclosure",
-          "link_type": "busca",
-          "review": "quarentena",
-          "review_note": "Investigação da SEC não localizada em fonte primária."
-        }
-      ],
-      "tags": [
-        "Recuperação judicial / Chapter 11"
-      ],
-      "last_verified": "2026-03-06"
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "HAPV3",
       "name": "Hapvida Participações",
-      "cnpj_root": "07175725",
-      "cnpj_verified": false,
+      "cnpj_root": "05197443",
+      "cnpj_verified": true,
       "sector": "Saúde",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3"
+      ],
       "disclosures": [],
       "events": [
         {
@@ -1064,89 +1075,75 @@
           "date_precision": "month",
           "description": "Notificações da ANS por negativa de coberturas e atendimentos",
           "link": "https://www.google.com/search?q=Hapvida+ANS+notificação+cobertura",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "HBSA3",
-      "name": "Hidrovias do Brasil",
-      "cnpj_root": "28024039",
-      "cnpj_verified": false,
-      "sector": "Transporte",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "HYPE3",
       "name": "Hypera Pharma",
-      "cnpj_root": "02281022",
-      "cnpj_verified": false,
+      "cnpj_root": "02932074",
+      "cnpj_verified": true,
       "sector": "Saúde",
       "segment": "NM",
       "indices": [
-        "ISE B3"
+        "ICO2 B3",
+        "IDiversa B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "IGTI11",
       "name": "Iguatemi S.A.",
-      "cnpj_root": "65994128",
-      "cnpj_verified": false,
+      "cnpj_root": "60543816",
+      "cnpj_verified": true,
       "sector": "Imobiliário",
-      "segment": "VERIFICAR",
+      "segment": "N1",
       "indices": [
-        "ISE B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3",
+        "ITAG"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "INBR32",
-      "name": "Banco Inter",
-      "cnpj_root": "00416968",
-      "cnpj_verified": false,
-      "sector": "Financeiro",
-      "segment": "BDR",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "INTB3",
       "name": "Intelbras",
-      "cnpj_root": "57334797",
-      "cnpj_verified": false,
+      "cnpj_root": "82901000",
+      "cnpj_verified": true,
       "sector": "Tecnologia",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IGPTW B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "IRBR3",
       "name": "IRB Brasil RE",
-      "cnpj_root": "33098239",
-      "cnpj_verified": false,
+      "cnpj_root": "33376989",
+      "cnpj_verified": true,
       "sector": "Financeiro",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
       "disclosures": [],
       "events": [
         {
@@ -1155,13 +1152,13 @@
           "pillars": [
             "G"
           ],
-          "severity": 4,
+          "severity": 3,
           "status": "processo",
-          "date": "2020-02-01",
-          "date_precision": "month",
-          "description": "Processo sancionador por manipulação de demonstrações financeiras",
-          "link": "https://www.google.com/search?q=IRB+CVM+fraude+balanço+2020",
-          "link_type": "busca"
+          "date": "2020-01-01",
+          "date_precision": "year",
+          "description": "PAS CVM 19957.003612/2020-35 contra 11 ex-administradores: divulgação de informação falsa e seletiva e irregularidades nas demonstrações de 2019 (julgamento em curso)",
+          "link": "https://www.gov.br/cvm/pt-br/assuntos/noticias/2025/cvm-inicia-julgamento-de-processo-envolvendo-ex-diretores-da-irb-2013-brasil-resseguros-s-a",
+          "link_type": "primaria"
         },
         {
           "id": "IRBR3-2",
@@ -1181,7 +1178,43 @@
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "ISAE4",
+      "name": "ISA Energia Brasil",
+      "cnpj_root": "02998611",
+      "cnpj_verified": true,
+      "sector": "Energia",
+      "segment": "N1",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "ITSA4",
+      "name": "Itaúsa",
+      "cnpj_root": "61532644",
+      "cnpj_verified": true,
+      "sector": "Holding",
+      "segment": "N1",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3",
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "ITUB4",
@@ -1191,10 +1224,10 @@
       "sector": "Financeiro",
       "segment": "N1",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
         "ICO2 B3",
         "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3",
         "ITAG"
       ],
       "disclosures": [],
@@ -1206,80 +1239,38 @@
             "G"
           ],
           "severity": 2,
-          "status": "processo",
-          "date": "2022-08-01",
-          "date_precision": "month",
-          "description": "Processo por práticas anticoncorrenciais no setor bancário",
-          "link": "https://www.google.com/search?q=Itaú+CADE+antitruste+2022",
-          "link_type": "busca"
+          "status": "investigacao",
+          "date": "2026-03-19",
+          "date_precision": "day",
+          "description": "Inquérito do CADE sobre barreiras a carteiras digitais concorrentes; medida preventiva mantida pelo Tribunal, com multa diária de R$ 250 mil em caso de descumprimento",
+          "link": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-mantem-medida-preventiva-aplicada-ao-itau",
+          "link_type": "primaria"
         }
       ],
       "tags": [
         "Holding"
       ],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "other_tickers": [
+        "ITUB3"
+      ]
     },
     {
-      "ticker": "JBSS3",
-      "name": "JBS S.A.",
-      "cnpj_root": "02916265",
+      "ticker": "JHSF3",
+      "name": "JHSF Participações",
+      "cnpj_root": "08294224",
       "cnpj_verified": true,
-      "sector": "Alimentos e Bebidas",
+      "sector": "Imobiliário",
       "segment": "NM",
-      "indices": [],
-      "disclosures": [
-        {
-          "type": "GRI",
-          "link": "https://jbs.com.br/sustentabilidade/"
-        }
+      "indices": [
+        "ICO2 B3",
+        "IGPTW B3"
       ],
-      "events": [
-        {
-          "id": "JBSS3-1",
-          "source": "MPF",
-          "pillars": [
-            "E"
-          ],
-          "severity": 3,
-          "status": "investigacao",
-          "date": "2024-06-01",
-          "date_precision": "month",
-          "description": "Fornecedores vinculados ao desmatamento na Amazônia — investigação do MPF",
-          "link": "https://www.google.com/search?q=JBS+desmatamento+Amazônia+MPF+2024",
-          "link_type": "busca"
-        },
-        {
-          "id": "JBSS3-2",
-          "source": "SEC / DOJ",
-          "pillars": [
-            "G"
-          ],
-          "severity": 4,
-          "status": "acordo",
-          "date": "2020-10-14",
-          "date_precision": "day",
-          "description": "Acordos com SEC e DOJ (EUA) por violações da FCPA ligadas a pagamentos indevidos (J&F/JBS)",
-          "link": "https://www.google.com/search?q=JBS+acordo+DOJ+SEC+256+milhoes",
-          "link_type": "busca"
-        },
-        {
-          "id": "JBSS3-3",
-          "source": "MTE",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-09-01",
-          "date_precision": "month",
-          "description": "Autuações trabalhistas em frigoríficos — condições insalubres",
-          "link": "https://www.google.com/search?q=JBS+frigorifico+MTE+autuação+insalubre",
-          "link_type": "busca"
-        }
-      ],
+      "disclosures": [],
+      "events": [],
       "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "JBS migrou a listagem principal para a NYSE em 2025. Verificar instrumento negociado na B3."
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "KLBN11",
@@ -1289,8 +1280,9 @@
       "sector": "Papel e Celulose",
       "segment": "N2",
       "indices": [
+        "IDiversa B3",
         "ISE B3",
-        "ICO2 B3"
+        "ITAG"
       ],
       "disclosures": [
         {
@@ -1298,22 +1290,26 @@
           "link": "https://klabin.com.br/sustentabilidade/"
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "id": "KLBN11-ibama-2024",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2024-07-02",
+          "date_precision": "day",
+          "description": "5 autos de infração em 2024, somando R$ 7,6 mi. Maior (R$ 5,0 mi, auto nº 8COS64U7, SC): Destruir 720,00 hectares de vegetação nativa objeto de especial preservação não passível de autorização para a supressão no bioma Mata Atlântica. Este…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "LEVE3",
-      "name": "Mahle Metal Leve",
-      "cnpj_root": "62942680",
-      "cnpj_verified": false,
-      "sector": "Indústria",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "LREN3",
@@ -1323,9 +1319,9 @@
       "sector": "Varejo",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "IDiversa B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
       ],
       "disclosures": [
         {
@@ -1335,33 +1331,104 @@
       ],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "LWSA3",
-      "name": "Locaweb S.A.",
-      "cnpj_root": "10609842",
-      "cnpj_verified": false,
-      "sector": "Tecnologia",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "MDIA3",
-      "name": "M. Dias Branco",
-      "cnpj_root": "07617490",
-      "cnpj_verified": false,
+      "ticker": "MBRF3",
+      "name": "MBRF Global Foods (Marfrig + BRF)",
+      "cnpj_root": "38538960",
+      "cnpj_verified": true,
       "sector": "Alimentos e Bebidas",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "MRFG3-1",
+          "source": "MPF",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "investigacao",
+          "date": "2024-03-01",
+          "date_precision": "month",
+          "description": "Fornecedores da cadeia bovina vinculados ao desmatamento no Cerrado",
+          "link": "https://www.google.com/search?q=Marfrig+desmatamento+Cerrado+2024",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Afirmação sobre o Cerrado sem fonte; auditoria supervisionada pelo MPF (TAC da Carne) aponta 100% de conformidade na Amazônia."
+        },
+        {
+          "id": "MRFG3-2",
+          "source": "MTE",
+          "pillars": [
+            "S"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-08-01",
+          "date_precision": "month",
+          "description": "Autuações trabalhistas em frigoríficos no MT e MS",
+          "link": "https://www.google.com/search?q=Marfrig+MTE+frigorifico+2022",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        },
+        {
+          "id": "BRFS3-1",
+          "source": "MPT",
+          "pillars": [
+            "S"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2023-01-01",
+          "date_precision": "year",
+          "description": "Ação coletiva por acidentes de trabalho em plantas frigoríficas",
+          "link": "https://www.google.com/search?q=BRF+MPT+acidente+trabalho+frigorifico",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        },
+        {
+          "id": "BRFS3-2",
+          "source": "IBAMA",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-07-01",
+          "date_precision": "month",
+          "description": "Autuações ambientais por descarte irregular de efluentes",
+          "link": "https://www.google.com/search?q=BRF+IBAMA+efluentes+2022",
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "MDNE3",
+      "name": "Moura Dubeux",
+      "cnpj_root": "12049631",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "IGPTW B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "MGLU3",
@@ -1371,8 +1438,10 @@
       "sector": "Varejo",
       "segment": "NM",
       "indices": [
+        "ICO2 B3",
         "IDiversa B3",
-        "IGPTW B3"
+        "IGPTW B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [
@@ -1388,20 +1457,59 @@
           "date_precision": "month",
           "description": "Investigação por divulgação de projeções de crescimento otimistas",
           "link": "https://www.google.com/search?q=Magazine+Luiza+CVM+2022",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "MOTV3",
+      "name": "Motiva (ex-CCR)",
+      "cnpj_root": "02846056",
+      "cnpj_verified": true,
+      "sector": "Transporte",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "MOTV3-n1",
+          "source": "MPF-PR (Operação Integração)",
+          "pillars": [
+            "G"
+          ],
+          "severity": 4,
+          "status": "reconhecido",
+          "date": "2019-03-06",
+          "date_precision": "day",
+          "description": "Acordo de leniência de R$ 750 mi da controlada Rodonorte, que reconheceu pagamento de propina para obter aditivos favoráveis em concessões de rodovias no Paraná",
+          "link": "https://apps.mpf.mp.br/apps/f?p=131%3A8",
+          "link_type": "primaria"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "MOVI3",
       "name": "Movida Participações",
       "cnpj_root": "21314559",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Serviços",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
       "disclosures": [
         {
           "type": "GRI",
@@ -1410,108 +1518,50 @@
       ],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "MRFG3",
-      "name": "Marfrig Global Foods",
-      "cnpj_root": "03748898",
-      "cnpj_verified": false,
-      "sector": "Alimentos e Bebidas",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "MRFG3-1",
-          "source": "MPF",
-          "pillars": [
-            "E"
-          ],
-          "severity": 3,
-          "status": "investigacao",
-          "date": "2024-03-01",
-          "date_precision": "month",
-          "description": "Fornecedores da cadeia bovina vinculados ao desmatamento no Cerrado",
-          "link": "https://www.google.com/search?q=Marfrig+desmatamento+Cerrado+2024",
-          "link_type": "busca"
-        },
-        {
-          "id": "MRFG3-2",
-          "source": "MTE",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2022-08-01",
-          "date_precision": "month",
-          "description": "Autuações trabalhistas em frigoríficos no MT e MS",
-          "link": "https://www.google.com/search?q=Marfrig+MTE+frigorifico+2022",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Marfrig e BRF anunciaram combinação de negócios em 2025. Verificar ticker atual."
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "MRVE3",
       "name": "MRV Engenharia",
       "cnpj_root": "08343492",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Construção Civil",
       "segment": "NM",
       "indices": [
-        "IDiversa B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "MULT3",
-      "name": "Multiplan Empreendimentos",
-      "cnpj_root": "07816890",
-      "cnpj_verified": false,
-      "sector": "Imobiliário",
-      "segment": "NM",
-      "indices": [
+        "IDiversa B3",
         "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "NEOE3",
-      "name": "Neoenergia S.A.",
-      "cnpj_root": "09261176",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "NM",
+      "ticker": "MULT3",
+      "name": "Multiplan Empreendimentos",
+      "cnpj_root": "07816890",
+      "cnpj_verified": true,
+      "sector": "Imobiliário",
+      "segment": "N2",
       "indices": [
-        "ISE B3",
-        "IDiversa B3"
+        "ITAG"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "NTCO3",
-      "name": "Natura &Co Holding",
-      "cnpj_root": "32785497",
+      "ticker": "NATU3",
+      "name": "Natura",
+      "cnpj_root": "71673990",
       "cnpj_verified": true,
-      "sector": "Varejo",
+      "sector": "Bens de Consumo",
       "segment": "NM",
       "indices": [
-        "ISE B3",
         "ICO2 B3",
-        "IDiversa B3"
+        "IDiversa B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [
@@ -1527,90 +1577,29 @@
           "date_precision": "month",
           "description": "Investigação CVM sobre disclosure de resultados da The Body Shop (2023)",
           "link": "https://www.google.com/search?q=Natura+Co+CVM+Body+Shop+investigação+2023",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         }
       ],
       "tags": [
         "Empresa B certificada"
       ],
-      "last_verified": "2026-03-06",
-      "notice": "Reorganização societária da Natura &Co em 2025. Verificar ticker atual."
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "OIBR3",
-      "name": "Oi S.A.",
-      "cnpj_root": "76535764",
-      "cnpj_verified": false,
-      "sector": "Telecomunicações",
-      "segment": "N1",
+      "ticker": "ORVR3",
+      "name": "Orizon Valorização de Resíduos",
+      "cnpj_root": "11421994",
+      "cnpj_verified": true,
+      "sector": "Saneamento",
+      "segment": "NM",
       "indices": [],
       "disclosures": [],
-      "events": [
-        {
-          "id": "OIBR3-1",
-          "source": "Tribunal Federal",
-          "pillars": [
-            "G"
-          ],
-          "severity": 0,
-          "status": "processo",
-          "date": "2016-06-20",
-          "date_precision": "day",
-          "description": "Recuperação Judicial com passivo de R$ 65 bilhões — maior da história do país",
-          "link": "https://www.google.com/search?q=Oi+recuperação+judicial+65+bilhões",
-          "link_type": "busca",
-          "review": "sinal_de_risco",
-          "review_note": "Recuperação judicial é risco financeiro, não infração socioambiental; vira tag sem pontuação."
-        },
-        {
-          "id": "OIBR3-2",
-          "source": "ANATEL",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "condenacao",
-          "date": "2022-01-01",
-          "date_precision": "year",
-          "description": "Multas recorrentes por qualidade de serviço abaixo do mínimo regulatório",
-          "link": "https://www.google.com/search?q=Oi+ANATEL+multa+qualidade+serviço",
-          "link_type": "busca"
-        }
-      ],
-      "tags": [
-        "Recuperação judicial"
-      ],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "PCAR3",
-      "name": "Grupo Pão de Açúcar (GPA)",
-      "cnpj_root": "75315333",
-      "cnpj_verified": false,
-      "sector": "Varejo",
-      "segment": "NM",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [
-        {
-          "id": "PCAR3-1",
-          "source": "MPT",
-          "pillars": [
-            "S"
-          ],
-          "severity": 2,
-          "status": "processo",
-          "date": "2023-02-01",
-          "date_precision": "month",
-          "description": "Ação por irregularidades trabalhistas em centros de distribuição",
-          "link": "https://www.google.com/search?q=GPA+MPT+trabalhista+CD",
-          "link_type": "busca"
-        }
-      ],
+      "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "PETR4",
@@ -1620,7 +1609,8 @@
       "sector": "Petróleo e Gás",
       "segment": "N2",
       "indices": [
-        "ICO2 B3"
+        "IDiversa B3",
+        "ITAG"
       ],
       "disclosures": [],
       "events": [
@@ -1668,7 +1658,9 @@
           "date_precision": "day",
           "description": "Investigações sobre governança e trocas de diretoria",
           "link": "https://www.google.com/search?q=Petrobras+CVM+governança+2023",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         },
         {
           "id": "PETR4-n1",
@@ -1679,72 +1671,295 @@
           "status": "acordo",
           "date": "2018-09-27",
           "date_precision": "day",
-          "description": "Acordo com SEC e DOJ (EUA) de US$ 853 mi relacionado ao esquema investigado na Operação Lava Jato",
-          "link": "https://www.google.com/search?q=Petrobras+acordo+SEC+DOJ+853+milh%C3%B5es+2018",
+          "description": "Acordos com SEC e DOJ (EUA): US$ 1,78 bi, incluindo multa de US$ 853 mi, por demonstrações financeiras que ocultaram o esquema de corrupção investigado na Lava Jato",
+          "link": "https://www.sec.gov/newsroom/press-releases/2018-215",
           "severity": 4,
-          "link_type": "busca"
+          "link_type": "primaria"
+        },
+        {
+          "id": "PETR4-ibama-2016",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2016-08-30",
+          "date_precision": "day",
+          "description": "83 autos de infração em 2016, somando R$ 36,3 mi. Maior (R$ 12,6 mi, auto nº 9059282-E, SE): Lançar residuo liquido, pelo emissario submarino PAP-1, em desacordo com a legislação conforme registro SIEMA n° 201652757638",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2017",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 4,
+          "status": "processo",
+          "date": "2017-08-17",
+          "date_precision": "day",
+          "description": "62 autos de infração em 2017, somando R$ 116,4 mi. Maior (R$ 22,6 mi, auto nº 9141878-E, SP): CAUSAR POLUIÇAO PELO LANÇAMENTO DE RESIDUOS SOLIDOS, BIOLOGICOS E QUIMICOS NO MAR, PROVENIENTE DA ATIVIDADE DE RASPAGEM DE CASCO DE NAVIO",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2018",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2018-07-27",
+          "date_precision": "day",
+          "description": "326 autos de infração em 2018, somando R$ 30,0 mi. Maior (R$ 5,2 mi, auto nº 9221594-E, SP): Fazer funcionar atividades e serviços utilizadores de recursos ambientais, considerados efetivo ou potencialmente poluidores, em desacordo com a licen…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2019",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 4,
+          "status": "processo",
+          "date": "2019-12-03",
+          "date_precision": "day",
+          "description": "482 autos de infração em 2019, somando R$ 299,6 mi. Maior (R$ 35,1 mi, auto nº QM5CV1O9, DF): Incorre nas mesmas multas do art. 61 quem: V - lançar resíduos sólidos, líquidos ou gasosos ou detritos, óleos ou substâncias oleosas em desacordo com…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2020",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2020-11-17",
+          "date_precision": "day",
+          "description": "112 autos de infração em 2020, somando R$ 32,5 mi. Maior (R$ 5,5 mi, auto nº 0EVWJ741, RJ): Deixar de atender a condicionante estabelecida na Licença Ambiental. (Quebra da condicionante 1.2 da licença 1123/2016, para o gasoduto rota 3)",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2021",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2021-01-29",
+          "date_precision": "day",
+          "description": "398 autos de infração em 2021, somando R$ 51,3 mi. Maior (R$ 3,1 mi, auto nº C69901S4, RN): Fazer funcionar atividades contrariando sétimo artigo da resolução Conama 306/2002, por não apresentar relatório de auditoria ambiental e do plano de…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2022",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2022-03-30",
+          "date_precision": "day",
+          "description": "207 autos de infração em 2022, somando R$ 37,6 mi. Maior (R$ 5,1 mi, auto nº 3KLO0M0D, RN): Fazer funcionar atividade de exploração de petróleo na Bacia Submersa do Ceará em desacordo com a licença obtida, deixando de atender a condicionante…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2023",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 4,
+          "status": "processo",
+          "date": "2023-05-10",
+          "date_precision": "day",
+          "description": "600 autos de infração em 2023, somando R$ 184,4 mi. Maior (R$ 20,0 mi, auto nº NTBMXZAE, ES): Efetuar a descarga de 191,5m3 de petróleo, da instalação FPSO Cidade de Anchieta(FCDA), Campo Jubarte, Bacia de Campos, em 22/01/2022, conforme SIEMA…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2024",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2024-10-01",
+          "date_precision": "day",
+          "description": "206 autos de infração em 2024, somando R$ 28,8 mi. Maior (R$ 5,0 mi, auto nº RD06I399, RJ): Efetuar a descarga de 47,5 m3 de petróleo em 08/05/2023, pela instalação FSO Cidade de Macaé, no Campo de Roncador, localizado na Bacia de Campos, em…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2025-11-25",
+          "date_precision": "day",
+          "description": "360 autos de infração em 2025, somando R$ 29,9 mi. Maior (R$ 12,6 mi, auto nº WS27PKWC, SE): Lançar resíduos líquidos no mar territorial, provenientes da Estação de Tratamento de Efluentes (ETE) Polo Atalaia, através do Emissário Submarino do…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "PETR4-ibama-2026",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2026-09-17",
+          "date_precision": "day",
+          "description": "236 autos de infração em 2026, somando R$ 27,8 mi. Maior (R$ 3,0 mi, auto nº Z3FYZSGE, RJ): Efetuar a descarga de 10,336 m³ (metros cúbicos) de Petróleo, em 21/08/2024, pela instalação P-74, no Campo de Búzios localizado na Bacia de Santos (c…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
         }
       ],
       "tags": [
         "Controle estatal"
       ],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "other_tickers": [
+        "PETR3"
+      ]
     },
     {
-      "ticker": "PETZ3",
-      "name": "Petz S.A.",
-      "cnpj_root": "22375272",
-      "cnpj_verified": false,
-      "sector": "Varejo",
+      "ticker": "PGMN3",
+      "name": "Pague Menos",
+      "cnpj_root": "06626253",
+      "cnpj_verified": true,
+      "sector": "Saúde",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "PLPL3",
+      "name": "Plano & Plano",
+      "cnpj_root": "24230275",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "POMO4",
       "name": "Marcopolo S.A.",
       "cnpj_root": "88611835",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Indústria",
       "segment": "N2",
       "indices": [
-        "ICO2 B3"
+        "IGPTW B3",
+        "ITAG"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "PRIO3",
       "name": "PetroRio S.A.",
       "cnpj_root": "10629105",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Petróleo e Gás",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3"
+      ],
       "disclosures": [],
-      "events": [],
+      "events": [
+        {
+          "id": "PRIO3-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2025-02-14",
+          "date_precision": "day",
+          "description": "2 autos de infração em 2025, somando R$ 2,7 mi. Maior (R$ 2,5 mi, auto nº NXJXOHXH, RJ): Lançar resíduos líquidos (Água de Produção) em desacordo com a Resolução CONAMA n° 430/2011 (Tabela II do artigo 16), ao ultrapassar os parâmetros de…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "PSSA3",
       "name": "Porto Seguro S.A.",
-      "cnpj_root": "61198164",
-      "cnpj_verified": false,
+      "cnpj_root": "02149205",
+      "cnpj_verified": true,
       "sector": "Financeiro",
       "segment": "NM",
       "indices": [
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "RADL3",
@@ -1754,75 +1969,60 @@
       "sector": "Saúde",
       "segment": "NM",
       "indices": [
-        "ISE B3",
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "RAIL3",
+      "name": "Rumo S.A.",
+      "cnpj_root": "02387241",
+      "cnpj_verified": true,
+      "sector": "Transporte",
+      "segment": "NM",
+      "indices": [
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "RDOR3",
+      "name": "Rede D'Or São Luiz",
+      "cnpj_root": "06047087",
+      "cnpj_verified": true,
+      "sector": "Saúde",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "RECV3",
+      "name": "PetroRecôncavo",
+      "cnpj_root": "03342704",
+      "cnpj_verified": true,
+      "sector": "Petróleo e Gás",
+      "segment": "NM",
+      "indices": [
         "IDiversa B3",
         "IGPTW B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "RAIL3",
-      "name": "Rumo S.A.",
-      "cnpj_root": "02521665",
-      "cnpj_verified": false,
-      "sector": "Transporte",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "RAPT4",
-      "name": "Randon S.A. Implementos e Participações",
-      "cnpj_root": "89850341",
-      "cnpj_verified": false,
-      "sector": "Indústria",
-      "segment": "N1",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "RDOR3",
-      "name": "Rede D'Or São Luiz",
-      "cnpj_root": "06057087",
-      "cnpj_verified": false,
-      "sector": "Saúde",
-      "segment": "NM",
-      "indices": [
-        "ISE B3",
-        "ICO2 B3",
-        "IDiversa B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "RECV3",
-      "name": "PetroRecôncavo",
-      "cnpj_root": "42146449",
-      "cnpj_verified": false,
-      "sector": "Petróleo e Gás",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "RENT3",
@@ -1832,38 +2032,27 @@
       "sector": "Serviços",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "RRRP3",
-      "name": "3R Petroleum",
-      "cnpj_root": "11609110",
-      "cnpj_verified": false,
-      "sector": "Petróleo e Gás",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "3R Petroleum e Enauta se combinaram em 2024 (Brava Energia). Verificar ticker atual."
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "SANB11",
       "name": "Santander Brasil",
       "cnpj_root": "90400888",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Financeiro",
-      "segment": "N2",
+      "segment": "BASICO",
       "indices": [
         "ICO2 B3",
-        "IDiversa B3"
+        "IDiversa B3",
+        "ISE B3",
+        "ITAG"
       ],
       "disclosures": [],
       "events": [
@@ -1879,24 +2068,147 @@
           "date_precision": "month",
           "description": "Multa por práticas anticoncorrenciais em tarifas bancárias",
           "link": "https://www.google.com/search?q=Santander+CADE+tarifa+2021",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizada condenação do CADE ao Santander por tarifas bancárias."
+        },
+        {
+          "id": "SANB11-ibama-2016",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2016-10-20",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2016, somando R$ 47,5 mi. Maior (R$ 47,5 mi, auto nº 9061377-E, MT): Intermediar 95.100 sacas de milho (Cédula Crédito Bancário n. 227000302672, Safra 2015/2015 ) produzidas em uma área de 572,59 ha embargada pelo Termo…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "SAPR11",
+      "name": "Sanepar",
+      "cnpj_root": "76484013",
+      "cnpj_verified": true,
+      "sector": "Saneamento",
+      "segment": "N2",
+      "indices": [
+        "IDiversa B3",
+        "ISE B3",
+        "ITAG"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "SAPR11-ibama-2018",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2018-08-15",
+          "date_precision": "day",
+          "description": "8 autos de infração em 2018, somando R$ 2,1 mi. Maior (R$ 0,4 mi, auto nº 9120791-E, PR): Lançar no meio ambiente efluentes liquidos da estação de tratamento de esgotos (ETE-Barro Preto), durante o período de janeiro/2014 a março/2016, em d…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "SAPR11-ibama-2022",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2022-06-10",
+          "date_precision": "day",
+          "description": "12 autos de infração em 2022, somando R$ 2,4 mi. Maior (R$ 0,3 mi, auto nº 5VIW7TBV, PR): Causar poluição através do lançamento de efluentes da ETE Alambari, provocando o desenquadramento reiterado do corpo hídrico receptor, rio Alambari, e…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "SAPR11-ibama-2024",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2024-04-08",
+          "date_precision": "day",
+          "description": "6 autos de infração em 2024, somando R$ 13,5 mi. Maior (R$ 12,6 mi, auto nº 57BJ0BE5, PR): causar poluição através do lançamento de efluentes da ETE Rancho Mundo, em desacordo com as normas ambientais, provocando redução da qualidade do corp…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "SAPR11-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2025-09-01",
+          "date_precision": "day",
+          "description": "22 autos de infração em 2025, somando R$ 67,5 mi. Maior (R$ 12,5 mi, auto nº TR09TR5Z, PR): Causar poluição através do lançamento de efluentes da estação de tratamento de esgoto sanitário ETE-São Tomé, provocando a redução da qualidade hídric…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [
+        "Controle estatal"
+      ],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
+    },
+    {
+      "ticker": "SAUD3",
+      "name": "Bradesco Saúde",
+      "cnpj_root": "58119199",
+      "cnpj_verified": true,
+      "sector": "Saúde",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "SBFG3",
       "name": "SBF Grupo (Centauro)",
-      "cnpj_root": "09009529",
-      "cnpj_verified": false,
+      "cnpj_root": "13217485",
+      "cnpj_verified": true,
       "sector": "Varejo",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IGPTW B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "SBSP3",
@@ -1906,69 +2218,77 @@
       "sector": "Saneamento",
       "segment": "NM",
       "indices": [
+        "IDiversa B3",
         "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "SIMH3",
+      "name": "Simpar",
+      "cnpj_root": "07415333",
+      "cnpj_verified": true,
+      "sector": "Transporte",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "SLCE3",
       "name": "SLC Agrícola",
-      "cnpj_root": "96523925",
-      "cnpj_verified": false,
+      "cnpj_root": "89096457",
+      "cnpj_verified": true,
       "sector": "Agronegócio",
       "segment": "NM",
       "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "SMFT3",
-      "name": "Smart Fit Escola de Ginástica",
-      "cnpj_root": "01708976",
-      "cnpj_verified": false,
-      "sector": "Saúde",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "SMTO3",
-      "name": "São Martinho S.A.",
-      "cnpj_root": "91523044",
-      "cnpj_verified": false,
-      "sector": "Agroindústria",
-      "segment": "NM",
-      "indices": [
+        "IGPTW B3",
         "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
-      "ticker": "SOMA3",
-      "name": "Grupo Soma",
-      "cnpj_root": "10724929",
-      "cnpj_verified": false,
-      "sector": "Varejo",
+      "ticker": "SMFT3",
+      "name": "Smart Fit Escola de Ginástica",
+      "cnpj_root": "07594978",
+      "cnpj_verified": true,
+      "sector": "Saúde",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "Grupo Soma e Arezzo&Co anunciaram fusão em 2024 (Azzas 2154). Verificar ticker atual."
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "SMTO3",
+      "name": "São Martinho S.A.",
+      "cnpj_root": "51466860",
+      "cnpj_verified": true,
+      "sector": "Agroindústria",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "SUZB3",
@@ -1978,9 +2298,7 @@
       "sector": "Papel e Celulose",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3"
+        "IDiversa B3"
       ],
       "disclosures": [
         {
@@ -2006,40 +2324,96 @@
           "date_precision": "day",
           "description": "TAC por condições de trabalho em colheita florestal",
           "link": "https://www.google.com/search?q=Suzano+TAC+MPT+2022",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
+        },
+        {
+          "id": "SUZB3-ibama-2024",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2024-10-31",
+          "date_precision": "day",
+          "description": "3 autos de infração em 2024, somando R$ 7,5 mi. Maior (R$ 7,5 mi, auto nº 915BHYMS, PA): Descumprir embargo de área de 25 hectares, parcela de área indicada pela autoridade competente no Termo de Embargo nº 0233981-C datado de 06/08/2004 (…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "SUZB3-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2025-03-18",
+          "date_precision": "day",
+          "description": "4 autos de infração em 2025, somando R$ 6,7 mi. Maior (R$ 5,0 mi, auto nº ODFW82UV, PA): Descumprir embargo de área de 20 hectares, na área indicada pela autoridade competente no Termo de Embargo nº 369878-C, datado de 15/09/2005 (Processo…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "TAEE11",
       "name": "Taesa (Transmissora Aliança de Energia)",
-      "cnpj_root": "07997969",
-      "cnpj_verified": false,
+      "cnpj_root": "07859971",
+      "cnpj_verified": true,
       "sector": "Energia",
       "segment": "N2",
-      "indices": [],
+      "indices": [
+        "IDiversa B3",
+        "IGPTW B3",
+        "ITAG"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "TEND3",
+      "name": "Construtora Tenda",
+      "cnpj_root": "71476527",
+      "cnpj_verified": true,
+      "sector": "Construção Civil",
+      "segment": "NM",
+      "indices": [
+        "IDiversa B3"
+      ],
+      "disclosures": [],
+      "events": [],
+      "tags": [],
+      "last_verified": "2026-10-06",
+      "coverage_note": "Empresa nova no universo (IBrX 100): controvérsias ainda não pesquisadas sistematicamente."
     },
     {
       "ticker": "TIMS3",
       "name": "TIM Brasil",
       "cnpj_root": "02421421",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Telecomunicações",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "TOTS3",
@@ -2049,70 +2423,44 @@
       "sector": "Tecnologia",
       "segment": "NM",
       "indices": [
-        "ISE B3",
+        "ICO2 B3",
         "IDiversa B3",
         "IGPTW B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "TRPL4",
-      "name": "CTEEP (Transmissão Paulista)",
-      "cnpj_root": "02468761",
-      "cnpj_verified": false,
-      "sector": "Energia",
-      "segment": "N1",
-      "indices": [
-        "ICO2 B3"
-      ],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06",
-      "notice": "CTEEP passou a se chamar ISA Energia Brasil. Verificar ticker atual."
-    },
-    {
-      "ticker": "TUPY3",
-      "name": "Tupy S.A.",
-      "cnpj_root": "84683374",
-      "cnpj_verified": false,
-      "sector": "Indústria",
-      "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "UGPA3",
       "name": "Ultrapar Participações",
       "cnpj_root": "33256439",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Petróleo e Gás",
       "segment": "NM",
       "indices": [
-        "ICO2 B3"
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [
         "Holding"
       ],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "USIM5",
       "name": "USIMINAS",
       "cnpj_root": "60894730",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Siderurgia",
       "segment": "N1",
       "indices": [
-        "ICO2 B3"
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [
@@ -2128,11 +2476,13 @@
           "date_precision": "year",
           "description": "Autuações por emissões atmosféricas acima do limite em planta de Ipatinga",
           "link": "https://www.google.com/search?q=USIMINAS+IBAMA+emissões+Ipatinga",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "VALE3",
@@ -2142,14 +2492,13 @@
       "sector": "Mineração",
       "segment": "NM",
       "indices": [
-        "ISE B3",
         "ICO2 B3"
       ],
       "disclosures": [],
       "events": [
         {
           "id": "VALE3-1",
-          "source": "Governo de MG / MPMG / TJMG",
+          "source": "Governo de MG / MPMG / MPF / DPMG",
           "pillars": [
             "E",
             "S"
@@ -2158,9 +2507,9 @@
           "status": "acordo",
           "date": "2021-02-04",
           "date_precision": "day",
-          "description": "Rompimento da barragem B1 em Brumadinho (2019), 270 mortos — acordo judicial de reparação de R$ 37,7 bi",
-          "link": "https://www.google.com/search?q=Vale+Brumadinho+acordo+37+bilhões",
-          "link_type": "busca"
+          "description": "Rompimento das barragens da Mina Córrego do Feijão em Brumadinho (2019), 270 mortos — acordo judicial de reparação de R$ 37,7 bi",
+          "link": "https://www.transparencia.mg.gov.br/eventos-extraordinarios/acordo-judicial/acordo-judicial-reparacao-vale",
+          "link_type": "primaria"
         },
         {
           "id": "VALE3-2",
@@ -2174,7 +2523,9 @@
           "date_precision": "day",
           "description": "Multas por infrações ambientais relacionadas a barragens",
           "link": "https://www.google.com/search?q=Vale+IBAMA+multa+barragem+2023",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         },
         {
           "id": "VALE3-3",
@@ -2188,11 +2539,13 @@
           "date_precision": "month",
           "description": "Ações do MPT por condições de saúde e trabalho em unidades operacionais",
           "link": "https://www.google.com/search?q=Vale+MPT+condições+trabalho+2023",
-          "link_type": "busca"
+          "link_type": "busca",
+          "review": "quarentena",
+          "review_note": "Não localizado em fonte oficial na checagem de out/2026 (descrição vaga, sem número de processo ou data precisa)."
         },
         {
           "id": "VALE3-n1",
-          "source": "Justiça Federal / União / MG / ES",
+          "source": "STF / União / MG / ES",
           "pillars": [
             "E",
             "S"
@@ -2200,66 +2553,204 @@
           "status": "acordo",
           "date": "2024-10-25",
           "date_precision": "day",
-          "description": "Rompimento da barragem de Fundão em Mariana (2015, via Samarco) — repactuação de R$ 170 bi",
-          "link": "https://www.google.com/search?q=repactua%C3%A7%C3%A3o+Mariana+acordo+170+bilh%C3%B5es",
+          "description": "Rompimento da barragem de Fundão em Mariana (2015, via Samarco) — acordo de repactuação de R$ 170 bi homologado pelo STF",
+          "link": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-homologa-acordo-para-reparacao-de-danos-causados-pela-tragedia-em-mariana-mg/",
           "severity": 5,
-          "link_type": "busca"
+          "link_type": "primaria"
+        },
+        {
+          "id": "VALE3-ibama-2016",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 3,
+          "status": "processo",
+          "date": "2016-02-18",
+          "date_precision": "day",
+          "description": "5 autos de infração em 2016, somando R$ 28,1 mi. Maior (R$ 22,6 mi, auto nº 9061063-E, MA): Deixar de adotar, medidas de contenção, exigidas pelo Ibama, no talude do km 567 da Estrada de Ferro Carajás ocasionando dano ambiental grave em área…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VALE3-ibama-2018",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 4,
+          "status": "processo",
+          "date": "2018-03-20",
+          "date_precision": "day",
+          "description": "10 autos de infração em 2018, somando R$ 111,2 mi. Maior (R$ 25,1 mi, auto nº 9128423-E, PA): Lançar resíduos líquidos em desacordo com as exigências estabelecidas na Resolução CONAMA nº 430/2011, conforme Laudo de Constatação (Parecer Técnico…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VALE3-ibama-2020",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 1,
+          "status": "processo",
+          "date": "2020-08-13",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2020, somando R$ 1,5 mi. Maior (R$ 1,5 mi, auto nº 2T2HCA83, MA): Causar poluição em niveis tais que podem resultar em destruicao da biodiversidade marinha local pela emissao de substancia oleosa em desacordo com exg…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VALE3-ibama-2023",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2023-01-26",
+          "date_precision": "day",
+          "description": "7 autos de infração em 2023, somando R$ 2,4 mi. Maior (R$ 1,0 mi, auto nº GC3WDJLB, PA): Lançar substância oleosa em desacordo com as exigências estabelecidas em ato normativo item V do artigo 62. (Resolução Conama 420, parágrafo único)",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VALE3-ibama-2025",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 1,
+          "status": "processo",
+          "date": "2025-07-02",
+          "date_precision": "day",
+          "description": "4 autos de infração em 2025, somando R$ 1,4 mi. Maior (R$ 0,9 mi, auto nº ODKPQ3VY, PA): Destruir, a corte raso, 173,66 ha (cento e setenta e três hectares e sessenta e seis ares) de floresta na Amazônia Legal e outros tipos de vegetações…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VALE3-ibama-2026",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2026-07-03",
+          "date_precision": "day",
+          "description": "6 autos de infração em 2026, somando R$ 2,0 mi. Maior (R$ 1,5 mi, auto nº RO1YSWGN, PA): Fazer funcionar ferrovia, no trecho da Terra Indígena Mãe Maria, no período compreendido entre 19/06/2024 a 03/03/2026, sem emissão do correspondente…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
         }
       ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "VAMO3",
       "name": "Vamos Locação de Caminhões e Máquinas",
-      "cnpj_root": "27096410",
-      "cnpj_verified": false,
+      "cnpj_root": "23373000",
+      "cnpj_verified": true,
       "sector": "Transporte",
       "segment": "NM",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "VBBR3",
-      "name": "Vibra Energia",
-      "cnpj_root": "33453598",
-      "cnpj_verified": false,
-      "sector": "Petróleo e Gás",
-      "segment": "NM",
       "indices": [
-        "ICO2 B3"
+        "ICO2 B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
+    },
+    {
+      "ticker": "VBBR3",
+      "name": "Vibra Energia",
+      "cnpj_root": "34274233",
+      "cnpj_verified": true,
+      "sector": "Petróleo e Gás",
+      "segment": "NM",
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "IGPTW B3",
+        "ISE B3"
+      ],
+      "disclosures": [],
+      "events": [
+        {
+          "id": "VBBR3-ibama-2021",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 1,
+          "status": "processo",
+          "date": "2021-12-06",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2021, somando R$ 1,6 mi. Maior (R$ 1,6 mi, auto nº OY5H55O6, RJ): Deixar, aquele que tem obrigação, de dar destinação ambientalmente adequada ao óleo lubrificante usado ou contaminado - OLUC, referente a meta/ano de…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VBBR3-ibama-2023",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2023-02-09",
+          "date_precision": "day",
+          "description": "2 autos de infração em 2023, somando R$ 3,0 mi. Maior (R$ 1,5 mi, auto nº 669V0SN7, AM): Comercializar produto ou substância tóxica, perigosa ou nociva à saúde humana ou ao meio ambiente (combustível de aviação), em desacordo com as exigên…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
+      "tags": [],
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "VIVA3",
       "name": "Vivara Participações",
-      "cnpj_root": "05141607",
-      "cnpj_verified": false,
+      "cnpj_root": "33839910",
+      "cnpj_verified": true,
       "sector": "Varejo",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "IDiversa B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "VIVT3",
       "name": "Telefônica Vivo",
-      "cnpj_root": "02449992",
-      "cnpj_verified": false,
+      "cnpj_root": "02558157",
+      "cnpj_verified": true,
       "sector": "Telecomunicações",
-      "segment": "NM",
+      "segment": "BASICO",
       "indices": [
-        "ISE B3",
-        "ICO2 B3"
+        "ICO2 B3",
+        "IGPTW B3",
+        "ISE B3"
       ],
       "disclosures": [
         {
@@ -2267,9 +2758,42 @@
           "link": "https://vivo.com.br/sobre-a-vivo/esg"
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "id": "VIVT3-ibama-2019",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2019-02-25",
+          "date_precision": "day",
+          "description": "1 auto de infração em 2019, somando R$ 7,5 mi. Maior (R$ 7,5 mi, auto nº 9148339-E, ES): Instalar atividades, obras ou serviços utilizadores de recursos ambientais, considerados efetiva ou potencialmente poluidores, em desacordo com a lice…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        },
+        {
+          "id": "VIVT3-ibama-2020",
+          "source": "IBAMA (autos de infração)",
+          "pillars": [
+            "E"
+          ],
+          "severity": 2,
+          "status": "processo",
+          "date": "2020-01-23",
+          "date_precision": "day",
+          "description": "2 autos de infração em 2020, somando R$ 2,1 mi. Maior (R$ 2,1 mi, auto nº D0WO1KOJ, SP): Deixar de atender as condicionantes 1.1, 1.4, 2.1, 2.2, 2.3, 2.4 e 2.5 estabelecidas na Licença de Operação n. 174/2001 (renovação) para a operação do…",
+          "link": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-auto-de-infracao",
+          "link_type": "primaria",
+          "group": "ibama-autos",
+          "origin": "ibama-sync"
+        }
+      ],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "WEGE3",
@@ -2279,40 +2803,30 @@
       "sector": "Indústria",
       "segment": "NM",
       "indices": [
-        "ISE B3",
-        "S&P/B3 ESG",
-        "ICO2 B3"
+        "ICO2 B3",
+        "ISE B3"
       ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
-    },
-    {
-      "ticker": "XPBR31",
-      "name": "XP Inc.",
-      "cnpj_root": "08248206",
-      "cnpj_verified": false,
-      "sector": "Financeiro",
-      "segment": "BDR",
-      "indices": [],
-      "disclosures": [],
-      "events": [],
-      "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     },
     {
       "ticker": "YDUQ3",
       "name": "Yduqs Participações",
       "cnpj_root": "08807432",
-      "cnpj_verified": false,
+      "cnpj_verified": true,
       "sector": "Educação",
       "segment": "NM",
-      "indices": [],
+      "indices": [
+        "ICO2 B3",
+        "IDiversa B3",
+        "ISE B3"
+      ],
       "disclosures": [],
       "events": [],
       "tags": [],
-      "last_verified": "2026-03-06"
+      "last_verified": "2026-10-06"
     }
   ]
 }

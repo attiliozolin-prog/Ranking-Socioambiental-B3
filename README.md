@@ -1,6 +1,6 @@
 # Ranking Socioambiental B3
 
-Ranking independente e auditável de responsabilidade socioambiental das maiores empresas listadas na B3. Cada nota é **calculada** a partir de fatos públicos (índices da B3, segmento de listagem e registros de órgãos como IBAMA, MPT, MTE, CVM e CADE), e a conta completa aparece na página de cada empresa.
+Ranking independente e auditável de responsabilidade socioambiental das empresas do IBrX 100. Cada nota é **calculada** a partir de fatos públicos (índices da B3, segmento de listagem e registros de órgãos como IBAMA, MPT, MTE, CVM e CADE), e a conta completa aparece na página de cada empresa.
 
 🌐 https://ranking-socioambiental-b3.vercel.app
 
@@ -32,6 +32,8 @@ npm run dev        # http://localhost:3000
 | `npm run typecheck` | Checagem de tipos (TypeScript estrito) |
 | `npm run build` | Valida, checa tipos, compila e gera páginas estáticas por empresa e `sitemap.xml` |
 | `npm run check` | Valida, checa tipos e roda os testes (o mesmo que a CI) |
+| `npm run sync` | Atualiza universo, índices, CNPJ e segmento (B3 + CVM) e autos do IBAMA |
+| `npm run snapshot` | Congela as notas da edição em `src/data/editions/` |
 
 ## Estrutura
 ```
@@ -45,10 +47,15 @@ scripts/
   validate-data.ts      # CLI de validação
   postbuild.ts          # HTML com meta tags por empresa + sitemap
   migrate_v1_to_v2.py   # registro auditável da migração da v1
+  sync_official_data.py # B3 (IBrX 100, índices) + CVM (CNPJ, segmento)
+  sync_ibama.py         # autos de infração do IBAMA por CNPJ
+  curation/             # decisões de curadoria por edição
 docs/AUDITORIA-v2.md    # achados da auditoria e pendências
 ```
 
 ## Como atualizar os dados
+Dados oficiais (universo, índices, CNPJ, segmento, autos do IBAMA) são coletados por `npm run sync` — uma GitHub Action faz isso toda segunda-feira e abre um PR. Controvérsias de outras fontes são curadas à mão:
+
 1. Edite `src/data/companies.json`. Para um novo registro, use o formato:
    ```json
    {

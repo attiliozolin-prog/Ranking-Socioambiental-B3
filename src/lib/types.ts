@@ -11,7 +11,6 @@ export type Segment = 'NM' | 'N2' | 'N1' | 'BASICO' | 'BDR' | 'VERIFICAR';
 
 export type IndexMembership =
   | 'ISE B3'
-  | 'S&P/B3 ESG'
   | 'ICO2 B3'
   | 'IDiversa B3'
   | 'IGPTW B3'
@@ -43,6 +42,10 @@ export interface CompanyEvent {
   /** quarentena: fora da nota e oculto até checagem; sinal_de_risco: exibido sem pontuar */
   review?: 'quarentena' | 'sinal_de_risco';
   review_note?: string;
+  /** eventos do mesmo grupo (ex.: autos do IBAMA) têm teto conjunto de dedução por pilar */
+  group?: string;
+  /** gerado por script de coleta (ex.: 'ibama-sync') — não editar à mão */
+  origin?: string;
 }
 
 export interface DirtyListEntry {
@@ -63,6 +66,10 @@ export interface Company {
   tags: string[];
   last_verified: string;
   notice?: string;
+  /** outras classes da mesma empresa no IBrX 100 (ex.: ITUB3) */
+  other_tickers?: string[];
+  /** controvérsias ainda não pesquisadas para esta empresa */
+  coverage_note?: string;
   /** Cadastro de Empregadores (MTE) — exclusão automática */
   dirty_list?: DirtyListEntry;
 }
@@ -72,6 +79,8 @@ export interface DatasetMeta {
   as_of: string;
   methodology_version: string;
   notes?: string;
+  universe?: string;
+  sources?: Record<string, string>;
 }
 
 export interface Dataset {

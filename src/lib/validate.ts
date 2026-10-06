@@ -11,7 +11,7 @@ export interface ValidationReport {
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 const TICKER = /^[A-Z0-9]{4}(3|4|5|6|11|3[1-5])$/;
 const SEGMENTS = new Set(['NM', 'N2', 'N1', 'BASICO', 'BDR', 'VERIFICAR']);
-const INDICES = new Set(['ISE B3', 'S&P/B3 ESG', 'ICO2 B3', 'IDiversa B3', 'IGPTW B3', 'ITAG']);
+const INDICES = new Set(['ISE B3', 'ICO2 B3', 'IDiversa B3', 'IGPTW B3', 'ITAG']);
 const PILLARS = new Set(['E', 'S', 'G']);
 
 function isSafeUrl(u: string): boolean {
